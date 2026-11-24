@@ -5,7 +5,7 @@ Bhagavata tells them. Every title and thumbnail pairing was run through `skills/
 the average score is 88.8/100 and the lowest is 80. The tool checks length, repetition and vagueness. It
 cannot predict views.
 
-A 10-minute episode is about **1,500 spoken words** at 150 words a minute. Hindi scripts written so far: E01-E19 (`epNN-*-hindi.md` in this folder), all in the [Hindi style guide](style-guide-hindi.md).
+A 10-minute episode is about **1,500 spoken words** at 150 words a minute. Hindi scripts written so far: E01-E26 (`epNN-*-hindi.md` in this folder), all in the [Hindi style guide](style-guide-hindi.md).
 
 ## Language and voice
 
@@ -112,13 +112,13 @@ illustrations.
 
 | # | title | thumbnail | source | the one-sentence promise | lint |
 | --- | --- | --- | --- | --- | --- |
-| E20 | Two Sages Fought as Birds Over 1 King | `YEARS OF WAR` | SB 9.7; Markandeya Purana | Vasishtha and Vishvamitra's years-long battle in bird form, and who started it. | 100 |
-| E21 | Harishchandra's Deal With Varuna: A Son, Then a Sacrifice | `THE PRICE` | SB 9.7 | A childless king's promise and the birth of Rohita. | 80 |
-| E22 | Harishchandra's 5 Delays: The Son He Promised Varuna | `STALLING A GOD` | SB 9.7 | The five times Harishchandra put off Varuna, and the illness that followed. | 98 |
-| E23 | Rohita's 6 Years in the Forest: 'Keep Walking' | `CHARAIVETI` | SB 9.7; Aitareya Brahmana | The prince who ran, and Indra's verses telling him not to go home. | 98 |
-| E24 | Shunahshepha: The Boy Bought to Die in a Prince's Place | `SOLD BY HIS FATHER` | SB 9.7; SB 9.16; Aitareya Brahmana | The boy bought from Ajigarta, his prayers at the post, and how he became Devarata. | 80 |
-| E25 | The Other Harishchandra, Part 1: He Gave Away His Kingdom | `NOT IN BHAGAVATA` | Markandeya Purana | The truth-test story most people know, and why it comes from a different Purana. | 98 |
-| E26 | The Other Harishchandra, Part 2: The Cremation Ground | `HIS OWN SON` | Markandeya Purana | Kashi, the sale of his wife and son, Rohita's death, and the end of the test. | 98 |
+| E20 | Harishchandra's Deal With Varuna: A Son, Then a Sacrifice | `THE PRICE` | SB 9.7 | A childless king's promise and the birth of Rohita. | 80 |
+| E21 | Harishchandra's 5 Delays: The Son He Promised Varuna | `STALLING A GOD` | SB 9.7 | The five times Harishchandra put off Varuna, and the illness that followed. | 98 |
+| E22 | Rohita's 6 Years in the Forest: 'Keep Walking' | `CHARAIVETI` | SB 9.7; Aitareya Brahmana | The prince who ran, and Indra's verses telling him not to go home. | 98 |
+| E23 | Shunahshepha: The Boy Bought to Die in a Prince's Place | `SOLD BY HIS FATHER` | SB 9.7; SB 9.16; Aitareya Brahmana | The boy bought from Ajigarta, his prayers at the post, and how he became Devarata. | 80 |
+| E24 | The Other Harishchandra, Part 1: He Gave Away His Kingdom | `NOT IN BHAGAVATA` | Markandeya Purana | The truth-test story most people know, and why it comes from a different Purana. | 98 |
+| E25 | The Other Harishchandra, Part 2: The Cremation Ground | `HIS OWN SON` | Markandeya Purana | Kashi, the sale of his wife and son, Rohita's death, and the end of the test. | 98 |
+| E26 | Two Sages Fought as Birds Over 1 King | `YEARS OF WAR` | SB 9.7; Markandeya Purana | Vasishtha and Vishvamitra's years-long battle in bird form, and who started it. | 100 |
 
 ## Arc 5: Sagara (7 episodes)
 
@@ -223,7 +223,7 @@ Notes on each arc where my memory of the text may be wrong, or where versions of
   Ravana is told in Valmiki's Uttara Kanda.
 - **E16 Trishanku's three sins**: this explanation of the name comes from the Harivamsha. Other
   texts give other reasons. Say that there are several versions.
-- **E20-E24 Harishchandra**: the Bhagavata names the priests at the sacrifice and says Shunahshepha
+- **E20-E26 Harishchandra** (the bird battle is E26, after the truth test, as in the Markandeya Purana): the Bhagavata names the priests at the sacrifice and says Shunahshepha
   was spared and later became Vishvamitra's son Devarata (SB 9.16). The "keep walking" verses
   (*charaiveti*) are from the Aitareya Brahmana. Only quote them as the Bhagavata if your
   translation actually contains them there.
