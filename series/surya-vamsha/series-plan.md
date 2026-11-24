@@ -5,7 +5,7 @@ Bhagavata tells them. Every title and thumbnail pairing was run through `skills/
 the average score is 88.8/100 and the lowest is 80. The tool checks length, repetition and vagueness. It
 cannot predict views.
 
-A 10-minute episode is about **1,500 spoken words** at 150 words a minute. Hindi scripts written so far: E01-E13 (`epNN-*-hindi.md` in this folder), all in the [Hindi style guide](style-guide-hindi.md).
+A 10-minute episode is about **1,500 spoken words** at 150 words a minute. Hindi scripts written so far: E01-E19 (`epNN-*-hindi.md` in this folder), all in the [Hindi style guide](style-guide-hindi.md).
 
 ## Language and voice
 
