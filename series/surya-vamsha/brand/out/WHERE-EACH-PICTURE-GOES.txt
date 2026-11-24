@@ -1,0 +1,27 @@
+सूर्यवंश कथा: channel pictures
+================================
+
+YOUTUBE (YouTube Studio > Customisation > Branding)
+  youtube/profile-picture-800x800.png   Picture (shown as a circle)
+  youtube/banner-2560x1440.jpg          Banner image (the text sits in the area every device shows)
+  youtube/watermark-150x150.png         Video watermark (shown in the corner of every video)
+  thumbnails/ep01-thumbnail-1280x720.jpg  Custom thumbnail for Episode 1
+
+INSTAGRAM (Edit profile)
+  instagram/profile-picture-1080x1080.png   Profile picture
+  instagram/first-post-1080x1080.jpg        Your first post (introduces the channel)
+  instagram/highlight-covers/00..10         Story highlight covers, in this order:
+       00 शुरुआत (start here)  01 इक्ष्वाकु  02 मान्धाता  03 त्रिशंकु  04 हरिश्चंद्र  05 सगर
+       06 भगीरथ  07 रघु  08 अज-दशरथ  09 श्रीराम  10 लव-कुश
+     (Add a story > highlight it > Edit highlight > Edit cover > pick the image.)
+
+FACEBOOK PAGE
+  facebook/profile-picture-720x720.png   Profile picture
+  facebook/cover-1640x624.jpg            Cover photo (phones show the middle, where the text is)
+  facebook/first-post-1080x1080.jpg      First post
+
+TIKTOK (Edit profile > Change photo)
+  tiktok/profile-picture-1080x1080.png   Profile photo
+
+Every platform uses the same sun logo, so people recognise the channel everywhere.
+A thumbnail for each later episode is made when that episode's pictures are made.

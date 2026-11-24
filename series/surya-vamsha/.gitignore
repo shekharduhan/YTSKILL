@@ -1,7 +1,4 @@
-audio/
 # Local secrets written by `elevenlabs onboard`
 /.env.local
 .env.local
-images/
 video/
-brand/
