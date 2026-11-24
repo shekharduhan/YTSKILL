@@ -10,7 +10,8 @@ import base64, json, os, re, sys, urllib.request
 HERE = os.path.dirname(os.path.abspath(__file__))
 STYLE = ("Polished digital painting in a premium animated Indian mythology film style, smooth cel-shaded colour "
          "with clean outlines, highly detailed, saturated warm golden-hour and firelight, amber, saffron and deep "
-         "red against a dusk purple-blue sky, cinematic rim lighting, no text, no watermark. ")
+         "red against a dusk purple-blue sky, cinematic rim lighting, dignified faces, sacred and majestic, not cartoonish, "
+         "not comic, no text, no watermark. ")
 MODEL = "gemini-2.5-flash-image"
 
 def prompts(ep):
@@ -31,10 +32,15 @@ def gen(text, out):
 if __name__ == "__main__":
     ep = int(sys.argv[1]); only = {int(x) for x in sys.argv[2:]}
     d = os.path.join(HERE, "images", f"ep{ep:02d}"); os.makedirs(d, exist_ok=True)
-    for n, text in sorted(prompts(ep).items()):
-        if only and n not in only: continue
+    from concurrent.futures import ThreadPoolExecutor
+    def one(item):
+        n, text = item
         out = os.path.join(d, f"{n:02d}.png")
         if only and os.path.exists(out): os.remove(out)
-        if os.path.exists(out): continue
-        try: gen(text, out); print("ok", n)
-        except Exception as e: print("fail", n, e)
+        if os.path.exists(out): return
+        for attempt in range(3):          # occasional empty replies: retry
+            try: gen(text, out); print("ok", n, flush=True); return
+            except Exception as e: err = e
+        print("fail", n, err, flush=True)
+    todo = [(n, t) for n, t in sorted(prompts(ep).items()) if not only or n in only]
+    with ThreadPoolExecutor(4) as ex: list(ex.map(one, todo))

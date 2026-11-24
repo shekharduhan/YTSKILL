@@ -2,7 +2,7 @@
 
     python3 brand_assets.py            # channel images -> brand/out/
     python3 brand_assets.py thumb 1 [image] [cx]   # episode thumbnail -> brand/out/thumbnails/
-                                                   # cx 0..1 moves the crop left/right
+                                                   # cx 0..1 moves the crop left/right; add 'top' or 'left' to move the words
 
 Artwork comes from brand/raw/ (logo.png, banner.png, made with Google's image model). Hindi text is
 drawn here with Noto Serif Devanagari, because image models can't spell Hindi reliably.
@@ -119,7 +119,7 @@ def unletterbox(im):
     return im.crop((cols[0], rows[0], cols[-1] + 1, rows[-1] + 1))
 
 
-def thumbnail(ep, image=None, cx=0.5):
+def thumbnail(ep, image=None, cx=0.5, top=False, left=False):
     """1280x720 YouTube thumbnail: the episode's strongest image + its thumbnail words from the script."""
     md = open(glob.glob(os.path.join(HERE, f"ep{ep:02d}-*-hindi.md"))[0], encoding="utf-8").read()
     words = re.search(r"^थंबनेल:\s*(.+)$", md.split("## कॉपी ब्लॉक")[-1], re.M).group(1).strip("` ")
@@ -127,11 +127,20 @@ def thumbnail(ep, image=None, cx=0.5):
     t = cover(unletterbox(Image.open(src).convert("RGB")), 1280, 720, cx=cx).convert("RGBA")
     grad = Image.new("RGBA", t.size, (0, 0, 0, 0))
     gd = ImageDraw.Draw(grad)
-    for y in range(720):                    # darken the bottom for the words
-        a = int(max(0, (y - 380) / 340) * 210)
-        gd.line([(0, y), (1280, y)], fill=(10, 2, 0, a))
-    t.alpha_composite(grad)
-    text(t, (640, 600), words, 130 if len(words) <= 10 else 104, stroke=6)
+    if left:                                # two lines in the top-left corner, darkened diagonally
+        for x in range(1280):
+            a = int(max(0, (700 - x) / 700) * 200)
+            gd.line([(x, 0), (x, 420)], fill=(10, 2, 0, a))
+        t.alpha_composite(grad.filter(ImageFilter.GaussianBlur(60)))
+        lines = [l.strip() + "।" for l in words.split("।") if l.strip()] or [words]
+        for i, l in enumerate(lines):
+            text(t, (60, 120 + i * 140), l, 120, anchor="lm", stroke=6)
+    else:
+        for y in range(720):                # darken the bottom (or top) for the words
+            a = int(max(0, ((340 - y) if top else (y - 380)) / 340) * 210)
+            gd.line([(0, y), (1280, y)], fill=(10, 2, 0, a))
+        t.alpha_composite(grad)
+        text(t, (640, 120 if top else 600), words, 130 if len(words) <= 10 else 104, stroke=6)
     text(t, (1240, 50), f"{ep}", 46, fill=CREAM, anchor="rm")
     save(t, "thumbnails", f"ep{ep:02d}-thumbnail-1280x720.jpg")
 
@@ -139,6 +148,6 @@ def thumbnail(ep, image=None, cx=0.5):
 if __name__ == "__main__":
     if sys.argv[1:2] == ["thumb"]:
         thumbnail(int(sys.argv[2]), sys.argv[3] if len(sys.argv) > 3 else None,
-                  float(sys.argv[4]) if len(sys.argv) > 4 else 0.5)
+                  float(sys.argv[4]) if len(sys.argv) > 4 else 0.5, "top" in sys.argv[5:], "left" in sys.argv[5:])
     else:
         channel()
