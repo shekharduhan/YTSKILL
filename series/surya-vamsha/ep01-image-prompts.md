@@ -6,7 +6,7 @@ video holds each one with a slow zoom or pan.
 
 | # | scene | prompt [SCENE] |
 | --- | --- | --- |
-| 1 | hook | a lone wooden boat on a dark endless flood under lightning, a giant golden horned fish towing it with a rope |
+| 1 | hook | a lone wooden boat on a dark endless flood under lightning, a giant golden fish with a single horn on its head towing it with a rope |
 | 2 | hook | the whole earth drowned, only mountain peaks breaking the stormy water, tiny boat in the distance |
 | 3 | title | the sun rising over a calm ocean, a royal lineage tree of golden light rising from the sun |
 | 4 | Vedas stolen | four-faced Brahma asleep on a lotus, four glowing scriptures slipping from his mouths |

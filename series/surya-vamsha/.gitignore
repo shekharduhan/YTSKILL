@@ -3,3 +3,4 @@ audio/
 /.env.local
 .env.local
 images/
+video/

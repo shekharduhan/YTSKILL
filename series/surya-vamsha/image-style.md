@@ -19,9 +19,10 @@ Matches the reference the user supplied: painted Indian-mythology illustrations,
 
 ## Prompt template
 
-> Detailed digital painting, premium illustrated Indian mythology comic style, clean ink outlines,
-> warm golden-hour and firelight, amber, saffron and deep red with dusk purple-blue sky, cinematic
-> rim lighting, ornate ancient Indian architecture, no text. **[SCENE]**. 16:9 widescreen.
+> Polished digital painting in a premium animated Indian mythology film style, smooth cel-shaded
+> colour with clean outlines, highly detailed, saturated warm golden-hour and firelight, amber,
+> saffron and deep red against a dusk purple-blue sky, cinematic rim lighting, no text, no
+> watermark. **[SCENE]**. Wide 16:9 landscape composition.
 
 Keep the same wording at the start of every prompt so the whole series looks consistent. Describe
 recurring characters the same way every time (see each episode's prompt list).
