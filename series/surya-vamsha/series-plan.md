@@ -5,7 +5,7 @@ Bhagavata tells them. Every title and thumbnail pairing was run through `skills/
 the average score is 88.8/100 and the lowest is 80. The tool checks length, repetition and vagueness. It
 cannot predict views.
 
-A 10-minute episode is about **1,500 spoken words** at 150 words a minute. Hindi scripts written so far: E01, E02, E03 and E04 (`epNN-*-hindi.md` in this folder).
+A 10-minute episode is about **1,500 spoken words** at 150 words a minute. Hindi scripts written so far: E01-E06 (`epNN-*-hindi.md` in this folder), all in the [Hindi style guide](style-guide-hindi.md).
 
 ## Language and voice
 
@@ -83,7 +83,7 @@ illustrations.
 | E03 | Nimi: Ikshvaku's Son Who Lives in Every Blink | `NO BODY LEFT` | SB 9.13 | Ikshvaku's son Nimi, the curse he and Vasishtha traded, and the line that leads to Sita's father Janaka. | 80 |
 | E04 | Kakutstha: The Prince Who Rode Indra Into Battle | `RIDING A GOD` | SB 9.6 | Puranjaya rides Indra in bull form against the asuras, and why Rama is called Kakutstha. | 80 |
 | E05 | Dhundhumara: 21,000 Sons Against 1 Demon | `ONLY 3 CAME BACK` | SB 9.6; Mahabharata Vana Parva | Kuvalayashva and the demon Dhundhu under the sand, and the three sons who survived. | 100 |
-| E06 | From Kakutstha to Yuvanashva: The Founder of Shravasti | `THE MISSING KINGS` | SB 9.6 | The kings between Kakutstha and Mandhata's father, including the founder of Shravasti. | 80 |
+| E06 | Shravasti: The City a Sun King Founded | `STILL STANDING` | SB 9.6; Valmiki Uttara Kanda; Buddhist and Jain tradition | The city King Shravasta founded, later Lava's capital and the Buddha's Jetavana, still standing as ruins. | 94 |
 
 ## Arc 2: Mandhata (7 episodes)
 
