@@ -39,7 +39,7 @@ Each king gets as many episodes as the sources can fill with **ten real minutes*
   Saudasa, Khatvanga, Maru) each get their own episode inside the closest arc. They fill out the
   arcs, and the stories are less well known.
 
-Rama's arc is 23 episodes because his story is the longest. You can cut it to about 12 by merging
+Rama's arc is 22 episodes because his story is the longest. You can cut it to about 12 by merging
 neighbouring episodes, or make it longer by splitting each kanda further.
 
 ## The rule this series runs on
@@ -166,7 +166,7 @@ illustrations.
 | E51 | Dasharatha's 2 Boons to Kaikeyi: The Shambara War | `SHE SAVED HIM` | Valmiki Ayodhya Kanda | The battle where Kaikeyi saved Dasharatha, and the boons she kept. | 98 |
 | E52 | Dasharatha's 4 Sons: The Bhagavata's Account | `THE GODS ASKED` | SB 9.10; Valmiki Bala Kanda | Rishyashringa's sacrifice and the Bhagavata's 'one Lord in four portions'. | 98 |
 
-## Arc 9: Shri Ram (23 episodes)
+## Arc 9: Shri Ram (22 episodes)
 
 | # | title | thumbnail | source | the one-sentence promise | lint |
 | --- | --- | --- | --- | --- | --- |
@@ -192,18 +192,18 @@ illustrations.
 | E72 | Rama's Coronation and the Bhagavata's Ramarajya | `EVERY SEASON KIND` | SB 9.10 | The coronation and the Bhagavata's description of Rama's reign. | 80 |
 | E73 | Rama's Rule in the Bhagavata: The Gifts Returned | `PRIESTS SAID NO` | SB 9.11 | Rama's sacrifices, the land he gave away, and why it came back. | 80 |
 | E74 | Hanuman's Prayer to Rama in the Bhagavata | `KIMPURUSHA` | SB 5.19 | Where Hanuman still worships Rama, according to the Bhagavata, and what he says. | 80 |
-| E75 | Rama's Departure: How the Avatar Ended | `THE SARAYU` | SB 9.11; Valmiki Uttara Kanda | Lakshmana's last act, and Rama entering the Sarayu. | 94 |
 
-## Arc 10: Lav and Kush (9 episodes)
+## Arc 10: Lav and Kush (10 episodes)
 
 | # | title | thumbnail | source | the one-sentence promise | lint |
 | --- | --- | --- | --- | --- | --- |
-| E76 | 'I Am Not Rama': The Words That Exiled Sita | `ONE MAN SAID IT` | SB 9.11; Valmiki Uttara Kanda | What Rama overheard, and how the Bhagavata and Valmiki tell it differently. | 80 |
-| E77 | Lav and Kush: 2 Twins Born After Sita Was Sent Away | `VALMIKI'S ASHRAM` | SB 9.11; Valmiki Uttara Kanda | The twins' birth and how they got their names. | 98 |
-| E78 | Rama's Brothers Build 3 New Kingdoms | `MATHURA FOUNDED` | SB 9.11; Valmiki Uttara Kanda | Shatrughna kills Lavana, Bharata conquers the Gandharvas, Lakshmana's sons rule. | 100 |
-| E79 | The Twins Sang the Ramayana to Rama | `HE DIDN'T KNOW` | Valmiki Uttara Kanda | Two boys reciting Rama's own story at his sacrifice. | 94 |
-| E80 | The Horse and the Battle: Where This Story Comes From | `NOT IN BHAGAVATA` | Padma Purana; Jaimini Ashvamedha | The twins capture Rama's horse, and which texts tell it. | 80 |
-| E81 | Sita Returns to the Earth | `THE GROUND OPENED` | SB 9.11; Valmiki Uttara Kanda | Sita's last act, and Rama's grief in the Bhagavata. | 94 |
+| E75 | 'I Am Not Rama': The Words That Exiled Sita | `ONE MAN SAID IT` | SB 9.11; Valmiki Uttara Kanda | What Rama overheard, and how the Bhagavata and Valmiki tell it differently. | 80 |
+| E76 | Lav and Kush: 2 Twins Born After Sita Was Sent Away | `VALMIKI'S ASHRAM` | SB 9.11; Valmiki Uttara Kanda | The twins' birth and how they got their names. | 98 |
+| E77 | Rama's Brothers Build 3 New Kingdoms | `MATHURA FOUNDED` | SB 9.11; Valmiki Uttara Kanda | Shatrughna kills Lavana, Bharata conquers the Gandharvas, Lakshmana's sons rule. | 100 |
+| E78 | The Twins Sang the Ramayana to Rama | `HE DIDN'T KNOW` | Valmiki Uttara Kanda | Two boys reciting Rama's own story at his sacrifice. | 94 |
+| E79 | The Horse and the Battle: Where This Story Comes From | `NOT IN BHAGAVATA` | Padma Purana; Jaimini Ashvamedha | The twins capture Rama's horse, and which texts tell it. | 80 |
+| E80 | Sita Returns to the Earth | `THE GROUND OPENED` | SB 9.11; Valmiki Uttara Kanda | Sita's last act, and Rama's grief in the Bhagavata. | 94 |
+| E81 | Rama's Departure: How the Avatar Ended | `THE SARAYU` | SB 9.11; Valmiki Uttara Kanda | Lakshmana's last act, and Rama entering the Sarayu. | 94 |
 | E82 | Kusha Returns to Ayodhya: The City's Goddess | `THE EMPTY CITY` | Kalidasa Raghuvamsha 16 | Ayodhya appears to Kusha as a grieving goddess and asks him home. | 80 |
 | E83 | Kusha's Line: From Atithi to Hiranyanabha | `YAJNAVALKYA'S GURU` | SB 9.12 | The kings after Kusha, including the yoga teacher of Yajnavalkya. | 80 |
 | E84 | The Last Sun King, and the One Still Waiting | `KALAPA VILLAGE` | SB 9.12 | Brihadbala at Kurukshetra, Sumitra the last king, and Maru waiting in Kalapa. | 80 |
@@ -227,7 +227,7 @@ Notes on each arc where my memory of the text may be wrong, or where versions of
   was spared and later became Vishvamitra's son Devarata (SB 9.16). The "keep walking" verses
   (*charaiveti*) are from the Aitareya Brahmana. Only quote them as the Bhagavata if your
   translation actually contains them there.
-- **E25-E26**: the truth-test story is from the Markandeya Purana (it is also in the Devi Bhagavata).
+- **E24-E25**: the truth-test story is from the Markandeya Purana (it is also in the Devi Bhagavata).
   Look up the chapter numbers before you show them.
 - **E31 Kapila**: the line saying Kapila did not burn the princes, and that they burned because of
   their own offence, is the reveal of the episode. Read it word for word.
@@ -236,14 +236,14 @@ Notes on each arc where my memory of the text may be wrong, or where versions of
 - **E42-E46 Raghu, E47-E49 Aja**: almost everything here is Kalidasa. The canto numbers are
   approximate, so check them. Each text gives a different family tree: in the Bhagavata, Raghu's
   father is Dirghabahu; in Kalidasa it is Dilipa; check Valmiki's list in the Bala Kanda.
-- **E58 the bow**: "300 men carried it" is how I remember the Bhagavata's wording. Check it, because
+- **E57 the bow**: "300 men carried it" is how I remember the Bhagavata's wording. Check it, because
   Valmiki gives a different number.
-- **E75 Hanuman's prayer**: SB 5.19, outside Skandha 9. It is worth including because it is the
+- **E74 Hanuman's prayer**: SB 5.19, outside Skandha 9. It is worth including because it is the
   Bhagavata's own picture of Rama.
-- **E77**: in the Bhagavata, Rama overhears the remark himself while walking the city at night in
+- **E75**: in the Bhagavata, Rama overhears the remark himself while walking the city at night in
   disguise. In Valmiki the report reaches him through others. Name the difference.
-- **E78**: the explanation of the names Kusha and Lava is Valmiki's (Uttara Kanda).
-- **E81**: the battle over the horse is in later texts (the Padma Purana and the Jaimini Ashvamedha),
+- **E76**: the explanation of the names Kusha and Lava is Valmiki's (Uttara Kanda).
+- **E79**: the battle over the horse is in later texts (the Padma Purana and the Jaimini Ashvamedha),
   not in Valmiki or the Bhagavata. Name both texts.
 - **E84**: in the Bhagavata, the dynasty ends with Sumitra in the Kali age, and Maru lives on by yoga
   in the village of Kalapa. Lava's descendants are not traced in the Bhagavata.
