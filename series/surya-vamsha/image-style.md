@@ -31,3 +31,21 @@ recurring characters the same way every time (see each episode's prompt list).
 
 The reference images are vertical (9:16, phone/Shorts). The 10-minute episodes are YouTube
 long-form, so render **16:9** for the episodes and 9:16 only for Shorts cut from them.
+
+## Lessons from Episode 1 (apply to every episode from E02 on)
+
+- **Divine beings must look divine, never comic.** Image models default to cartoon faces (goldfish eyes,
+  droopy whiskers, open mouths). Describe a calm, dignified face and add "sacred and majestic, not
+  cartoonish, not comic".
+- **Matsya (the fish):** "a colossal sleek streamlined golden fish like a giant mahseer, jewel-like scales,
+  dignified serene face with a calm half-closed eye, no whiskers, no open mouth, a single short pointed
+  golden spike on its brow like a small temple finial". The word "horn" alone gives a long unicorn spike.
+- **Put the people the narration names in the picture.** The boat carries the king and the seven sages;
+  an empty boat loses the story.
+- **Show scale.** A god-sized being must be far larger than the humans beside it.
+- **Follow the narration order.** The first image matches the first spoken line (E01: the drowned earth
+  first, the fish only when the fish is mentioned).
+- **Make 2-3 versions of the opening image and the thumbnail image** (about $0.04 each) and pick the best:
+  the first seconds decide whether a viewer stays.
+- The model often draws the rope to the mouth instead of the horn and adds letterbox bars or a
+  signature scribble; check every image before assembling.
