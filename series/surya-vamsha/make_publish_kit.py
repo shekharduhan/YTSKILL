@@ -33,7 +33,7 @@ KINGS = {  # king -> (Hindi name, hashtags)
 CORE = ["#सूर्यवंश", "#Suryavansh", "#भागवतपुराण", "#हिंदूपौराणिककथा", "#IndianMythology",
         "#BhagavataPurana", "#पौराणिककथा", "#सनातनधर्म", "#HindiKahani", "#Mythology"]
 DISCLOSE = ("वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित\n"
-            "Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts")
+            "Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts")
 
 
 def clean(s):
@@ -106,6 +106,8 @@ def write_srt(ep, max_chars=80):
         for p in parts:
             while len(p) > max_chars:                       # break at the pause nearest the middle
                 cuts = [m.end() for m in re.finditer(r"…|,", p) if 15 <= m.end() <= len(p) - 15]
+                if not cuts:                                # no pause mark: cut at the space nearest the middle
+                    cuts = [m.start() for m in re.finditer(" ", p) if 15 <= m.start() <= len(p) - 15]
                 if not cuts:
                     break
                 c = min(cuts, key=lambda x: abs(x - len(p) / 2))
