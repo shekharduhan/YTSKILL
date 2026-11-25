@@ -17,7 +17,8 @@ How it renders
 - Every recording is transcribed offline (qa_audio.py, Whisper) and compared with the script. A
   recording with extra words (repeats, context read aloud), missing words or a cut-off ending is
   recorded again without context and with a new seed, up to 3 times, and the best take is kept.
-  Chosen takes are remembered in audio/takes.json, so a re-run never pays twice.
+  The approved recording of each line is remembered in audio/takes.json (line -> file), so a
+  re-run never pays twice, and editing one line does not re-record its neighbours.
 - Silence the voice adds at the start and end of a recording is trimmed, long silences inside a
   recording are shortened, and the script's pauses are added exactly:
       [विराम] 1.0 s    between paragraphs 0.5 s    new scene 0.8 s    (stacked pauses max 1.2 s)
@@ -160,7 +161,13 @@ def load_takes():
 def choose(text, prev, nxt, takes, qa=True):
     """Return the path of a good recording of `text`, re-recording if the speech check fails."""
     if text in takes:
-        return tts(text, prev, nxt, takes[text])
+        v = takes[text]
+        if isinstance(v, str):                      # the approved recording's file, whatever its context
+            path = os.path.join(CACHE, v)
+            if os.path.exists(path):
+                return path
+        else:
+            return tts(text, prev, nxt, v)
     if not qa:
         return tts(text, prev, nxt)
     import qa_audio
@@ -173,11 +180,12 @@ def choose(text, prev, nxt, takes, qa=True):
             best = (take, r)
         if not r["flags"]:
             break
-    takes[text] = best[0]
+    path = tts(text, prev, nxt, best[0])
+    takes[text] = os.path.basename(path)
     json.dump(takes, open(TAKES, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     if best[1]["flags"]:
         print(f"   !! kept best take {best[0]} but it still has: {', '.join(best[1]['flags'])}", flush=True)
-    return tts(text, prev, nxt, best[0])
+    return path
 
 
 def render(md_path, out_mp3, qa=True):

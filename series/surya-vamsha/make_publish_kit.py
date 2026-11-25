@@ -54,13 +54,17 @@ def episode(path):
     nxt = field(copy, "अगला")
     src = clean(re.search(r"\*\*स्रोत:\*\*\s*(.+)", t).group(1))
     body = t.split("\n---\n", 1)[1]
-    hook = body.split("## हुक", 1)[-1]
-    hook = re.split(r"(?m)^## ", hook, maxsplit=1)[0]
-    lines = [clean(l) for l in hook.splitlines()
-             if l.strip() and "[स्क्रीन" not in l and not l.startswith(">")]
-    lines = [l for l in lines if l.strip(" …")]
+    # spoken pieces of the hook, whole sentences (script lines are wrapped, so use the narration plan)
+    import eleven_render as er
+    items = er.plan(t)
+    hook_pieces = []
+    for kind, val in items:
+        if kind == "scene" and hook_pieces:
+            break
+        if kind == "text":
+            hook_pieces.append(clean(val))
     opener, n = [], 0
-    for l in lines:
+    for l in hook_pieces:
         opener.append(l); n += len(l)
         if n > 220 or len(opener) >= 4:
             break
@@ -187,7 +191,7 @@ def main():
               f"सूर्यवंश कथा · एपिसोड {n} 🔱\n\n"
               f"📜 स्रोत: {e['src'].split('·')[0].strip()}\n"
               f"पूरा एपिसोड YouTube पर, लिंक बायो में।\n"
-              f"आप क्या करते इस जगह? कमेंट में बताइए 👇\n\n"
+              f"इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇\n\n"
               + " ".join(short_tags))
         fb = (f"{e['hook']}\n\n"
               f"👉 {e['title']} (सूर्यवंश कथा, एपिसोड {n})\n"

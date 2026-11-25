@@ -36,11 +36,15 @@ if __name__ == "__main__":
     def one(item):
         n, text = item
         out = os.path.join(d, f"{n:02d}.png")
-        if only and os.path.exists(out): os.remove(out)
-        if os.path.exists(out): return
+        if os.path.exists(out) and not only: return
+        tmp = out + ".new"
         for attempt in range(3):          # occasional empty replies: retry
-            try: gen(text, out); print("ok", n, flush=True); return
-            except Exception as e: err = e
+            try:
+                gen(text, tmp); os.replace(tmp, out)   # the old picture is replaced only on success
+                print("ok", n, flush=True); return
+            except Exception as e:
+                err = e
+                if "402" in str(e): break               # out of credit: retrying won't help
         print("fail", n, err, flush=True)
     todo = [(n, t) for n, t in sorted(prompts(ep).items()) if not only or n in only]
     with ThreadPoolExecutor(4) as ex: list(ex.map(one, todo))
