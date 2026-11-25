@@ -33,12 +33,12 @@ picture to that phrase in the finished audio, so pictures never drift from the v
 | 21 | punishment | close portrait of King Ikshvaku, the strong king with the trimmed dark beard and golden crown, his face frozen in grief and anger, silence | राजा को पता चल गया |
 | 22 | punishment | the royal court: the prince Vikukshi kneeling, King Ikshvaku standing on the steps of the throne, courtiers watching in silence | और यहाँ आती है वह पंक्ति |
 | 23 | punishment | King Ikshvaku pointing toward the open palace gates, his face stern, the prince rising slowly with his head bowed | राज्य से निकाल दिया |
-| 24 | punishment | the prince Vikukshi walking alone out of the great gates of Ayodhya toward a dusty road at sunset, his bow on his back | यह सुनने में बहुत कठोर |
+| 24 | punishment | the prince Vikukshi walking alone out of the great gates of Ayodhya toward a dusty road at sunset, his bow on his back | ग्रंथ हमें इतना बताता है |
 | 25 | punishment | King Ikshvaku alone at a palace window at night watching the road where his son left, an oil lamp beside him, sorrow | और इक्ष्वाकु कोई साधारण राजा |
 | 26 | renunciation | King Ikshvaku without his crown sitting with the sage Vasishtha under a great banyan tree in soft morning light, in deep conversation | पुत्र को निकालने के बाद |
 | 27 | renunciation | an empty golden throne in a quiet royal hall, sunbeams falling on it, a crown resting on the seat | और पीछे रह जाता है |
 | 28 | Shashada | a lone figure, the prince Vikukshi now older with a short beard, walking back toward the gates of Ayodhya at dawn, people gathering | तब विकुक्षि लौटे |
-| 29 | Shashada | Vikukshi crowned king on the throne of Ayodhya performing a sacred fire ritual, priests around him, solemn | जिस पुत्र को निकाला गया था |
+| 29 | Shashada | Vikukshi crowned king on the throne of Ayodhya performing a sacred fire ritual, priests around him, solemn | उसने पृथ्वी पर राज |
 | 30 | Kakutstha | the young warrior prince Puranjaya with a golden crown and bow riding on the hump of a colossal glowing white bull made of light, the god Indra in that form, charging into a battle in the clouds | स्वयं इंद्र ने |
 | 31 | Kakutstha | gods in shining armour gathering behind Puranjaya on the giant bull of light, dark demon armies on the horizon, epic sky battle | शशाद के पुत्र का नाम |
 | 32 | Kakutstha | Shri Ram, blue-skinned, with a golden bow, standing tall in golden light, calm and noble | तो जब रामायण |

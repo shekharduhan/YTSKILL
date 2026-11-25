@@ -72,10 +72,14 @@ def plan(md):
     # merge stacked pauses so there is never long dead air
     out = []
     for kind, val in items:
-        if kind == "pause" and out and out[-1][0] == "pause":
-            out[-1] = ("pause", min(MAX_PAUSE, out[-1][1] + val))
-        else:
-            out.append((kind, val))
+        if kind == "pause":
+            # a pause just before a scene heading merges with the scene's pause
+            j = len(out) - 1
+            while j >= 0 and out[j][0] == "scene":
+                j -= 1
+            if j >= 0 and out[j][0] == "pause":
+                out[j] = ("pause", min(MAX_PAUSE, out[j][1] + val)); continue
+        out.append((kind, val))
     while out and out[0][0] == "pause":
         out.pop(0)
     return out

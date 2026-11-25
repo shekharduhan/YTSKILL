@@ -42,3 +42,20 @@ and pitch at the top of `make_narration.py` until a test paragraph sounds right.
 
 YouTube asks creators to disclose realistic synthetic content when uploading; mark the videos as
 using a synthetic narrator if you use TTS.
+
+## Production checks (from the first review)
+
+Every episode now goes through these automatically; don't skip them.
+
+1. **Record whole paragraphs, never half-sentences.** The scripts wrap long lines; `eleven_render.py`
+   joins each paragraph before recording. Half-sentences made the voice stop abruptly and read
+   neighbouring text aloud (heard as repeats).
+2. **Check every recording against the script** (`qa_audio.py`, offline Whisper). Extra words,
+   missing words or an ending cut off mid-sound → re-recorded automatically, without context.
+3. **No dead air.** Edge silence is trimmed from each recording; script pauses are 1.0 s / 0.5 s /
+   0.9 s and never stack past 1.6 s.
+4. **Pictures follow the words.** Each picture has a "starts at" phrase in the prompt table;
+   `assemble.py` places it at that moment. `verify_video.py` confirms the right picture is on
+   screen for every phrase, and that video and audio lengths match.
+5. **Look at every picture** for drawing mistakes (two bows, extra limbs, wrong character age or
+   beard) before assembling.

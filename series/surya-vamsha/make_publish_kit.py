@@ -96,11 +96,12 @@ def write_srt(ep, max_chars=80):
     cues = []
     for it in (x for x in tm["items"] if x["kind"] == "text"):
         text, a, b = it["text"], it["start"], it["end"]
-        parts = [p.strip() for p in re.split(r"(?<=[।?!])\s+", text) if p.strip()]
+        parts = [p.strip(" …") for p in re.split(r"(?<=[।?!])\s+", text)]
+        parts = [p for p in parts if re.search(r"[\u0900-\u097F]", p)]
         split = []
         for p in parts:
             while len(p) > max_chars:                       # break at the pause nearest the middle
-                cuts = [m.end() for m in re.finditer(r"…|,", p)]
+                cuts = [m.end() for m in re.finditer(r"…|,", p) if 15 <= m.end() <= len(p) - 15]
                 if not cuts:
                     break
                 c = min(cuts, key=lambda x: abs(x - len(p) / 2))
