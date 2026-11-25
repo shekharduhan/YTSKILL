@@ -93,6 +93,10 @@ def load_shots(path):
         if m not in MOTIONS:
             die("shot %d: unknown motion %r (use one of %s)" % (n + 1, m, ", ".join(MOTIONS)))
         s["_motion"] = m
+        s["_size"] = probe_size(s["_path"])
+        if s["_size"][0] < 960 or s["_size"][1] < 540:
+            log("note: shot %d image is only %dx%d; it will look soft (use 1920x1080 or larger)"
+                % (n + 1, s["_size"][0], s["_size"][1]))
     return shots, (data.get("audio") if isinstance(data, dict) else None), base
 
 
@@ -123,9 +127,12 @@ def fit_to(d, total):
         d[-1] += total - s
         return d
     log("shots run %.2f s past the audio: trimming the tail" % (s - total))
-    while d and sum(d) - d[-1] >= total - 0.5:
+    n0 = len(d)
+    while len(d) > 1 and sum(d) - d[-1] >= total - 0.5:
         d.pop()
     d[-1] = total - sum(d[:-1])
+    if len(d) < n0:
+        log("dropped shot(s) %d-%d: they start after the narration ends" % (len(d) + 1, n0))
     return d
 
 
@@ -150,6 +157,30 @@ def motion_expr(m, n, zoom):
     return "1", "0", "0"  # static
 
 
+def probe_size(path):
+    r = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries",
+                        "stream=width,height", "-of", "csv=p=0:s=x", path], capture_output=True, text=True)
+    try:
+        w, h = r.stdout.strip().splitlines()[0].split("x")[:2]
+        return int(w), int(h)
+    except (ValueError, IndexError):
+        die("could not read the picture size of %s (not an image/video ffmpeg can open?)" % path)
+
+
+def fit_still(src, w, h, work):
+    """Image far from the target aspect (e.g. a portrait still in a 16:9 video): put the whole
+    picture on a blurred copy of itself instead of cropping most of it away."""
+    st = os.stat(src)
+    tag = hashlib.sha1(json.dumps([src, st.st_mtime, st.st_size, w, h]).encode()).hexdigest()[:10]
+    out = os.path.join(work, "fit_%s.png" % tag)
+    if not os.path.exists(out):
+        fc = ("[0:v]split=2[a][b];[a]scale=%d:%d:force_original_aspect_ratio=increase,crop=%d:%d,boxblur=20:2,"
+              "eq=brightness=-0.08:saturation=0.85[bg];[b]scale=%d:%d:force_original_aspect_ratio=decrease[fg];"
+              "[bg][fg]overlay=(W-w)/2:(H-h)/2" % (w, h, w, h, w, h))
+        run(["ffmpeg", "-v", "error", "-y", "-i", src, "-filter_complex", fc, "-frames:v", "1", out])
+    return out
+
+
 def kb_chain(label_in, label_out, m, n, w, h, zoom, fps, up):
     z, x, y = motion_expr(m, n, zoom)
     W, H = w * up, h * up
@@ -169,7 +200,14 @@ def render_clip(job):
         return out
     is_vid = s["_path"].lower().endswith(VIDEO_EXT)
     W, H, fps = cfg["W"], cfg["H"], cfg["fps"]
-    inp = (["-stream_loop", "-1"] if is_vid else []) + ["-i", s["_path"]]
+    src = s["_path"]
+    if not is_vid and cfg["fit"]:
+        # frame the picture is cropped into: the 16:9 band for vertical blur-fill, else the output
+        tw, th = (W, int(round(W * 9 / 16 / 2)) * 2) if (cfg["vertical"] and cfg["vfill"] == "blur") else (W, H)
+        iw, ih = s["_size"]
+        if max(iw / ih, tw / th) / min(iw / ih, tw / th) > 1.25:
+            src = fit_still(src, tw, th, cfg["work"])
+    inp = (["-stream_loop", "-1"] if is_vid else []) + ["-i", src]
     if cfg["vertical"] and cfg["vfill"] == "blur":
         fw, fh = W, int(round(W * 9 / 16 / 2)) * 2  # 1080x608 foreground band
         fg = (video_chain("f0", "fg", n, fw, fh, fps) if is_vid else
@@ -346,6 +384,8 @@ def main():
     ap.add_argument("--zoom", type=float, default=0.12, help="Ken Burns zoom amount (default 0.12 = 12%%)")
     ap.add_argument("--upscale", type=int, default=2, help="upscale factor before zoompan to avoid jitter (default 2)")
     ap.add_argument("--no-fit", action="store_true", help="do not stretch/trim shots to the audio length")
+    ap.add_argument("--crop-all", action="store_true", help="always centre-crop stills to the frame (default: a still whose "
+                                                          "aspect differs by >25%%, e.g. portrait in 16:9, is shown whole on a blurred fill)")
     ap.add_argument("--no-loudnorm", action="store_true", help="skip loudness normalisation (default: -14 LUFS)")
     ap.add_argument("--crf", type=int, default=20, help="final x264 CRF (default 20)")
     ap.add_argument("--preset", default="medium", help="final x264 preset (default medium)")
@@ -410,6 +450,7 @@ def main():
     out = os.path.abspath(args.out)
     work = os.path.abspath(args.workdir or os.path.splitext(out)[0] + "_work")
     os.makedirs(work, exist_ok=True)
+    cfg["work"], cfg["fit"] = work, not args.crop_all
     log("%d shots, %.2f s, %dx%d@%d, fade %.2f s, audio %.2f s" % (len(shots), total, W, H, fps, args.fade, a_dur))
 
     # 1. clips (cached by content)
@@ -417,7 +458,7 @@ def main():
     for k, s in enumerate(shots):
         st = os.stat(s["_path"])
         key = json.dumps([s["_path"], st.st_mtime, st.st_size, s["_motion"], frames[k] + ext[k],
-                          W, H, fps, args.zoom, cfg["up"], args.vertical, args.vfill])
+                          W, H, fps, args.zoom, cfg["up"], args.vertical, args.vfill, cfg["fit"]])
         h = hashlib.sha1(key.encode()).hexdigest()[:10]
         jobs.append({"shot": s, "frames": frames[k] + ext[k], "cfg": cfg,
                      "out": os.path.join(work, "clip_%03d_%s.mp4" % (k + 1, h))})
