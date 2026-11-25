@@ -6,9 +6,9 @@ Reads episodes.psv and each epNN-*-hindi.md (title, thumbnail words, sources, ho
 episode). Writes:
   publishing-kit.md    channel name, bios, profile fields, playlists, and all 84 episode posts
   publishing-kit.csv   the same episode posts, one row per episode, for spreadsheets / schedulers
-  captions/epNN.srt    Hindi subtitles, for every episode whose narration is already rendered
+  captions/epNN.srt    Hindi subtitles, for every episode whose narration is rendered (from audio/epNN.timing.json)
 """
-import csv, glob, os, re, sys
+import csv, glob, json, os, re, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
@@ -69,43 +69,48 @@ def episode(path):
                 hook1=opener[0] if opener else "", sections=sections)
 
 
+def timing(ep):
+    p = os.path.join(HERE, "audio", f"ep{ep:02d}.timing.json")
+    return json.load(open(p, encoding="utf-8")) if os.path.exists(p) else None
+
+
 def chapters(ep):
-    """YouTube chapters from rendered narration timings, if the narration exists."""
-    if not os.path.exists(os.path.join(HERE, "audio", f"ep{ep:02d}.mp3")):
+    """YouTube chapters from the narration's timing file (exact), if the episode is rendered."""
+    tm = timing(ep)
+    if not tm:
         return None
-    try:
-        import assemble
-        md = glob.glob(os.path.join(HERE, f"ep{ep:02d}-*-hindi.md"))[0]
-        secs, _ = assemble.section_times(md)
-        names = re.findall(r"(?m)^## (.+)$", open(md, encoding="utf-8").read().split("\n---\n", 1)[1]
-                           .split("## जाँच लें")[0])
-        return [(a, n) for (a, _), n in zip(secs, names)]
-    except Exception as e:  # cache missing: no chapters rather than a wrong guess
-        print("chapters skipped for", ep, e)
-        return None
+    return [(it["start"] if i else 0.0, it["text"]) for i, it in enumerate(x for x in tm["items"] if x["kind"] == "scene")]
 
 
 def stamp(s, srt=False):
-    h, m, sec = int(s // 3600), int(s % 3600 // 60), s % 60
     if srt:
-        return f"{h:02d}:{m:02d}:{int(sec):02d},{int(round((sec % 1) * 1000)) % 1000:03d}"
+        ms = int(round(s * 1000))
+        return f"{ms // 3600000:02d}:{ms // 60000 % 60:02d}:{ms // 1000 % 60:02d},{ms % 1000:03d}"
+    h, m, sec = int(s // 3600), int(s % 3600 // 60), s % 60
     return f"{m}:{int(sec):02d}" if h == 0 else f"{h}:{m:02d}:{int(sec):02d}"
 
 
-def write_srt(ep):
-    """Hindi subtitles from the rendered chunk timings (one cue per spoken chunk)."""
-    import eleven_render as er, assemble
-    md = glob.glob(os.path.join(HERE, f"ep{ep:02d}-*-hindi.md"))[0]
-    items = er.plan(open(md, encoding="utf-8").read())
-    texts = [v for k, v in items if k == "text"]
-    t, ti, cues = 0.0, 0, []
-    for kind, val in items:
-        if kind == "pause":
-            t += val; continue
-        prev = texts[ti - 1] if ti > 0 else None
-        nxt = texts[ti + 1] if ti + 1 < len(texts) else None
-        d = assemble.dur(er.tts(val, prev, nxt)); ti += 1
-        cues.append((t, t + d, val.strip(" …"))); t += d
+def write_srt(ep, max_chars=80):
+    """Hindi subtitles from the timing file: one cue per sentence, long sentences split at a pause."""
+    tm = timing(ep)
+    cues = []
+    for it in (x for x in tm["items"] if x["kind"] == "text"):
+        text, a, b = it["text"], it["start"], it["end"]
+        parts = [p.strip() for p in re.split(r"(?<=[।?!])\s+", text) if p.strip()]
+        split = []
+        for p in parts:
+            while len(p) > max_chars:                       # break at the pause nearest the middle
+                cuts = [m.end() for m in re.finditer(r"…|,", p)]
+                if not cuts:
+                    break
+                c = min(cuts, key=lambda x: abs(x - len(p) / 2))
+                split.append(p[:c].strip()); p = p[c:].strip()
+            split.append(p)
+        total = sum(len(p) for p in split)
+        t = a
+        for p in split:
+            d = (b - a) * len(p) / total
+            cues.append((t, t + d, p.strip(" …") or p)); t += d
     os.makedirs(os.path.join(HERE, "captions"), exist_ok=True)
     out = os.path.join(HERE, "captions", f"ep{ep:02d}.srt")
     with open(out, "w", encoding="utf-8") as f:
@@ -214,7 +219,7 @@ def main():
     with open(os.path.join(HERE, "publishing-kit.csv"), "w", encoding="utf-8-sig", newline="") as f:
         cw = csv.DictWriter(f, fieldnames=list(csv_rows[0]))
         cw.writeheader(); cw.writerows(csv_rows)
-    for p in sorted(glob.glob(os.path.join(HERE, "audio", "ep??.mp3"))):
+    for p in sorted(glob.glob(os.path.join(HERE, "audio", "ep??.timing.json"))):
         print("wrote", write_srt(int(os.path.basename(p)[2:4])))
     print("wrote publishing-kit.md and publishing-kit.csv,", len(eps), "episodes")
 

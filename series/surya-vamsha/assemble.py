@@ -1,23 +1,25 @@
-"""Assemble an episode video: images + ElevenLabs narration -> 1080p MP4.
+"""Assemble an episode video: images + ElevenLabs narration -> 1080p MP4, in sync with the voice.
 
     python3 assemble.py 1
+    python3 assemble.py --check 1     # only check the timing plan, don't render
 
-Needs: audio/epNN.mp3 (eleven_render.py, with its chunk cache), images/epNN/NN.png
-(gen_images.py), and epNN-image-prompts.md whose "scene" column says which script section
-each image belongs to (see SECTION_OF below).
+Needs: audio/epNN.mp3 and audio/epNN.timing.json (eleven_render.py), images/epNN/NN.png
+(gen_images.py), and epNN-image-prompts.md, whose last column ("starts at") holds the narration
+words at which each picture appears.
 
-Each image is shown for an equal share of its section's narration time, with a slow
-Ken Burns zoom (alternating in/out) and a 0.6 s crossfade. Black letterbox bars in generated
-images are cropped first. Output: video/epNN.mp4 (H.264 + AAC, 1920x1080, 25 fps).
+Each picture starts at the moment its words are spoken (looked up in the timing file; inside a
+long paragraph the moment is estimated from the character position), shifted earlier by one
+crossfade so the new picture is fully visible as the words begin. Pictures get a slow Ken Burns
+zoom (alternating in/out) and a 0.6 s crossfade. Black letterbox bars are cropped first.
+Output: video/epNN.mp4 (H.264 + AAC, 1920x1080, 25 fps).
 """
 import glob, json, os, re, subprocess, sys, tempfile
 import numpy as np
 from PIL import Image
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import eleven_render as er
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 W, H, FPS, XF = 1920, 1080, 25, 0.6
+MIN_SHOT = 2.5
 
 
 def dur(path):
@@ -25,39 +27,49 @@ def dur(path):
                                           "-of", "csv=p=0", path]).strip())
 
 
-def section_times(md_path):
-    """Start/end seconds of each '## ' section, from the cached narration chunks."""
-    items = er.plan(open(md_path, encoding="utf-8").read())
-    texts = [v for k, v in items if k == "text"]
-    t, ti, bounds = 0.0, 0, [0.0]
-    for kind, val in items:
-        if kind == "pause":
-            if val == er.SCENE:
-                bounds.append(t)
-            t += val
-        else:
-            prev = texts[ti - 1] if ti > 0 else None
-            nxt = texts[ti + 1] if ti + 1 < len(texts) else None
-            t += dur(er.tts(val, prev, nxt)); ti += 1
-    bounds.append(t)
-    # bounds[0]=0 then one per heading; the first heading is at t=0, so drop the duplicate
-    starts = [b for i, b in enumerate(bounds[:-1]) if not (i == 1 and b == 0.0)]
-    return list(zip(starts, starts[1:] + [t])), t
-
-
-def section_of_images(ep, n_sections):
-    """Map each image to a section index using the prompts file's scene column, in order."""
-    rows = []
+def anchors(ep):
+    """{image number: narration phrase} from the prompts table's last column."""
+    out = {}
     for line in open(os.path.join(HERE, f"ep{ep:02d}-image-prompts.md"), encoding="utf-8"):
-        m = re.match(r"\|\s*(\d+)\s*\|\s*([^|]+)\|", line)
+        m = re.match(r"\|\s*(\d+)\s*\|", line)
         if m:
-            rows.append((int(m.group(1)), m.group(2).strip()))
-    labels, sec, out = [], -1, {}
-    for n, lab in rows:
-        if lab not in labels:
-            labels.append(lab); sec += 1
-        out[n] = sec
-    return out, labels
+            cells = [c.strip() for c in line.strip().strip("|").split("|")]
+            out[int(m.group(1))] = cells[-1]
+    return out
+
+
+def squash(s):
+    return re.sub(r"[\s…,।\"'“”‘’!?\-—]+", "", s)
+
+
+def shot_plan(ep):
+    timing = json.load(open(os.path.join(HERE, "audio", f"ep{ep:02d}.timing.json"), encoding="utf-8"))
+    pieces = [it for it in timing["items"] if it["kind"] == "text"]
+    total = dur(os.path.join(HERE, "audio", f"ep{ep:02d}.mp3"))
+    starts, problems = [], []
+    for n, phrase in sorted(anchors(ep).items()):
+        key, hits = squash(phrase), []
+        for it in pieces:
+            body = squash(it["text"])
+            pos = body.find(key)
+            if pos >= 0:
+                frac = pos / max(1, len(body))
+                hits.append(it["start"] + frac * (it["end"] - it["start"]))
+        if not hits:
+            problems.append(f"image {n}: words not found in narration: {phrase}"); continue
+        if len(hits) > 1:
+            problems.append(f"image {n}: words occur {len(hits)} times, using the first: {phrase}")
+        starts.append((max(0.0, hits[0] - XF), n))
+    starts.sort()
+    if starts:
+        starts[0] = (0.0, starts[0][1])
+    shots = []
+    for i, (t, n) in enumerate(starts):
+        end = starts[i + 1][0] if i + 1 < len(starts) else total
+        shots.append([n, t, end - t])
+        if end - t < MIN_SHOT:
+            problems.append(f"image {n}: on screen only {end - t:.1f}s")
+    return shots, total, problems
 
 
 def autocrop(src, dst):
@@ -73,45 +85,36 @@ def autocrop(src, dst):
     im.resize((W * 2, H * 2), Image.LANCZOS).save(dst, quality=92)
 
 
-def main(ep, mapping=None):
-    md = glob.glob(os.path.join(HERE, f"ep{ep:02d}-*-hindi.md"))[0]
+def main(ep, check_only=False):
+    shots, total, problems = shot_plan(ep)
+    for p in problems:
+        print("  !", p)
+    for n, t, d in shots:
+        print(f"  {int(t // 60)}:{t % 60:04.1f}  image {n:2d}  {d:4.1f}s")
+    if check_only:
+        return
     audio = os.path.join(HERE, "audio", f"ep{ep:02d}.mp3")
-    sections, total = section_times(md)
-    img_sec, labels = section_of_images(ep, len(sections))
-    if mapping:
-        img_sec = {n: mapping[labels[s]] for n, s in img_sec.items()}
-    per_sec = {}
-    for n, s in sorted(img_sec.items()):
-        per_sec.setdefault(s, []).append(n)
-    # assign durations
-    shots = []
-    for s, (a, b) in enumerate(sections):
-        imgs = per_sec.get(s, [])
-        if not imgs:
-            if shots: shots[-1][1] += b - a          # extend previous image over an image-less section
-            continue
-        for n in imgs:
-            shots.append([n, (b - a) / len(imgs)])
     out_dir = os.path.join(HERE, "video"); os.makedirs(out_dir, exist_ok=True)
     with tempfile.TemporaryDirectory() as tmp:
         clips = []
-        for i, (n, d) in enumerate(shots):
+        for i, (n, t, d) in enumerate(shots):
             src = os.path.join(HERE, "images", f"ep{ep:02d}", f"{n:02d}.png")
             big = os.path.join(tmp, f"{n:02d}.jpg"); autocrop(src, big)
-            length = d + (XF if i < len(shots) - 1 else 0)
-            frames = int(round(length * FPS))
-            z = "min(1+0.0009*on,1.15)" if i % 2 == 0 else "max(1.15-0.0009*on,1)"
+            # frame counts from the absolute timeline, so rounding never accumulates into drift
+            f0, f1 = round(t * FPS), round((t + d) * FPS)
+            frames = f1 - f0 + (round(XF * FPS) if i < len(shots) - 1 else 0)
+            step = min(0.0009, 0.15 / max(frames, 1))           # gentle zoom, never more than 15 %
+            z = f"min(1+{step:.6f}*on,1.15)" if i % 2 == 0 else f"max(1.15-{step:.6f}*on,1)"
             clip = os.path.join(tmp, f"c{i:02d}.mp4")
             subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-loop", "1", "-i", big, "-vf",
                             f"zoompan=z='{z}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={frames}:s={W}x{H}:fps={FPS},format=yuv420p",
                             "-frames:v", str(frames), "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", clip], check=True)
-            clips.append((clip, length))
-        # chain crossfades
-        inputs, filt, last, offset = [], [], "[0:v]", 0.0
-        for i, (c, L) in enumerate(clips):
+            clips.append(clip)
+        inputs, filt, last = [], [], "[0:v]"
+        for c in clips:
             inputs += ["-i", c]
         for i in range(1, len(clips)):
-            offset += clips[i - 1][1] - XF
+            offset = round(shots[i][1] * FPS) / FPS          # picture i is fully in at its start time + XF
             filt.append(f"{last}[{i}:v]xfade=transition=fade:duration={XF}:offset={offset:.3f}[v{i}]")
             last = f"[v{i}]"
         silent = os.path.join(tmp, "silent.mp4")
@@ -120,8 +123,9 @@ def main(ep, mapping=None):
         out = os.path.join(out_dir, f"ep{ep:02d}.mp4")
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", silent, "-i", audio, "-map", "0:v", "-map", "1:a",
                         "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", out], check=True)
-    print("wrote", out, f"{total:.1f}s narration, {len(shots)} shots")
+    print("wrote", out, f"{total:.1f}s narration, {len(shots)} shots, video {dur(out):.1f}s")
 
 
 if __name__ == "__main__":
-    main(int(sys.argv[1]))
+    args = sys.argv[1:]
+    main(int([a for a in args if a != "--check"][0]), check_only="--check" in args)
