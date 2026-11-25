@@ -19,8 +19,8 @@ Read these when you reach the step that needs them:
 Scripts (in `scripts/`, run with `python`; need ffmpeg + ffprobe on PATH):
 | script | what it does |
 |---|---|
-| `make_voice.py` | script text -> `voice.mp3` + `voice.timings.json` (per-line start/end) + `voice.srt`. Backends: `edge` (free, default) or `elevenlabs` |
-| `shotlist.py` | timings -> `shots.json` skeleton, ~5 s per shot, cuts on sentence boundaries, plus a prompt worksheet |
+| `make_voice.py` | script text -> `voice.mp3` + `voice.timings.json` (per-line start/end) + `voice.srt`. Backends: `edge` (free, default), `elevenlabs` (paid), `dryrun` (silent test track, offline) |
+| `shotlist.py` | timings -> `shots.json` skeleton, ~5 s per shot, cuts on sentence boundaries, plus a prompt worksheet; `--like` retimes one language's shot list to the other language's voice |
 | `placeholders.py` | stand-in images for every shot (needs Pillow) to test the edit before buying images |
 | `assemble.py` | `shots.json` + voice [+ music, + srt] -> finished MP4, 1920x1080 or `--vertical` 1080x1920 |
 
@@ -68,12 +68,19 @@ python scripts/make_voice.py script_hi.txt -o out/voice_hi            # edge-tts
 python scripts/make_voice.py script_en.txt -o out/voice_en            # edge-tts, en-US-GuyNeural
 python scripts/make_voice.py script_hi.txt -o out/voice_hi --backend elevenlabs --voice <voice_id>
 python scripts/make_voice.py --list-voices --lang hi
+python scripts/make_voice.py script_hi.txt -o out/voice_hi --backend dryrun     # silent, offline test track
 ```
 - Default: free `edge-tts` (`pip install edge-tts`). Hindi: `hi-IN-MadhurNeural` (m), `hi-IN-SwaraNeural` (f);
-  English: `en-US-GuyNeural`, `en-US-AndrewNeural`, `en-IN-PrabhatNeural`. `--rate -5%` for a calmer read.
+  English: `en-US-GuyNeural`, `en-US-AndrewNeural`, `en-IN-PrabhatNeural`. `--rate=-5%` for a calmer read
+  (write it with `=`; the script also accepts `--rate -5%`).
 - edge-tts needs the host `speech.platform.bing.com`. In sandboxed/cloud sessions it is often
   blocked (DNS/403); then use `--backend elevenlabs` if a key is available
-  (`ELEVENLABS_API_KEY`), or run the step on the user's own PC.
+  (`ELEVENLABS_API_KEY`; in a cloud session whose proxy injects the ElevenLabs key, set the variable to any
+  placeholder such as `x` and the proxy supplies the real one), or run the step on the user's own PC.
+  ElevenLabs bills per character: list voices with `--list-voices --backend elevenlabs` and pick one
+  tagged for Hindi/Indian accent for Hindi; Claude cannot judge how a voice sounds.
+- `--backend dryrun` writes a SILENT track with word-count-estimated timings (~155 wpm EN, ~130 wpm HI).
+  Use it only to test shot lists and the edit without network or cost; never deliver it.
 - Listen-check is the user's job: Claude cannot hear the result. Ask them to listen to the first 30 s.
 
 ### 5. Shot list
@@ -85,15 +92,28 @@ Then fill each shot's `prompt` (and `title` where an era/name/date starts) follo
 dialogue two-shots 30%, wide/establishing 27%, close-ups 11%, single medium 10%, object inserts 9%,
 maps 6%, dark spotlight 4%, text/infographic 2%. Picture what the narrator is saying right then,
 literally. Use `motion` to vary zoom_in / zoom_out / pan_left / pan_right; `static` for maps with text.
-For a bilingual video, build the shot list from one language and reuse the images for the other
-(rerun `shotlist.py` on the other timings and copy the `image`/`prompt` fields across by order, or
-keep one timing and let `assemble.py` stretch).
+`shots.json` stores the audio path relative to itself, so `assemble.py` finds it even without `--audio`.
+
+**Bilingual (one image set, two voices):** make the Hindi script with the same number of spoken lines
+in the same order as the English one (adapt line by line, same `## ` sections). Build and illustrate
+the shot list for one language, then retime it to the other voice:
+```bash
+python scripts/shotlist.py out/voice_en.timings.json -o shots_en.json --like shots.json --chapters chapters_en.txt
+```
+Each shot keeps its image, prompt, motion and title, with new start/end. Auto section titles switch
+to the new language; for hand-written titles add `"title_en"` / `"title_hi"` fields and pass
+`--title-key title_en` to `assemble.py` (shots without that field fall back to `title`). If the line
+counts differ, `--like` stops with an error: fix the script rather than stretching one timing
+(`assemble.py` only holds/trims the LAST shot, so reusing one language's timings for the other drifts).
 
 ### 6. Images
 - Tell the user the options (production-stack.md) and use what they have. Generate **without text**
   in the image; `assemble.py` adds the titles (Devanagari included) from the `title` field.
 - Keep character cards fixed (style-bible.md section "Character consistency"). Save as
-  `images/shot_001.png …` at 16:9, 1920x1080 or larger. A short `.mp4` (image-to-video) can replace any still for hero shots.
+  `images/shot_001.png …` at 16:9, 1920x1080 or larger (PNG/JPG/WebP; smaller images work but look soft,
+  and `assemble.py` warns). A still whose shape is far from the frame (e.g. portrait in 16:9) is shown
+  whole on a blurred fill instead of being cropped; `--crop-all` forces cropping. A short `.mp4`
+  (image-to-video) can replace any still for hero shots; it is looped/trimmed to the shot length.
 - Before paying for images, do a dry run: `python scripts/placeholders.py --shots shots.json`.
 
 ### 7. Assemble
@@ -104,9 +124,16 @@ python scripts/assemble.py shots.json --audio out/voice_hi.mp3 --srt out/voice_h
        --vertical -o out/short_hi.mp4                     # 1080x1920, blurred fill (--vfill crop)
 ```
 Useful flags: `--subs burn|soft|none`, `--fade 0.4`, `--zoom 0.12`, `--music-db -18`,
-`--fontsdir fonts/ --title-font "Mukta ExtraBold"`, `--workdir out/work` (keeps a clip cache, so
-re-running after replacing one image re-renders only that shot). For Shorts, cut a 45-60 s
-script section and make a separate `shots.json` for it.
+`--fontsdir fonts/ --title-font "Mukta ExtraBold"`, `--title-key title_en`, `--workdir out/work` (keeps a
+clip cache, so re-running after replacing one image re-renders only that shot), `--no-fit` (do not hold/trim
+the last shot to the audio). Timing is always driven by the narration: if the shot list ends early the
+last shot is held; if it runs long, shots that start after the voice ends are dropped (both are logged).
+A missing `--music`/`--srt` file is an error, so leave the flag out when there is no music.
+For Shorts, cut a 45-60 s script section and make a separate `shots.json` for it.
+
+Hindi text needs a font with Devanagari: check `fc-list :lang=hi family`. `assemble.py` picks the first
+installed of Noto Sans Devanagari, Mukta, Hind, Nirmala UI, Lohit Devanagari, FreeSans/FreeSerif, and
+warns if none exists; for a better look put Mukta/Hind `.ttf` files in `fonts/` and pass `--fontsdir fonts`.
 
 ### 8. QA checklist (do all before handing over)
 - [ ] `ffprobe` the MP4: video + audio streams, duration = narration ±0.5 s, 1920x1080 (or 1080x1920), 30 fps.
@@ -116,7 +143,8 @@ script section and make a separate `shots.json` for it.
 - [ ] Facts: dates checked, disputed points hedged, no copied script lines from any other channel.
 - [ ] Loudness ≈ -14 LUFS (`ffmpeg -i out.mp4 -af ebur128 -f null -`); music never fights the voice.
 - [ ] Music licence noted (YouTube Audio Library / Pixabay / attribution text in description).
-- [ ] Deliver: MP4(s), SRT(s) for upload in both languages, chapter timestamps (`shotlist.py --chapters chapters.txt`), title/description draft.
+- [ ] Deliver: MP4(s), SRT(s) for upload in both languages, chapter timestamps (`shotlist.py --chapters chapters.txt`; YouTube needs 3+ chapters starting at 0:00, each ≥10 s), title/description draft.
+- [ ] Nothing in the delivery is a placeholder image or a `dryrun` silent track.
 
 ## Originality rules
 Make original work in this general format. Do not copy another channel's name, logo, mascot,

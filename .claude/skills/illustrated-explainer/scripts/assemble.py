@@ -371,7 +371,7 @@ def main():
                     help="burn captions into the picture, add a soft track, or none (default burn when --srt given)")
     ap.add_argument("--sub-lang", default=None, help="ISO 639-2 language tag for soft subs, e.g. hin or eng (default: detect)")
     ap.add_argument("--no-titles", action="store_true", help="ignore the 'title' fields")
-    ap.add_argument("--title-key", default="title", help="shots.json field used for titles (default title; e.g. title_hi)")
+    ap.add_argument("--title-key", default="title", help="shots.json field used for titles, e.g. title_en; shots without it use 'title' (default title)")
     ap.add_argument("--font", help="caption font family (default for Hindi: the first installed of Noto Sans "
                                    "Devanagari, Mukta, Hind, Nirmala UI, ..., FreeSans; else Arial)")
     ap.add_argument("--title-font", help="title font family (default: same as --font)")
@@ -489,7 +489,7 @@ def main():
     titles, captions = [], []
     if not args.no_titles:
         for k, s in enumerate(shots):
-            txt = (s.get(args.title_key) or "").strip()
+            txt = ((s[args.title_key] if args.title_key in s else s.get("title")) or "").strip()
             if txt:
                 a = cum[k] / fps + 0.25
                 titles.append((a, max(a + 0.8, cum[k + 1] / fps - 0.15), txt))

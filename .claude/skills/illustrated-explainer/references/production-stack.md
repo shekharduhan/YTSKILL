@@ -34,7 +34,7 @@ Rough count: minutes x 12-17 images (one per 3.5-5 s). 14 min ≈ 170-240.
 | **Kokoro-82M** (local, Apache-2.0, CPU ok) | free | `hf_alpha`, `hf_beta` (f), `hm_omega`, `hm_psi` (m), lang code `h` | very good | Hindi usable, less natural; needs your own wrapper (write per-line WAVs, then use the same join logic) |
 | **Piper** (local) | free | `hi_IN` pratham, priyamvada, rohan | many | fastest, more robotic; drafts |
 
-Delivery tips: one calm, steady narrator; `--rate -5%` on edge-tts; leave the 0.6 s act-break pauses.
+Delivery tips: one calm, steady narrator; `--rate=-5%` on edge-tts; leave the 0.6 s act-break pauses.
 Claude cannot listen to the result; the user should check the first 30 s before generating images.
 
 ### Motion and assembly
@@ -64,6 +64,10 @@ Prices change; check current plans yourself before committing.
 ## Environment notes
 - edge-tts fails in many sandboxes (DNS error or proxy 403 on `speech.platform.bing.com`, then
   "No server date in headers"). Run voice on your own PC or use `--backend elevenlabs`.
-- ElevenLabs key: `ELEVENLABS_API_KEY` env var (in a proxied cloud session a credential may be injected by the proxy).
+- ElevenLabs key: `ELEVENLABS_API_KEY` env var (in a proxied cloud session a credential may be injected by the
+  proxy; then set the variable to any placeholder so the script starts).
 - Fonts: Devanagari needs a font with Devanagari glyphs installed or passed via `--fontsdir`
-  (Noto Sans Devanagari, Mukta, Hind; on Windows "Nirmala UI" works via `--font "Nirmala UI"`).
+  (Noto Sans Devanagari, Mukta, Hind; on Windows "Nirmala UI" works via `--font "Nirmala UI"`; on Linux
+  `fc-list :lang=hi family` lists what is installed, and GNU FreeSans/FreeSerif also cover Devanagari).
+- Offline/no-cost test of the whole edit: `make_voice.py --backend dryrun` (silent track, estimated timings)
+  plus `placeholders.py`; replace both before publishing.
