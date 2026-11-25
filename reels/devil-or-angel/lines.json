@@ -1,0 +1,18 @@
+[
+ ["H","Psst... babe. Babe. One more slice of cake. Nobody's counting.", "whisper"],
+ ["W","No.", "flat"],
+ ["H","Psst... skip the gym tomorrow. You deserve a rest day.", "whisper"],
+ ["W","Stop it.", "flat"],
+ ["H","Psst... order the pizza. Extra cheese. Go on, do it.", "whisper"],
+ ["W","Okay. Seriously. Are you the devil?", "annoyed"],
+ ["H","What? Why would I be the devil?", "normal"],
+ ["W","Because you keep whispering in my ear. Over and over. That's exactly what the devil does. He speaks in your ear, and he tries to manipulate you.", "annoyed"],
+ ["H","Okay... so what am I supposed to be?", "normal"],
+ ["W","That's the real question. Are you the devil, or the angel? Which side are you on? The good side, or the bad side?", "serious"],
+ ["H","Uh... the cake side?", "normal"],
+ ["W","Listen to me. Don't be a devil. Be an angel instead. Whisper the things that lift me up.", "warm"],
+ ["H","Psst... you're stronger than you think. Drink some water. And I'm really proud of you.", "whisper"],
+ ["W","See? Was that so hard?", "warm"],
+ ["H","Psst... one tiny bite of cake though?", "whisper"],
+ ["W","Devil!", "annoyed"]
+]
