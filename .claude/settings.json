@@ -1,0 +1,69 @@
+{
+  "enabledPlugins": {
+    "watch@claude-video": true,
+    "replica-skill@replica-skill": true,
+    "instagram-agent@instagram-agent-skill": true,
+    "task-observer@one-skill-to-rule-them-all": true,
+    "claude-code-setup@claude-plugins-official": true,
+    "ponytail@ponytail": true,
+    "lemo-opuscar@lemolab": true,
+    "claude-mem@thedotmack": true,
+    "ecc@ecc": false
+  },
+  "extraKnownMarketplaces": {
+    "claude-video": {
+      "source": {
+        "source": "github",
+        "repo": "bradautomates/claude-video"
+      }
+    },
+    "replica-skill": {
+      "source": {
+        "source": "github",
+        "repo": "Jakeschincariol/replica-skill"
+      }
+    },
+    "instagram-agent-skill": {
+      "source": {
+        "source": "github",
+        "repo": "Jakeschincariol/instagram-agent-skill"
+      }
+    },
+    "one-skill-to-rule-them-all": {
+      "source": {
+        "source": "github",
+        "repo": "rebelytics/one-skill-to-rule-them-all"
+      }
+    },
+    "thedotmack": {
+      "source": {
+        "source": "github",
+        "repo": "thedotmack/claude-mem"
+      }
+    },
+    "ponytail": {
+      "source": {
+        "source": "github",
+        "repo": "DietrichGebert/ponytail"
+      }
+    },
+    "lemolab": {
+      "source": {
+        "source": "github",
+        "repo": "lemomo-ai/lemo-opuscar"
+      }
+    },
+    "ecc": {
+      "source": {
+        "source": "github",
+        "repo": "affaan-m/ECC"
+      }
+    },
+    "claude-plugins-official": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/claude-plugins-official"
+      }
+    }
+  }
+}
