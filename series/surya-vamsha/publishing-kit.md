@@ -173,7 +173,7 @@ In this episode: Who the Sun dynasty descends from: Vivasvan, Vaivasvata Manu, a
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #इक्ष्वाकु #भागवतपुराण #Ikshvaku #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -249,16 +249,16 @@ In this episode: Ikshvaku's birth, his hundred sons, and the rabbit that got his
 2:27 तीसरा दृश्य: सौ पुत्र और एक नक्शा
 3:28 चौथा दृश्य: खरगोश
 4:55 पाँचवाँ दृश्य: दंड
-6:18 छठा दृश्य: राजा ने सब त्याग दिया
+6:17 छठा दृश्य: राजा ने सब त्याग दिया
 6:56 सातवाँ दृश्य: शशाद लौटता है
 7:31 समाधान: श्रीराम "काकुत्स्थ" क्यों कहलाए
-8:13 समापन
+8:14 समापन
 
 ▶ अगला एपिसोड: E03 निमि: इक्ष्वाकु का वह पुत्र जो हर पलक में है
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #इक्ष्वाकु #भागवतपुराण #Ikshvaku #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -340,7 +340,7 @@ In this episode: Ikshvaku's son Nimi, the curse he and Vasishtha traded, and the
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #इक्ष्वाकु #भागवतपुराण #Ikshvaku #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -423,7 +423,7 @@ In this episode: Puranjaya rides Indra in bull form against the asuras, and why 
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #इक्ष्वाकु #भागवतपुराण #Ikshvaku #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -508,7 +508,7 @@ In this episode: Kuvalayashva and the demon Dhundhu under the sand, and the thre
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #इक्ष्वाकु #भागवतपुराण #Ikshvaku #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -595,7 +595,7 @@ In this episode: The city King Shravasta founded, later Lava's capital and the B
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #इक्ष्वाकु #भागवतपुराण #Ikshvaku #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -681,7 +681,7 @@ In this episode: How a childless king drank the consecrated water and gave birth
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #मान्धाता #भागवतपुराण #Mandhata #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -768,7 +768,7 @@ In this episode: What 'Mandhata' and 'Trasaddasyu' mean, and the empire from sun
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #मान्धाता #भागवतपुराण #Mandhata #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -855,7 +855,7 @@ In this episode: Why a sage meditating under the Yamuna decided to marry.
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #मान्धाता #भागवतपुराण #Mandhata #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -941,7 +941,7 @@ In this episode: The old sage's request, his transformation, and the palaces he 
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #मान्धाता #भागवतपुराण #Mandhata #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -1026,7 +1026,7 @@ In this episode: Saubhari's own words on desire, and what he did next.
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #मान्धाता #भागवतपुराण #Mandhata #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -1111,7 +1111,7 @@ In this episode: Mandhata's son marries the river Narmada and fights the Gandhar
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #मान्धाता #भागवतपुराण #Mandhata #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -1196,7 +1196,7 @@ In this episode: Mandhata's son, his long sleep, and the day Krishna led Kalayav
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #मान्धाता #भागवतपुराण #Mandhata #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -1283,7 +1283,7 @@ In this episode: Anaranya of Trishanku's line and his dying curse on Ravana.
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #त्रिशंकु #भागवतपुराण #Trishanku #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -1370,7 +1370,7 @@ In this episode: The Bhagavata's two verses on Trishanku, read in full, and what
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #त्रिशंकु #भागवतपुराण #Trishanku #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -1457,7 +1457,7 @@ In this episode: The prince who stole a bride, fed a sage's family in famine, an
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #त्रिशंकु #भागवतपुराण #Trishanku #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -1545,7 +1545,7 @@ In this episode: How Trishanku became an outcast and found the one sage who woul
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #त्रिशंकु #भागवतपुराण #Trishanku #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -1633,7 +1633,7 @@ In this episode: The sacrifice the gods refused, the fall, and the stars Vishvam
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #त्रिशंकु #भागवतपुराण #Trishanku #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -1720,7 +1720,7 @@ In this episode: The king who tried to take a cow from a sage, and became a sage
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #त्रिशंकु #भागवतपुराण #Trishanku #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -1807,7 +1807,7 @@ In this episode: A childless king's promise and the birth of Rohita.
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #राजाहरिश्चंद्र #भागवतपुराण #Harishchandra #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -1895,7 +1895,7 @@ In this episode: The five times Harishchandra put off Varuna, and the illness th
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #राजाहरिश्चंद्र #भागवतपुराण #Harishchandra #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -1983,7 +1983,7 @@ In this episode: The prince who ran, and Indra's verses telling him not to go ho
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #राजाहरिश्चंद्र #भागवतपुराण #Harishchandra #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -2071,7 +2071,7 @@ In this episode: The boy bought from Ajigarta, his prayers at the post, and how 
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #राजाहरिश्चंद्र #भागवतपुराण #Harishchandra #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -2159,7 +2159,7 @@ In this episode: The truth-test story most people know, and why it comes from a 
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #राजाहरिश्चंद्र #भागवतपुराण #Harishchandra #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -2247,7 +2247,7 @@ In this episode: Kashi, the sale of his wife and son, Rohita's death, and the en
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #राजाहरिश्चंद्र #भागवतपुराण #Harishchandra #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -2335,7 +2335,7 @@ In this episode: Vasishtha and Vishvamitra's years-long battle in bird form, and
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #राजाहरिश्चंद्र #भागवतपुराण #Harishchandra #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -2423,7 +2423,7 @@ In this episode: The kings after Harishchandra, the founder of Champapuri, and t
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #राजासगर #भागवतपुराण #KingSagara #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -2511,7 +2511,7 @@ In this episode: The pyre that Aurva stopped, the co-wives' poison, and the name
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #राजासगर #भागवतपुराण #KingSagara #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -2599,7 +2599,7 @@ In this episode: Sagara retakes the kingdom and, at Aurva's word, spares the def
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #राजासगर #भागवतपुराण #KingSagara #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -2688,7 +2688,7 @@ In this episode: Sumati and Keshini's boon, and Indra stealing the sacrificial h
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #राजासगर #भागवतपुराण #KingSagara #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -2777,7 +2777,7 @@ In this episode: The digging, the horse beside Kapila, and the Bhagavata's line 
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #राजासगर #भागवतपुराण #KingSagara #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -2866,7 +2866,7 @@ In this episode: Why Sagara's son threw children in the Sarayu, and what he did 
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #राजासगर #भागवतपुराण #KingSagara #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -2955,7 +2955,7 @@ In this episode: The grandson who prayed instead of accusing, and the condition 
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #राजासगर #भागवतपुराण #KingSagara #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -3044,7 +3044,7 @@ In this episode: Two generations of tapas that did not work.
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #भगीरथ #भागवतपुराण #Bhagiratha #गंगावतरण #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -3133,7 +3133,7 @@ In this episode: Ganga's force, the sins of the world, and Bhagiratha's two answ
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #भगीरथ #भागवतपुराण #Bhagiratha #गंगावतरण #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -3221,7 +3221,7 @@ In this episode: The Bhagavata's account of Ganga's source, and Shiva holding he
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #भगीरथ #भागवतपुराण #Bhagiratha #गंगावतरण #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -3309,7 +3309,7 @@ In this episode: The sage who drank the river, and why she is Jahnavi.
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #भगीरथ #भागवतपुराण #Bhagiratha #गंगावतरण #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -3399,7 +3399,7 @@ In this episode: Ganga following Bhagiratha's chariot to the ashes, and the name
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #भगीरथ #भागवतपुराण #Bhagiratha #गंगावतरण #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -3488,7 +3488,7 @@ In this episode: Bhagiratha's descendant and his part in the Nala-Damayanti stor
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #भगीरथ #भागवतपुराण #Bhagiratha #गंगावतरण #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -3578,7 +3578,7 @@ In this episode: The disguised cook, Vasishtha's curse, and the name Kalmashapad
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #भगीरथ #भागवतपुराण #Bhagiratha #गंगावतरण #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -3668,7 +3668,7 @@ In this episode: Mulaka hidden by women from Parashurama, and the king who used 
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #भगीरथ #भागवतपुराण #Bhagiratha #गंगावतरण #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -3757,7 +3757,7 @@ In this episode: The single line, and why three texts give Raghu three different
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #रघुवंश #भागवतपुराण #Raghuvansh #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -3846,7 +3846,7 @@ In this episode: Raghu's father in Kalidasa, serving the cow Nandini, and the li
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #रघुवंश #भागवतपुराण #Raghuvansh #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -3936,7 +3936,7 @@ In this episode: Raghu guarding his father's horse sacrifice.
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #रघुवंश #भागवतपुराण #Raghuvansh #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -4024,7 +4024,7 @@ In this episode: The digvijaya, region by region.
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #रघुवंश #भागवतपुराण #Raghuvansh #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -4112,7 +4112,7 @@ In this episode: The Vishvajit sacrifice, the student's fee, and the gold from K
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #रघुवंश #भागवतपुराण #Raghuvansh #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -4202,7 +4202,7 @@ In this episode: Aja's road to the swayamvara and the gift he won on the way.
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #राजादशरथ #भागवतपुराण #Dasharatha #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -4292,7 +4292,7 @@ In this episode: The kings Indumati passed, the choice, and the fight after.
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #राजादशरथ #भागवतपुराण #Dasharatha #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -4381,7 +4381,7 @@ In this episode: Indumati's death and Aja's lament.
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #राजादशरथ #भागवतपुराण #Dasharatha #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -4470,7 +4470,7 @@ In this episode: The hunt, the boy at the river, and his parents' curse.
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #राजादशरथ #भागवतपुराण #Dasharatha #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -4559,7 +4559,7 @@ In this episode: The battle where Kaikeyi saved Dasharatha, and the boons she ke
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #राजादशरथ #भागवतपुराण #Dasharatha #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -4648,7 +4648,7 @@ In this episode: Rishyashringa's sacrifice and the Bhagavata's 'one Lord in four
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #राजादशरथ #भागवतपुराण #Dasharatha #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -4737,7 +4737,7 @@ In this episode: The Bhagavata's whole Rama story at a glance, and what this arc
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #श्रीराम #भागवतपुराण #Ramayan #रामायण #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -4825,7 +4825,7 @@ In this episode: The four brothers, their teachers, and Rama's early years.
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #श्रीराम #भागवतपुराण #Ramayan #रामायण #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -4914,7 +4914,7 @@ In this episode: Why Vishvamitra asked for Rama, and the first fight.
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #श्रीराम #भागवतपुराण #Ramayan #रामायण #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -5004,7 +5004,7 @@ In this episode: The sacrifice Rama protected, and the demon he spared who comes
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #श्रीराम #भागवतपुराण #Ramayan #रामायण #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -5094,7 +5094,7 @@ In this episode: Janaka's challenge, Shiva's bow, and Sita.
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #श्रीराम #भागवतपुराण #Ramayan #रामायण #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -5183,7 +5183,7 @@ In this episode: The meeting of two avatars, and what Parashurama handed over.
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #श्रीराम #भागवतपुराण #Ramayan #रामायण #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -5273,7 +5273,7 @@ In this episode: Manthara, the two boons, and the exile.
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #श्रीराम #भागवतपुराण #Ramayan #रामायण #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -5363,7 +5363,7 @@ In this episode: Shravana's curse paid, and the brother who would not rule.
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #श्रीराम #भागवतपुराण #Ramayan #रामायण #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -5453,7 +5453,7 @@ In this episode: The insult at Panchavati and the battle with Khara and Dushana.
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #श्रीराम #भागवतपुराण #Ramayan #रामायण #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -5543,7 +5543,7 @@ In this episode: Maricha returns, Sita is taken, and Jatayu fights.
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #श्रीराम #भागवतपुराण #Ramayan #रामायण #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -5632,7 +5632,7 @@ In this episode: Rama's lament, Kabandha, and Shabari.
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #श्रीराम #भागवतपुराण #Ramayan #रामायण #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -5722,7 +5722,7 @@ In this episode: The alliance and the most argued-over act in the Ramayana.
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #श्रीराम #भागवतपुराण #Ramayan #रामायण #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -5811,7 +5811,7 @@ In this episode: The search, the leap, finding Sita in the Ashoka grove.
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #श्रीराम #भागवतपुराण #Ramayan #रामायण #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -5900,7 +5900,7 @@ In this episode: Hanuman captured, the fire, the return.
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #श्रीराम #भागवतपुराण #Ramayan #रामायण #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -5988,7 +5988,7 @@ In this episode: Why Ravana's brother left him, and why Rama accepted him.
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #श्रीराम #भागवतपुराण #Ramayan #रामायण #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -6078,7 +6078,7 @@ In this episode: The ocean that would not answer, Rama's anger, and the bridge.
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #श्रीराम #भागवतपुराण #Ramayan #रामायण #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -6167,7 +6167,7 @@ In this episode: The battles before the last one.
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #श्रीराम #भागवतपुराण #Ramayan #रामायण #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -6256,7 +6256,7 @@ In this episode: Rama and Ravana, and the lament of Ravana's queens in the Bhaga
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #श्रीराम #भागवतपुराण #Ramayan #रामायण #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -6345,7 +6345,7 @@ In this episode: The flight home and the brother who kept the sandals on the thr
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #श्रीराम #भागवतपुराण #Ramayan #रामायण #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -6434,7 +6434,7 @@ In this episode: The coronation and the Bhagavata's description of Rama's reign.
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #श्रीराम #भागवतपुराण #Ramayan #रामायण #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -6523,7 +6523,7 @@ In this episode: Rama's sacrifices, the land he gave away, and why it came back.
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #श्रीराम #भागवतपुराण #Ramayan #रामायण #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -6612,7 +6612,7 @@ In this episode: Where Hanuman still worships Rama, according to the Bhagavata, 
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #श्रीराम #भागवतपुराण #Ramayan #रामायण #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -6701,7 +6701,7 @@ In this episode: What Rama overheard, and how the Bhagavata and Valmiki tell it 
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #लवकुश #भागवतपुराण #LavKush #रामायण #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -6790,7 +6790,7 @@ In this episode: The twins' birth and how they got their names.
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #लवकुश #भागवतपुराण #LavKush #रामायण #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -6878,7 +6878,7 @@ In this episode: Shatrughna kills Lavana, Bharata conquers the Gandharvas, Laksh
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #लवकुश #भागवतपुराण #LavKush #रामायण #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -6967,7 +6967,7 @@ In this episode: Two boys reciting Rama's own story at his sacrifice.
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #लवकुश #भागवतपुराण #LavKush #रामायण #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -7056,7 +7056,7 @@ In this episode: The twins capture Rama's horse, and which texts tell it.
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #लवकुश #भागवतपुराण #LavKush #रामायण #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -7145,7 +7145,7 @@ In this episode: Sita's last act, and Rama's grief in the Bhagavata.
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #लवकुश #भागवतपुराण #LavKush #रामायण #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -7234,7 +7234,7 @@ In this episode: Lakshmana's last act, and Rama entering the Sarayu.
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #लवकुश #भागवतपुराण #LavKush #रामायण #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -7323,7 +7323,7 @@ In this episode: Ayodhya appears to Kusha as a grieving goddess and asks him hom
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #लवकुश #भागवतपुराण #LavKush #रामायण #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -7412,7 +7412,7 @@ In this episode: The kings after Kusha, including the yoga teacher of Yajnavalky
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #लवकुश #भागवतपुराण #LavKush #रामायण #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
@@ -7501,7 +7501,7 @@ In this episode: Brihadbala at Kurukshetra, Sumitra the last king, and Maru wait
 ▶ पूरी शृंखला (प्लेलिस्ट): [link]
 
 वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
-Narration: AI voice (ElevenLabs) · Illustrations: AI-generated · Script: written from the cited texts
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
 
 #सूर्यवंश #लवकुश #भागवतपुराण #LavKush #रामायण #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
 ```
