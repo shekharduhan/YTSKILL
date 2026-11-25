@@ -113,6 +113,15 @@ def write_srt(ep, max_chars=80):
                 c = min(cuts, key=lambda x: abs(x - len(p) / 2))
                 split.append(p[:c].strip()); p = p[c:].strip()
             split.append(p)
+        merged = []
+        for p in split:                              # a very short fragment is merged with its neighbour
+            if merged and len(p) < 14:
+                merged[-1] = merged[-1] + " " + p
+            else:
+                merged.append(p)
+        if len(merged) > 1 and len(merged[0]) < 14:
+            merged[1] = merged[0] + " " + merged[1]; merged.pop(0)
+        split = merged
         total = sum(len(p) for p in split)
         t = a
         for p in split:
@@ -201,7 +210,7 @@ def main():
               f"पूरा वीडियो देखें: [link]\n"
               f"अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏\n\n"
               + " ".join(["#सूर्यवंश", ktags[0], "#पौराणिककथा"]))
-        tt = (f"{e['hook1']} 🔱 {e['title']} | सूर्यवंश कथा #{n}\n"
+        tt = (f"{e['hook1']} 🔱 {e['title']} | सूर्यवंश कथा · एपिसोड {n}\n"
               f"स्रोत: {e['src'].split('·')[0].strip()} · पूरी कथा प्रोफ़ाइल के लिंक पर\n"
               + " ".join([ktags[0], "#सूर्यवंश", "#mythology", "#hinduism", "#storytime", "#hindi"]))
         pin = (f"आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇\n"
