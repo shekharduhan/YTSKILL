@@ -23,6 +23,17 @@ script), not malware.
 | `lemo-opuscar` ([lemomo-ai/lemo-opuscar](https://github.com/lemomo-ai/lemo-opuscar)) | 2 | 99 animation and film styles made in code, for explainer videos. | `/lemo-opuscar` |
 | `claude-mem` ([thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)) | 1 | Memory across sessions. Runs a local background worker. Most useful on your own computer, because cloud containers are wiped. | `/mem-search` |
 
+### Also switched on
+
+| Plugin / skill | What it gives you | Try |
+| --- | --- | --- |
+| `youtube-agent` (this repo's own 11 skills) | Scripts, titles and thumbnails, edit lists, retention, Shorts, chapters, SEO, comments, plans, audits, niche research. Loaded from this repo via the `youtube-agent-skill` marketplace. | `/youtube-agent:yt-script` |
+| `illustrated-explainer` (in `.claude/skills/`) | Long narrated explainers made of AI still images with pan/zoom, Hindi or English voice, ffmpeg assembly. Learned from an illustrated history video on YouTube. | `/illustrated-explainer` |
+
+The full learning guide is [`free-video-with-claude-code.pdf`](free-video-with-claude-code.pdf), and
+[`demo-reel-code-se-video.mp4`](demo-reel-code-se-video.mp4) is a 23-second Reel made entirely in code
+with Lemo-Opuscar.
+
 ### Installed but switched off
 
 | Plugin | From reel | Why it is off |
