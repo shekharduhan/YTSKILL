@@ -20,7 +20,7 @@ How it renders
   Chosen takes are remembered in audio/takes.json, so a re-run never pays twice.
 - Silence the voice adds at the start and end of a recording is trimmed, long silences inside a
   recording are shortened, and the script's pauses are added exactly:
-      [विराम] 1.0 s    between paragraphs 0.5 s    new scene 0.9 s    (stacked pauses max 1.6 s)
+      [विराम] 1.0 s    between paragraphs 0.5 s    new scene 0.8 s    (stacked pauses max 1.2 s)
 - Output: audio/epNN.mp3 (levelled to -16 LUFS) and audio/epNN.timing.json, the exact start and
   end of every spoken piece. assemble.py and the subtitles use the timing file, so pictures and
   captions stay in sync with the voice.
@@ -31,7 +31,7 @@ import numpy as np
 VOICE_ID = "tp9ZAQ5ti5xjrtabLbxF"   # Vijay - Narrative Mythology (ElevenLabs voice library)
 MODEL = "eleven_v4"
 SETTINGS = {"stability": 0.5, "similarity_boost": 0.8, "style": 0.35, "speed": 0.9}
-FULL, LINE, SCENE, MAX_PAUSE = 1.0, 0.5, 0.9, 1.6
+FULL, LINE, SCENE, MAX_PAUSE = 1.0, 0.5, 0.8, 1.2
 SR = 44100
 
 HERE = os.path.dirname(os.path.abspath(__file__))
