@@ -8,7 +8,7 @@
     "ponytail@ponytail": true,
     "lemo-opuscar@lemolab": true,
     "claude-mem@thedotmack": true,
-    "ecc@ecc": false,
+    "ecc@ecc": true,
     "youtube-agent@youtube-agent-skill": true
   },
   "extraKnownMarketplaces": {
