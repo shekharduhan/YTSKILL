@@ -1,0 +1,23 @@
+E05 production report
+timing plan problems:
+  none
+wrote /home/user/YTSKILL/series/surya-vamsha/video/ep05.mp4 444.6s narration, 41 shots, video 444.6s
+wrote brand/out/thumbnails/ep05-thumbnail-1280x720.jpg (1280, 720)
+--- qa_audio.py
+E05 0:10.9 missing words                want: एक राजा अपने इक्कीस हज़ार पुत्रों को लेकर उसे जगाने गया।
+                                        said: एक राजा अपने 21,000 पुत्रों को लेकर उसे जगाने गया।
+E05 1:18.3 missing words, does not match want: इक्कीस हज़ार में से… तीन।
+                                        said: 21,000 में से 3
+E05 4:47.1 missing words                want: वह आग इक्कीस हज़ार राजकुमारों पर गिरी।
+                                        said: वह आग 21,000 राजकुमारों पर गिरी।
+E05: 3 of 62 pieces flagged; longest pause between pieces 1.2 s
+--- voice_report.py
+E05 voice: 62 pieces, 3 failed the script check, longest silence 1.6s, loudness spread -1.6/+1.6 dB, speed spread 0.74-1.35x, clipped samples 0
+  ! 1:26.6 speed 1.35x the usual: अब महाभारत की ओर चलते हैं।
+--- verify_video.py
+E05: 41 pictures, 0 mismatches; video 444.59s, narration 444.63s
+--- sync_check.py
+E05 streams: video starts 0.000s lasts 444.44s | audio starts 0.000s lasts 444.59s -> MISMATCH
+  ! 1:18.3 expected: इक्कीस हज़ार में से… तीन।
+                heard:    मे से  (match 0.38)
+E05: 62 pieces checked in the video file, 1 out of sync
