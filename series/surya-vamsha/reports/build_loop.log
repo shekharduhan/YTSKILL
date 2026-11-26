@@ -82,3 +82,5 @@ E06: 44 pictures, 0 mismatches; video 410.25s, narration 410.28s
 --- sync_check.py
 E06 streams: video starts 0.000s lasts 410.20s | audio starts 0.000s lasts 410.25s -> OK
 E06: 56 pieces checked in the video file, 0 out of sync
+21:16 done E06
+21:16 building E07
