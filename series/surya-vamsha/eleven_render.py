@@ -16,7 +16,7 @@ How it renders
   text sent as context so the delivery stays even.
 - Every recording is transcribed offline (qa_audio.py, Whisper) and compared with the script. A
   recording with extra words (repeats, context read aloud), missing words or a cut-off ending is
-  recorded again without context and with a new seed, up to 3 times, and the best take is kept.
+  recorded once more without context and with a new seed (at most one retry), and the better take is kept.
   The approved recording of each line is remembered in audio/takes.json (line -> file), so a
   re-run never pays twice, and editing one line does not re-record its neighbours.
 - Silence the voice adds at the start and end of a recording is trimmed, long silences inside a
@@ -172,7 +172,7 @@ def choose(text, prev, nxt, takes, qa=True):
         return tts(text, prev, nxt)
     import qa_audio
     best = None
-    for take in range(0, 4):
+    for take in range(0, 2):          # first recording + at most one retry of a broken take
         p = tts(text, prev, nxt, take)
         r = qa_audio.score(p, text)
         print(f"   take {take}: ratio {r['ratio']} sim {r['sim']} {', '.join(r['flags']) or 'ok'}", flush=True)

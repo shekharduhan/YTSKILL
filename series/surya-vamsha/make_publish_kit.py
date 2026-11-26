@@ -4,7 +4,7 @@
 
 Reads episodes.psv and each epNN-*-hindi.md (title, thumbnail words, sources, hook lines, next
 episode). Writes:
-  publishing-kit.md    channel name, bios, profile fields, playlists, and all 84 episode posts
+  publishing-kit.md    YouTube channel set-up, upload settings, playlists, and all 84 episode uploads
   publishing-kit.csv   the same episode posts, one row per episode, for spreadsheets / schedulers
   captions/epNN.srt    Hindi subtitles, for every episode whose narration is rendered (from audio/epNN.timing.json)
 """
@@ -155,7 +155,7 @@ def main():
     out, csv_rows = [], []
     w = out.append
     w(HEADER)
-    w("## 5. Playlists (one per king, plus the full series)\n")
+    w("## 5. Playlists (create these once; add each episode to its king's playlist and to the full series)\n")
     w("| playlist | title | description |\n| --- | --- | --- |")
     w(f"| all | सूर्यवंश कथा: संपूर्ण शृंखला (84 एपिसोड) | मनु से लव-कुश तक, सूर्यवंश की पूरी कथा क्रम से। श्रीमद्भागवत स्कंध 9 पर आधारित, हर कथा के स्रोत स्क्रीन पर। |")
     for a, es in arc_eps.items():
@@ -163,7 +163,7 @@ def main():
         w(f"| arc {a} | {hi}: सूर्यवंश कथा भाग {a} ({len(es)} एपिसोड) | {hi} की पूरी कथा, {len(es)} एपिसोड में, एपिसोड {es[0]['n']} से {es[-1]['n']} तक। स्रोत: {es[0]['en_src'].split(';')[0]} आदि, हर एपिसोड में स्क्रीन पर। |")
     w("")
     w("## 6. Every episode\n")
-    w("Each episode below has one block per platform. Copy the box as it is. Where the description says "
+    w("Each episode below has everything for its YouTube upload. Copy each box as it is. Where the description says "
       "`[link]`, paste that episode's YouTube link once it is up. Chapters are filled in for episodes whose "
       "narration is already rendered; for the others, run `python3 make_publish_kit.py` again after rendering.\n")
 
@@ -196,23 +196,9 @@ def main():
                                   "Hindi story", "पौराणिक कथा"])
         while len(yt_tag_field) > 480:
             yt_tag_field = yt_tag_field.rsplit(",", 1)[0]
-        short_tags = [ktags[0], "#सूर्यवंश", "#पौराणिककथा", "#IndianMythology", "#Hindi"]
-        ig = (f"{e['hook1']}\n\n"
-              f"{e['title']}\n"
-              f"सूर्यवंश कथा · एपिसोड {n} 🔱\n\n"
-              f"📜 स्रोत: {e['src'].split('·')[0].strip()}\n"
-              f"पूरा एपिसोड YouTube पर, लिंक बायो में।\n"
-              f"इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇\n\n"
-              + " ".join(short_tags))
-        fb = (f"{e['hook']}\n\n"
-              f"👉 {e['title']} (सूर्यवंश कथा, एपिसोड {n})\n"
-              f"📜 स्रोत: {e['src']}\n\n"
-              f"पूरा वीडियो देखें: [link]\n"
-              f"अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏\n\n"
-              + " ".join(["#सूर्यवंश", ktags[0], "#पौराणिककथा"]))
-        tt = (f"{e['hook1']} 🔱 {e['title']} | सूर्यवंश कथा · एपिसोड {n}\n"
-              f"स्रोत: {e['src'].split('·')[0].strip()} · पूरी कथा प्रोफ़ाइल के लिंक पर\n"
-              + " ".join([ktags[0], "#सूर्यवंश", "#mythology", "#hinduism", "#storytime", "#hindi"]))
+        short = (f"{e['hook1']} 🔱 {e['title']}\n"
+                 f"पूरी कथा: सूर्यवंश कथा · एपिसोड {n} (Related video में लिंक)\n"
+                 f"#Shorts #सूर्यवंश {ktags[0]} #पौराणिककथा")
         pin = (f"आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇\n"
                f"अगला एपिसोड: {nxt}")
         thumb = e["thumb"].strip("`") or e["en_thumb"]
@@ -223,13 +209,12 @@ def main():
         w(f"**YouTube description**\n```\n{yt_desc}\n```")
         w(f"**YouTube tags field** ({len(yt_tag_field)}/500)\n```\n{yt_tag_field}\n```")
         w(f"**YouTube pinned comment**\n```\n{pin}\n```")
-        w(f"**Instagram Reel caption** (9:16 clip of the hook)\n```\n{ig}\n```")
-        w(f"**Facebook post** (full video)\n```\n{fb}\n```")
-        w(f"**TikTok caption** (9:16 clip of the hook)\n```\n{tt}\n```\n")
+        w(f"**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)\n```\n{short}\n```\n")
         csv_rows.append(dict(episode=n, arc=e["arc"], king=e["king"], hindi_title=e["title"],
                              english_title=e["en"], thumbnail=thumb, youtube_title=yt_title,
                              youtube_description=yt_desc, youtube_tags=yt_tag_field, pinned_comment=pin,
-                             instagram_caption=ig, facebook_post=fb, tiktok_caption=tt))
+                             youtube_short=short, thumbnail_file=f"ep{n:02d}-thumbnail-1280x720.jpg",
+                             subtitles_file=f"ep{n:02d}.srt"))
 
     open(os.path.join(HERE, "publishing-kit.md"), "w", encoding="utf-8").write("\n".join(out))
     with open(os.path.join(HERE, "publishing-kit.csv"), "w", encoding="utf-8-sig", newline="") as f:
@@ -237,57 +222,81 @@ def main():
         cw.writeheader(); cw.writerows(csv_rows)
     for p in sorted(glob.glob(os.path.join(HERE, "audio", "ep??.timing.json"))):
         print("wrote", write_srt(int(os.path.basename(p)[2:4])))
+    upload_folders(csv_rows, arc_eps)
     print("wrote publishing-kit.md and publishing-kit.csv,", len(eps), "episodes")
 
 
-HEADER = f"""# Publishing kit: सूर्यवंश कथा
+def upload_folders(rows, arc_eps):
+    """youtube-upload/EpNN/: thumbnail, subtitles and upload.txt for every episode whose video exists."""
+    import shutil
+    base = os.path.join(HERE, "youtube-upload")
+    for r in rows:
+        n = r["episode"]
+        if not os.path.exists(os.path.join(HERE, "video", f"ep{n:02d}.mp4")):
+            continue
+        d = os.path.join(base, f"Ep{n:02d}"); os.makedirs(d, exist_ok=True)
+        thumb = os.path.join(HERE, "brand", "out", "thumbnails", r["thumbnail_file"])
+        srt = os.path.join(HERE, "captions", r["subtitles_file"])
+        for src in (thumb, srt):
+            if os.path.exists(src):
+                shutil.copy(src, d)
+        hi_king = KINGS[r["king"]][0]
+        a = r["arc"]
+        txt = (f"EPISODE {n} — YouTube upload\n"
+               f"Video file: ep{n:02d}.mp4\n\n"
+               f"== TITLE ==\n{r['youtube_title']}\n\n"
+               f"== DESCRIPTION ==\n{r['youtube_description']}\n\n"
+               f"== TAGS ==\n{r['youtube_tags']}\n\n"
+               f"== THUMBNAIL ==\n{r['thumbnail_file']}\n\n"
+               f"== SUBTITLES ==\nHindi, upload with timing: {r['subtitles_file']}\n\n"
+               f"== PLAYLISTS ==\n{hi_king}: सूर्यवंश कथा भाग {a} ({len(arc_eps[a])} एपिसोड)\n"
+               f"सूर्यवंश कथा: संपूर्ण शृंखला (84 एपिसोड)\n\n"
+               f"== SETTINGS ==\nAudience: No, not made for kids · Altered/synthetic content: No · "
+               f"Category: Education · Language: Hindi\n\n"
+               f"== PINNED COMMENT ==\n{r['pinned_comment']}\n\n"
+               f"== YOUTUBE SHORT (optional) ==\n{r['youtube_short']}\n")
+        open(os.path.join(d, "upload.txt"), "w", encoding="utf-8").write(txt)
+    print("wrote upload folders in", base)
 
-Everything to type into YouTube, Instagram, Facebook and TikTok: the channel name, the profile
-fields on each platform, and a ready post for each of the 84 episodes. Made by `make_publish_kit.py`
-from the scripts, so each caption quotes that episode's own opening lines and sources.
+
+HEADER = f"""# YouTube upload kit: सूर्यवंश कथा
+
+Everything to type into YouTube: the channel set-up, the settings for every upload, the playlists,
+and for each of the 84 episodes its title, description (with chapters once the episode is made),
+tags, pinned comment and thumbnail words. Made by `make_publish_kit.py` from the scripts, so every
+description quotes that episode's own opening lines and sources.
+
+For every finished episode there is also a ready folder in `youtube-upload/EpNN/`: the thumbnail,
+the Hindi subtitle file, and `upload.txt` with all the text below for that episode.
 
 ## 1. Channel name
 
-**Recommended: {CHANNEL}**, handle **{HANDLE}** on every platform.
+**{CHANNEL}**, handle **{HANDLE}**. If the handle is taken, use `@SuryavanshKathaHindi`.
 
-Why this one:
-- It names exactly what the channel is: the story (कथा) of the Sun dynasty (सूर्यवंश), from Manu to Lav and Kush. Nothing in it promises more than the videos give.
-- Everyone who grew up with the Ramayan knows the word सूर्यवंश, so it reads as familiar and serious, not clickbait.
-- People search for it in both scripts: "सूर्यवंश" in Hindi, "Suryavansh" in English. The name has both.
-- **Tagline: "{TAGLINE_HI}" ({TAGLINE_EN})** This is what makes the channel stand out. Most mythology channels never say where a story comes from. This one shows the source (भागवत 9.x, वाल्मीकि, तुलसीदास, लोक-परंपरा) on screen in every episode.
+Why: it says exactly what the channel is (the story of the Sun dynasty, from Manu to Lav and Kush),
+people search the word in both Hindi and English, and the tagline **"{TAGLINE_HI}"** ({TAGLINE_EN})
+is what sets it apart: every episode shows its source on screen.
 
-Other names, if the handle is taken:
-
-| name | handle | the feel |
-| --- | --- | --- |
-| रघुकुल कथा \\| Raghukul Katha | @RaghukulKatha | warm and devotional ("रघुकुल रीति सदा चली आई") |
-| वंश कथा \\| Vansh Katha | @VanshKatha | short; leaves room for a Chandravansh series later |
-| सूर्यकुल \\| Suryakul Stories | @SuryakulStories | modern, good for Reels and TikTok |
-| पुराण पथ \\| Puran Path | @PuranPath | broad, if you later cover other Puranas |
-
-**Before you create anything,** check the handle is free on all four platforms on the same day, then register it everywhere at once. I can't check availability from here. If `@SuryavanshKatha` is taken anywhere, use the same fallback everywhere (for example `@SuryavanshKathaHindi`), so viewers find you by one name.
-
-## 2. YouTube
+## 2. Channel set-up (YouTube Studio → Customisation)
 
 | field | what to enter |
 | --- | --- |
-| Channel name (max 50) | `{CHANNEL}` |
+| Name (max 50) | `{CHANNEL}` |
 | Handle | `{HANDLE}` |
-| Category (on each video) | Education (or Entertainment) |
-| Video language / caption language | Hindi |
-| Audience | **No, it's not made for kids** (it's family-friendly, but "made for kids" switches off comments and the mini-player) |
-| Altered or synthetic content | Tick **Yes** if a video shows realistic-looking people or events. For these painted illustrations it's usually not required, but the AI voice and AI images are already disclosed in every description below. |
-| Links (shown on banner) | Instagram, Facebook page, playlist "संपूर्ण शृंखला" |
-| Banner text (2560×1440, keep text in the middle 1546×423) | **सूर्यवंश कथा** · {TAGLINE_HI} · नए एपिसोड हर मंगलवार और शुक्रवार |
-| Watermark | the channel logo (a sun disc with a bow, gold on deep red) |
-| Channel trailer | the first 60 seconds of Episode 1 (the fish and the flood) |
+| Picture | `youtube/profile-picture-800x800.png` (channel pictures zip) |
+| Banner | `youtube/banner-2560x1440.jpg` |
+| Video watermark | `youtube/watermark-150x150.png`, display: entire video |
+| Channel trailer | Episode 1 (the fish and the flood) |
+| Featured section | playlist "सूर्यवंश कथा: संपूर्ण शृंखला" |
+| Country | India |
+| Banner text | **सूर्यवंश कथा** · {TAGLINE_HI} · नए एपिसोड हर मंगलवार और शुक्रवार (change the days in the banner if you post on other days) |
 
-**Description (paste into Customisation → Basic info):**
+**Description (Customisation → Basic info):**
 ```
 मनु की नाव को खींचती एक सुनहरी मछली से लेकर… श्रीराम के पुत्र लव और कुश तक।
 यह है सूर्यवंश की पूरी कथा: वह वंश जिसमें इक्ष्वाकु, मान्धाता, हरिश्चंद्र, सगर, भगीरथ, रघु, दशरथ और श्रीराम हुए।
 
-84 एपिसोड, लगभग 10-10 मिनट के, ठीक क्रम में।
+84 एपिसोड, लगभग 7 से 9 मिनट के, ठीक क्रम में।
 आधार: श्रीमद्भागवत महापुराण, स्कंध 9 (अध्याय 6 से 12), साथ में वाल्मीकि रामायण, कालिदास का रघुवंशम् और तुलसीदास का रामचरितमानस।
 
 {TAGLINE_HI}
@@ -298,7 +307,7 @@ Other names, if the handle is taken:
 
 The story of the Sun dynasty (Suryavansh), from Manu to Lav and Kush, in Hindi.
 84 episodes based on the Bhagavata Purana (Book 9), with the source shown on screen in every episode.
-Narration: AI voice. Illustrations: AI-generated.
+Narration: AI voice (ElevenLabs). Illustrations: AI-generated (Google).
 ```
 
 **Channel keywords (Settings → Channel → Basic info):**
@@ -306,58 +315,39 @@ Narration: AI voice. Illustrations: AI-generated.
 सूर्यवंश, सूर्यवंश कथा, Suryavansh, Suryavanshi, भागवत पुराण, श्रीमद्भागवत, Bhagavata Purana, Srimad Bhagavatam, रामायण, Ramayan, श्रीराम, इक्ष्वाकु, रघुवंश, राजा हरिश्चंद्र, भगीरथ, गंगावतरण, पौराणिक कथा, हिंदू पौराणिक कथा, Indian mythology, Hindu mythology, Hindi kahani, धार्मिक कथा
 ```
 
-## 3. Instagram
+## 3. Upload defaults (Settings → Upload defaults, set once)
 
-| field | what to enter |
+| field | value |
 | --- | --- |
-| Name (searchable, max 30) | `सूर्यवंश कथा Suryavansh Katha` |
-| Username | `suryavanshkatha` |
-| Category (professional account) | Digital creator, or Education |
-| Link | your YouTube channel (or a link page with YouTube + Facebook) |
+| Category | Education |
+| Video language | Hindi |
+| Title and description language | Hindi |
+| Caption certification | None of these / not aired on TV |
+| Licence | Standard YouTube licence |
+| Comments | On, hold potentially inappropriate comments for review |
+| Shorts remixing | Allow |
 
-**Bio (max 150 characters):**
-```
-🔱 मनु से लव-कुश तक: सूर्यवंश की पूरी कथा
-📜 {TAGLINE_HI}
-84 एपिसोड · भागवत स्कंध 9
-▶ पूरे एपिसोड YouTube पर 👇
-```
+## 4. For every upload
 
-Story highlights: one per king (इक्ष्वाकु, हरिश्चंद्र, भगीरथ, श्रीराम …), using each arc's best image as the cover.
+1. **Video:** the episode's MP4 (1920×1080, 25 fps).
+2. **Title, description, tags:** copy from the episode's section below (or its `upload.txt`).
+3. **Thumbnail:** `epNN-thumbnail-1280x720.jpg`.
+4. **Playlists:** the king's playlist and "सूर्यवंश कथा: संपूर्ण शृंखला".
+5. **Audience:** **No, it's not made for kids** (made-for-kids turns off comments and the mini-player).
+6. **Altered or synthetic content:** **No** for these painted illustrations (they don't show realistic people or events). The AI voice and AI pictures are disclosed in every description anyway.
+7. **Subtitles:** Subtitles → Add language Hindi → Upload file → *With timing* → `epNN.srt`.
+8. **Chapters:** already in the description (the timestamps make YouTube chapters automatically).
+9. **End screen:** "Video: best for viewer" + "Playlist: सूर्यवंश कथा: संपूर्ण शृंखला" + Subscribe, from the last 15 s.
+10. **Cards:** at the end of each episode, a card to the next episode once it's published.
+11. **Pinned comment:** post the episode's pinned comment from your channel and pin it.
+12. **Visibility:** Schedule (two episodes a week works well), so new episodes go out at the same time.
 
-## 4. Facebook page and TikTok
+**YouTube Shorts (optional):** cut a 30-60 s vertical clip from each episode's hook, upload it as a
+Short with the text in the episode's "YouTube Short" box, and set **Related video** to the full
+episode. Shorts bring new viewers to the long episodes.
 
-**Facebook page**
-
-| field | what to enter |
-| --- | --- |
-| Page name | `{CHANNEL}` |
-| Username | `{HANDLE}` |
-| Category | Education website, or Digital creator |
-| Intro (max 101) | `मनु से लव-कुश तक: सूर्यवंश की पूरी कथा, हिंदी में। {TAGLINE_HI}` |
-| Action button | Watch video, pointing to the YouTube channel |
-
-Facebook "About" text: paste the same text as the YouTube description above.
-
-**TikTok**
-
-| field | what to enter |
-| --- | --- |
-| Name | `सूर्यवंश कथा` |
-| Username | `suryavanshkatha` |
-| Bio (max 80) | `मनु से लव-कुश तक 🔱 सूर्यवंश की कथा · {TAGLINE_HI}` |
-| Link | YouTube channel (TikTok shows a bio link only on business accounts, or after 1,000 followers) |
-
-**TikTok is blocked in India.** It's only worth running if you want viewers abroad: Hindi speakers in the US, UK, Canada, the Gulf, Nepal and Fiji. For viewers in India, put that effort into Instagram Reels and YouTube Shorts.
-
-**How to post on each platform:**
-- **YouTube:** the full 16:9 episode. Then 2-3 Shorts (9:16, under 60 s) cut from the hook and the strongest scene, each linking to the full episode ("Related video" field).
-- **Instagram and TikTok:** the same 9:16 hook clips as Reels, with the captions below.
-- **Facebook:** upload the full video natively (it gets more reach than a YouTube link), and share the Reels there too.
-- **Hashtags:** YouTube ignores *all* hashtags if a video has more than 60, and shows the first 3 above the title, so each description below has 15 at most. Instagram now allows 5 per post, so each Reel caption has 5.
-- **Disclosure:** every description says the voice and images are AI-made. Keep that line. Viewers trust a channel that tells them, and every platform asks for it.
-
-**Subtitles:** for each episode whose narration is rendered, `captions/epNN.srt` holds Hindi subtitles timed to the voice. Upload it on YouTube under Subtitles → Hindi → Upload file → With timing, and on Facebook in the video's Captions settings. Viewers watching on mute, and the YouTube search index, both read them.
+**Hashtags:** each description carries at most 15 (YouTube ignores all of them above 60, and shows
+the first three above the title).
 """
 
 if __name__ == "__main__":

@@ -1,51 +1,41 @@
-# Publishing kit: सूर्यवंश कथा
+# YouTube upload kit: सूर्यवंश कथा
 
-Everything to type into YouTube, Instagram, Facebook and TikTok: the channel name, the profile
-fields on each platform, and a ready post for each of the 84 episodes. Made by `make_publish_kit.py`
-from the scripts, so each caption quotes that episode's own opening lines and sources.
+Everything to type into YouTube: the channel set-up, the settings for every upload, the playlists,
+and for each of the 84 episodes its title, description (with chapters once the episode is made),
+tags, pinned comment and thumbnail words. Made by `make_publish_kit.py` from the scripts, so every
+description quotes that episode's own opening lines and sources.
+
+For every finished episode there is also a ready folder in `youtube-upload/EpNN/`: the thumbnail,
+the Hindi subtitle file, and `upload.txt` with all the text below for that episode.
 
 ## 1. Channel name
 
-**Recommended: सूर्यवंश कथा | Suryavansh Katha**, handle **@SuryavanshKatha** on every platform.
+**सूर्यवंश कथा | Suryavansh Katha**, handle **@SuryavanshKatha**. If the handle is taken, use `@SuryavanshKathaHindi`.
 
-Why this one:
-- It names exactly what the channel is: the story (कथा) of the Sun dynasty (सूर्यवंश), from Manu to Lav and Kush. Nothing in it promises more than the videos give.
-- Everyone who grew up with the Ramayan knows the word सूर्यवंश, so it reads as familiar and serious, not clickbait.
-- People search for it in both scripts: "सूर्यवंश" in Hindi, "Suryavansh" in English. The name has both.
-- **Tagline: "हर कथा, स्रोत के साथ।" (Every story, with its source.)** This is what makes the channel stand out. Most mythology channels never say where a story comes from. This one shows the source (भागवत 9.x, वाल्मीकि, तुलसीदास, लोक-परंपरा) on screen in every episode.
+Why: it says exactly what the channel is (the story of the Sun dynasty, from Manu to Lav and Kush),
+people search the word in both Hindi and English, and the tagline **"हर कथा, स्रोत के साथ।"** (Every story, with its source.)
+is what sets it apart: every episode shows its source on screen.
 
-Other names, if the handle is taken:
-
-| name | handle | the feel |
-| --- | --- | --- |
-| रघुकुल कथा \| Raghukul Katha | @RaghukulKatha | warm and devotional ("रघुकुल रीति सदा चली आई") |
-| वंश कथा \| Vansh Katha | @VanshKatha | short; leaves room for a Chandravansh series later |
-| सूर्यकुल \| Suryakul Stories | @SuryakulStories | modern, good for Reels and TikTok |
-| पुराण पथ \| Puran Path | @PuranPath | broad, if you later cover other Puranas |
-
-**Before you create anything,** check the handle is free on all four platforms on the same day, then register it everywhere at once. I can't check availability from here. If `@SuryavanshKatha` is taken anywhere, use the same fallback everywhere (for example `@SuryavanshKathaHindi`), so viewers find you by one name.
-
-## 2. YouTube
+## 2. Channel set-up (YouTube Studio → Customisation)
 
 | field | what to enter |
 | --- | --- |
-| Channel name (max 50) | `सूर्यवंश कथा | Suryavansh Katha` |
+| Name (max 50) | `सूर्यवंश कथा | Suryavansh Katha` |
 | Handle | `@SuryavanshKatha` |
-| Category (on each video) | Education (or Entertainment) |
-| Video language / caption language | Hindi |
-| Audience | **No, it's not made for kids** (it's family-friendly, but "made for kids" switches off comments and the mini-player) |
-| Altered or synthetic content | Tick **Yes** if a video shows realistic-looking people or events. For these painted illustrations it's usually not required, but the AI voice and AI images are already disclosed in every description below. |
-| Links (shown on banner) | Instagram, Facebook page, playlist "संपूर्ण शृंखला" |
-| Banner text (2560×1440, keep text in the middle 1546×423) | **सूर्यवंश कथा** · हर कथा, स्रोत के साथ। · नए एपिसोड हर मंगलवार और शुक्रवार |
-| Watermark | the channel logo (a sun disc with a bow, gold on deep red) |
-| Channel trailer | the first 60 seconds of Episode 1 (the fish and the flood) |
+| Picture | `youtube/profile-picture-800x800.png` (channel pictures zip) |
+| Banner | `youtube/banner-2560x1440.jpg` |
+| Video watermark | `youtube/watermark-150x150.png`, display: entire video |
+| Channel trailer | Episode 1 (the fish and the flood) |
+| Featured section | playlist "सूर्यवंश कथा: संपूर्ण शृंखला" |
+| Country | India |
+| Banner text | **सूर्यवंश कथा** · हर कथा, स्रोत के साथ। · नए एपिसोड हर मंगलवार और शुक्रवार (change the days in the banner if you post on other days) |
 
-**Description (paste into Customisation → Basic info):**
+**Description (Customisation → Basic info):**
 ```
 मनु की नाव को खींचती एक सुनहरी मछली से लेकर… श्रीराम के पुत्र लव और कुश तक।
 यह है सूर्यवंश की पूरी कथा: वह वंश जिसमें इक्ष्वाकु, मान्धाता, हरिश्चंद्र, सगर, भगीरथ, रघु, दशरथ और श्रीराम हुए।
 
-84 एपिसोड, लगभग 10-10 मिनट के, ठीक क्रम में।
+84 एपिसोड, लगभग 7 से 9 मिनट के, ठीक क्रम में।
 आधार: श्रीमद्भागवत महापुराण, स्कंध 9 (अध्याय 6 से 12), साथ में वाल्मीकि रामायण, कालिदास का रघुवंशम् और तुलसीदास का रामचरितमानस।
 
 हर कथा, स्रोत के साथ।
@@ -56,7 +46,7 @@ Other names, if the handle is taken:
 
 The story of the Sun dynasty (Suryavansh), from Manu to Lav and Kush, in Hindi.
 84 episodes based on the Bhagavata Purana (Book 9), with the source shown on screen in every episode.
-Narration: AI voice. Illustrations: AI-generated.
+Narration: AI voice (ElevenLabs). Illustrations: AI-generated (Google).
 ```
 
 **Channel keywords (Settings → Channel → Basic info):**
@@ -64,60 +54,41 @@ Narration: AI voice. Illustrations: AI-generated.
 सूर्यवंश, सूर्यवंश कथा, Suryavansh, Suryavanshi, भागवत पुराण, श्रीमद्भागवत, Bhagavata Purana, Srimad Bhagavatam, रामायण, Ramayan, श्रीराम, इक्ष्वाकु, रघुवंश, राजा हरिश्चंद्र, भगीरथ, गंगावतरण, पौराणिक कथा, हिंदू पौराणिक कथा, Indian mythology, Hindu mythology, Hindi kahani, धार्मिक कथा
 ```
 
-## 3. Instagram
+## 3. Upload defaults (Settings → Upload defaults, set once)
 
-| field | what to enter |
+| field | value |
 | --- | --- |
-| Name (searchable, max 30) | `सूर्यवंश कथा Suryavansh Katha` |
-| Username | `suryavanshkatha` |
-| Category (professional account) | Digital creator, or Education |
-| Link | your YouTube channel (or a link page with YouTube + Facebook) |
+| Category | Education |
+| Video language | Hindi |
+| Title and description language | Hindi |
+| Caption certification | None of these / not aired on TV |
+| Licence | Standard YouTube licence |
+| Comments | On, hold potentially inappropriate comments for review |
+| Shorts remixing | Allow |
 
-**Bio (max 150 characters):**
-```
-🔱 मनु से लव-कुश तक: सूर्यवंश की पूरी कथा
-📜 हर कथा, स्रोत के साथ।
-84 एपिसोड · भागवत स्कंध 9
-▶ पूरे एपिसोड YouTube पर 👇
-```
+## 4. For every upload
 
-Story highlights: one per king (इक्ष्वाकु, हरिश्चंद्र, भगीरथ, श्रीराम …), using each arc's best image as the cover.
+1. **Video:** the episode's MP4 (1920×1080, 25 fps).
+2. **Title, description, tags:** copy from the episode's section below (or its `upload.txt`).
+3. **Thumbnail:** `epNN-thumbnail-1280x720.jpg`.
+4. **Playlists:** the king's playlist and "सूर्यवंश कथा: संपूर्ण शृंखला".
+5. **Audience:** **No, it's not made for kids** (made-for-kids turns off comments and the mini-player).
+6. **Altered or synthetic content:** **No** for these painted illustrations (they don't show realistic people or events). The AI voice and AI pictures are disclosed in every description anyway.
+7. **Subtitles:** Subtitles → Add language Hindi → Upload file → *With timing* → `epNN.srt`.
+8. **Chapters:** already in the description (the timestamps make YouTube chapters automatically).
+9. **End screen:** "Video: best for viewer" + "Playlist: सूर्यवंश कथा: संपूर्ण शृंखला" + Subscribe, from the last 15 s.
+10. **Cards:** at the end of each episode, a card to the next episode once it's published.
+11. **Pinned comment:** post the episode's pinned comment from your channel and pin it.
+12. **Visibility:** Schedule (two episodes a week works well), so new episodes go out at the same time.
 
-## 4. Facebook page and TikTok
+**YouTube Shorts (optional):** cut a 30-60 s vertical clip from each episode's hook, upload it as a
+Short with the text in the episode's "YouTube Short" box, and set **Related video** to the full
+episode. Shorts bring new viewers to the long episodes.
 
-**Facebook page**
+**Hashtags:** each description carries at most 15 (YouTube ignores all of them above 60, and shows
+the first three above the title).
 
-| field | what to enter |
-| --- | --- |
-| Page name | `सूर्यवंश कथा | Suryavansh Katha` |
-| Username | `@SuryavanshKatha` |
-| Category | Education website, or Digital creator |
-| Intro (max 101) | `मनु से लव-कुश तक: सूर्यवंश की पूरी कथा, हिंदी में। हर कथा, स्रोत के साथ।` |
-| Action button | Watch video, pointing to the YouTube channel |
-
-Facebook "About" text: paste the same text as the YouTube description above.
-
-**TikTok**
-
-| field | what to enter |
-| --- | --- |
-| Name | `सूर्यवंश कथा` |
-| Username | `suryavanshkatha` |
-| Bio (max 80) | `मनु से लव-कुश तक 🔱 सूर्यवंश की कथा · हर कथा, स्रोत के साथ।` |
-| Link | YouTube channel (TikTok shows a bio link only on business accounts, or after 1,000 followers) |
-
-**TikTok is blocked in India.** It's only worth running if you want viewers abroad: Hindi speakers in the US, UK, Canada, the Gulf, Nepal and Fiji. For viewers in India, put that effort into Instagram Reels and YouTube Shorts.
-
-**How to post on each platform:**
-- **YouTube:** the full 16:9 episode. Then 2-3 Shorts (9:16, under 60 s) cut from the hook and the strongest scene, each linking to the full episode ("Related video" field).
-- **Instagram and TikTok:** the same 9:16 hook clips as Reels, with the captions below.
-- **Facebook:** upload the full video natively (it gets more reach than a YouTube link), and share the Reels there too.
-- **Hashtags:** YouTube ignores *all* hashtags if a video has more than 60, and shows the first 3 above the title, so each description below has 15 at most. Instagram now allows 5 per post, so each Reel caption has 5.
-- **Disclosure:** every description says the voice and images are AI-made. Keep that line. Viewers trust a channel that tells them, and every platform asks for it.
-
-**Subtitles:** for each episode whose narration is rendered, `captions/epNN.srt` holds Hindi subtitles timed to the voice. Upload it on YouTube under Subtitles → Hindi → Upload file → With timing, and on Facebook in the video's Captions settings. Viewers watching on mute, and the YouTube search index, both read them.
-
-## 5. Playlists (one per king, plus the full series)
+## 5. Playlists (create these once; add each episode to its king's playlist and to the full series)
 
 | playlist | title | description |
 | --- | --- | --- |
@@ -135,7 +106,7 @@ Facebook "About" text: paste the same text as the YouTube description above.
 
 ## 6. Every episode
 
-Each episode below has one block per platform. Copy the box as it is. Where the description says `[link]`, paste that episode's YouTube link once it is up. Chapters are filled in for episodes whose narration is already rendered; for the others, run `python3 make_publish_kit.py` again after rendering.
+Each episode below has everything for its YouTube upload. Copy each box as it is. Where the description says `[link]`, paste that episode's YouTube link once it is up. Chapters are filled in for episodes whose narration is already rendered; for the others, run `python3 make_publish_kit.py` again after rendering.
 
 ### E01 · इक्ष्वाकु से पहले: वह मछली जिसने सूर्यवंश को बचाया
 
@@ -186,39 +157,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E02 इक्ष्वाकु: छींक से जन्मा राजा, जिससे इक्ष्वाकु वंश चला
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-एक समय था… जब पूरी पृथ्वी जल में डूब गई थी।
-
-इक्ष्वाकु से पहले: वह मछली जिसने सूर्यवंश को बचाया
-सूर्यवंश कथा · एपिसोड 1 🔱
-
-📜 स्रोत: श्रीमद्भागवत 8.24 (मत्स्य अवतार)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#इक्ष्वाकु #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-एक समय था… जब पूरी पृथ्वी जल में डूब गई थी।
-न पर्वत बचे… न नगर… न राजा।
-बची थी… एक नाव। और उस नाव को खींच रही थी… एक मछली।
-सोचिए… जिस वंश में श्रीराम जन्मे… उस वंश का बीज… एक मछली की कृपा से बचा था।
-
-👉 इक्ष्वाकु से पहले: वह मछली जिसने सूर्यवंश को बचाया (सूर्यवंश कथा, एपिसोड 1)
-📜 स्रोत: श्रीमद्भागवत 8.24 (मत्स्य अवतार) · 9.1 (मनु, इला, सुद्युम्न) · 9.2 · 9.6
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #इक्ष्वाकु #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-एक समय था… जब पूरी पृथ्वी जल में डूब गई थी। 🔱 इक्ष्वाकु से पहले: वह मछली जिसने सूर्यवंश को बचाया | सूर्यवंश कथा · एपिसोड 1
-स्रोत: श्रीमद्भागवत 8.24 (मत्स्य अवतार) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#इक्ष्वाकु #सूर्यवंश #mythology #hinduism #storytime #hindi
+एक समय था… जब पूरी पृथ्वी जल में डूब गई थी। 🔱 इक्ष्वाकु से पहले: वह मछली जिसने सूर्यवंश को बचाया
+पूरी कथा: सूर्यवंश कथा · एपिसोड 1 (Related video में लिंक)
+#Shorts #सूर्यवंश #इक्ष्वाकु #पौराणिककथा
 ```
 
 ### E02 · इक्ष्वाकु: छींक से जन्मा राजा, जिससे इक्ष्वाकु वंश चला
@@ -271,38 +214,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E03 निमि: इक्ष्वाकु का वह पुत्र जो हर पलक में है
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-अयोध्या का नाम आपने सुना है। … लेकिन बहुत कम लोग जानते हैं कि अयोध्या के पहले राजा ने अपने ही ज्येष्ठ पुत्र को राज्य से क्यों निकाल दिया था।
-
-इक्ष्वाकु: छींक से जन्मा राजा, जिससे इक्ष्वाकु वंश चला
-सूर्यवंश कथा · एपिसोड 2 🔱
-
-📜 स्रोत: श्रीमद्भागवत महापुराण, नवम स्कंध, अध्याय 6 (श्रीमद्भा. 9.6)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#इक्ष्वाकु #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-अयोध्या का नाम आपने सुना है। … लेकिन बहुत कम लोग जानते हैं कि अयोध्या के पहले राजा ने अपने ही ज्येष्ठ पुत्र को राज्य से क्यों निकाल दिया था।
-कारण था… एक खरगोश।
-और जिस पुत्र को निकाला गया… उसी के वंश से श्रीराम को उनका एक नाम मिला।
-
-👉 इक्ष्वाकु: छींक से जन्मा राजा, जिससे इक्ष्वाकु वंश चला (सूर्यवंश कथा, एपिसोड 2)
-📜 स्रोत: श्रीमद्भागवत महापुराण, नवम स्कंध, अध्याय 6 (श्रीमद्भा. 9.6)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #इक्ष्वाकु #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-अयोध्या का नाम आपने सुना है। … लेकिन बहुत कम लोग जानते हैं कि अयोध्या के पहले राजा ने अपने ही ज्येष्ठ पुत्र को राज्य से क्यों निकाल दिया था। 🔱 इक्ष्वाकु: छींक से जन्मा राजा, जिससे इक्ष्वाकु वंश चला | सूर्यवंश कथा · एपिसोड 2
-स्रोत: श्रीमद्भागवत महापुराण, नवम स्कंध, अध्याय 6 (श्रीमद्भा. 9.6) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#इक्ष्वाकु #सूर्यवंश #mythology #hinduism #storytime #hindi
+अयोध्या का नाम आपने सुना है। … लेकिन बहुत कम लोग जानते हैं कि अयोध्या के पहले राजा ने अपने ही ज्येष्ठ पुत्र को राज्य से क्यों निकाल दिया था। 🔱 इक्ष्वाकु: छींक से जन्मा राजा, जिससे इक्ष्वाकु वंश चला
+पूरी कथा: सूर्यवंश कथा · एपिसोड 2 (Related video में लिंक)
+#Shorts #सूर्यवंश #इक्ष्वाकु #पौराणिककथा
 ```
 
 ### E03 · निमि: इक्ष्वाकु का वह पुत्र जो हर पलक में है
@@ -353,37 +269,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E04 काकुत्स्थ: वह राजकुमार जो इंद्र पर सवार हुआ
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-अभी… आपने पलक झपकाई।
-
-निमि: इक्ष्वाकु का वह पुत्र जो हर पलक में है
-सूर्यवंश कथा · एपिसोड 3 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.13 (निमि और मिथिला का वंश)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#इक्ष्वाकु #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-अभी… आपने पलक झपकाई।
-भागवत कहता है… उस पल में एक राजा रहता है। एक राजा, जिसने अपनी देह लौटाने से मना कर दिया था। उसका नाम था… निमि।
-
-👉 निमि: इक्ष्वाकु का वह पुत्र जो हर पलक में है (सूर्यवंश कथा, एपिसोड 3)
-📜 स्रोत: श्रीमद्भागवत 9.13 (निमि और मिथिला का वंश)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #इक्ष्वाकु #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-अभी… आपने पलक झपकाई। 🔱 निमि: इक्ष्वाकु का वह पुत्र जो हर पलक में है | सूर्यवंश कथा · एपिसोड 3
-स्रोत: श्रीमद्भागवत 9.13 (निमि और मिथिला का वंश) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#इक्ष्वाकु #सूर्यवंश #mythology #hinduism #storytime #hindi
+अभी… आपने पलक झपकाई। 🔱 निमि: इक्ष्वाकु का वह पुत्र जो हर पलक में है
+पूरी कथा: सूर्यवंश कथा · एपिसोड 3 (Related video में लिंक)
+#Shorts #सूर्यवंश #इक्ष्वाकु #पौराणिककथा
 ```
 
 ### E04 · काकुत्स्थ: वह राजकुमार जो इंद्र पर सवार हुआ
@@ -436,37 +326,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E05 धुंधुमार: एक दैत्य के विरुद्ध 21,000 पुत्र
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-देवताओं का राजा… इंद्र। … और एक दिन इंद्र को एक मनुष्य राजा की सवारी बनना पड़ा।
-
-काकुत्स्थ: वह राजकुमार जो इंद्र पर सवार हुआ
-सूर्यवंश कथा · एपिसोड 4 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.6
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#इक्ष्वाकु #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-देवताओं का राजा… इंद्र। … और एक दिन इंद्र को एक मनुष्य राजा की सवारी बनना पड़ा।
-और उस दिन जो नाम पड़ा… वही नाम हज़ारों वर्ष बाद श्रीराम को पुकारने के लिए इस्तेमाल हुआ।
-
-👉 काकुत्स्थ: वह राजकुमार जो इंद्र पर सवार हुआ (सूर्यवंश कथा, एपिसोड 4)
-📜 स्रोत: श्रीमद्भागवत 9.6 · संदर्भ: 9.9 (खट्वांग), 10.51 (मुचुकुंद), वाल्मीकि रामायण (दशरथ)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #इक्ष्वाकु #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-देवताओं का राजा… इंद्र। … और एक दिन इंद्र को एक मनुष्य राजा की सवारी बनना पड़ा। 🔱 काकुत्स्थ: वह राजकुमार जो इंद्र पर सवार हुआ | सूर्यवंश कथा · एपिसोड 4
-स्रोत: श्रीमद्भागवत 9.6 · पूरी कथा प्रोफ़ाइल के लिंक पर
-#इक्ष्वाकु #सूर्यवंश #mythology #hinduism #storytime #hindi
+देवताओं का राजा… इंद्र। … और एक दिन इंद्र को एक मनुष्य राजा की सवारी बनना पड़ा। 🔱 काकुत्स्थ: वह राजकुमार जो इंद्र पर सवार हुआ
+पूरी कथा: सूर्यवंश कथा · एपिसोड 4 (Related video में लिंक)
+#Shorts #सूर्यवंश #इक्ष्वाकु #पौराणिककथा
 ```
 
 ### E05 · धुंधुमार: एक दैत्य के विरुद्ध 21,000 पुत्र
@@ -521,39 +385,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E06 श्रावस्ती: वह नगर जो एक सूर्यवंशी राजा ने बसाया
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-रेत के नीचे… कोई सो रहा था।
-
-धुंधुमार: एक दैत्य के विरुद्ध 21,000 पुत्र
-सूर्यवंश कथा · एपिसोड 5 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.6 (मूल घटना)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#इक्ष्वाकु #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-रेत के नीचे… कोई सो रहा था।
-और जब वह साँस लेता… तो धरती काँप उठती। आकाश धुएँ से भर जाता।
-एक राजा अपने इक्कीस हज़ार पुत्रों को लेकर उसे जगाने गया।
-और लौटे… केवल तीन।
-
-👉 धुंधुमार: एक दैत्य के विरुद्ध 21,000 पुत्र (सूर्यवंश कथा, एपिसोड 5)
-📜 स्रोत: श्रीमद्भागवत 9.6 (मूल घटना) · महाभारत, वन पर्व (विस्तृत कथा)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #इक्ष्वाकु #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-रेत के नीचे… कोई सो रहा था। 🔱 धुंधुमार: एक दैत्य के विरुद्ध 21,000 पुत्र | सूर्यवंश कथा · एपिसोड 5
-स्रोत: श्रीमद्भागवत 9.6 (मूल घटना) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#इक्ष्वाकु #सूर्यवंश #mythology #hinduism #storytime #hindi
+रेत के नीचे… कोई सो रहा था। 🔱 धुंधुमार: एक दैत्य के विरुद्ध 21,000 पुत्र
+पूरी कथा: सूर्यवंश कथा · एपिसोड 5 (Related video में लिंक)
+#Shorts #सूर्यवंश #इक्ष्वाकु #पौराणिककथा
 ```
 
 ### E06 · श्रावस्ती: वह नगर जो एक सूर्यवंशी राजा ने बसाया
@@ -608,39 +444,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E07 मांधाता: पिता से जन्मे, इंद्र ने पाला
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-उत्तर प्रदेश में… कुछ पुरानी ईंटें हैं।
-
-श्रावस्ती: वह नगर जो एक सूर्यवंशी राजा ने बसाया
-सूर्यवंश कथा · एपिसोड 6 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.6 (शावस्त और श्रावस्ती)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#इक्ष्वाकु #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-उत्तर प्रदेश में… कुछ पुरानी ईंटें हैं।
-लोग उन्हें देखने दुनिया भर से आते हैं। श्रीलंका से, थाईलैंड से, जापान से।
-पर बहुत कम लोग जानते हैं… भागवत के अनुसार इस नगर को बसाया था… श्रीराम के एक पूर्वज ने।
-और इसी नगर का राजा बना… श्रीराम का पुत्र लव।
-
-👉 श्रावस्ती: वह नगर जो एक सूर्यवंशी राजा ने बसाया (सूर्यवंश कथा, एपिसोड 6)
-📜 स्रोत: श्रीमद्भागवत 9.6 (शावस्त और श्रावस्ती) · वाल्मीकि रामायण, उत्तर कांड (लव और श्रावस्ती) · बौद्ध और जैन परंपरा · पुरातत्व
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #इक्ष्वाकु #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-उत्तर प्रदेश में… कुछ पुरानी ईंटें हैं। 🔱 श्रावस्ती: वह नगर जो एक सूर्यवंशी राजा ने बसाया | सूर्यवंश कथा · एपिसोड 6
-स्रोत: श्रीमद्भागवत 9.6 (शावस्त और श्रावस्ती) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#इक्ष्वाकु #सूर्यवंश #mythology #hinduism #storytime #hindi
+उत्तर प्रदेश में… कुछ पुरानी ईंटें हैं। 🔱 श्रावस्ती: वह नगर जो एक सूर्यवंशी राजा ने बसाया
+पूरी कथा: सूर्यवंश कथा · एपिसोड 6 (Related video में लिंक)
+#Shorts #सूर्यवंश #इक्ष्वाकु #पौराणिककथा
 ```
 
 ### E07 · मांधाता: पिता से जन्मे, इंद्र ने पाला
@@ -694,39 +502,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E08 मांधाता के दो नाम: वह सम्राट जिससे दस्यु डरते थे
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-एक रात… एक राजा को प्यास लगी।
-
-मांधाता: पिता से जन्मे, इंद्र ने पाला
-सूर्यवंश कथा · एपिसोड 7 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.6
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#मान्धाता #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-एक रात… एक राजा को प्यास लगी।
-उसने एक कलश का जल पी लिया। वह जल… उसकी रानी के लिए अभिमंत्रित था।
-और कुछ महीनों बाद… उस राजा ने स्वयं… एक पुत्र को जन्म दिया।
-यह कोई लोककथा नहीं है। यह भागवत का नवम स्कंध है।
-
-👉 मांधाता: पिता से जन्मे, इंद्र ने पाला (सूर्यवंश कथा, एपिसोड 7)
-📜 स्रोत: श्रीमद्भागवत 9.6
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #मान्धाता #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-एक रात… एक राजा को प्यास लगी। 🔱 मांधाता: पिता से जन्मे, इंद्र ने पाला | सूर्यवंश कथा · एपिसोड 7
-स्रोत: श्रीमद्भागवत 9.6 · पूरी कथा प्रोफ़ाइल के लिंक पर
-#मान्धाता #सूर्यवंश #mythology #hinduism #storytime #hindi
+एक रात… एक राजा को प्यास लगी। 🔱 मांधाता: पिता से जन्मे, इंद्र ने पाला
+पूरी कथा: सूर्यवंश कथा · एपिसोड 7 (Related video में लिंक)
+#Shorts #सूर्यवंश #मान्धाता #पौराणिककथा
 ```
 
 ### E08 · मांधाता के दो नाम: वह सम्राट जिससे दस्यु डरते थे
@@ -781,39 +561,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E09 सौभरि: वह ऋषि जिसे एक मछली से ईर्ष्या हुई
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-भागवत में एक पंक्ति है।
-
-मांधाता के दो नाम: वह सम्राट जिससे दस्यु डरते थे
-सूर्यवंश कथा · एपिसोड 8 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.6 (साम्राज्य, यज्ञ, विवाह)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#मान्धाता #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-भागवत में एक पंक्ति है।
-"जहाँ से सूर्य उगता है… और जहाँ वह अस्त होता है… वह सारी भूमि मांधाता की कहलाती है।"
-इतना बड़ा सम्राट। इतना अजेय।
-और फिर भी… एक दिन… एक ही त्रिशूल के सामने… वह राख हो गया।
-
-👉 मांधाता के दो नाम: वह सम्राट जिससे दस्यु डरते थे (सूर्यवंश कथा, एपिसोड 8)
-📜 स्रोत: श्रीमद्भागवत 9.6 (साम्राज्य, यज्ञ, विवाह) · वाल्मीकि रामायण, उत्तर कांड (मांधाता और लवणासुर)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #मान्धाता #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-भागवत में एक पंक्ति है। 🔱 मांधाता के दो नाम: वह सम्राट जिससे दस्यु डरते थे | सूर्यवंश कथा · एपिसोड 8
-स्रोत: श्रीमद्भागवत 9.6 (साम्राज्य, यज्ञ, विवाह) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#मान्धाता #सूर्यवंश #mythology #hinduism #storytime #hindi
+भागवत में एक पंक्ति है। 🔱 मांधाता के दो नाम: वह सम्राट जिससे दस्यु डरते थे
+पूरी कथा: सूर्यवंश कथा · एपिसोड 8 (Related video में लिंक)
+#Shorts #सूर्यवंश #मान्धाता #पौराणिककथा
 ```
 
 ### E09 · सौभरि: वह ऋषि जिसे एक मछली से ईर्ष्या हुई
@@ -868,39 +620,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E10 सौभरि और मांधाता की 50 पुत्रियाँ
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-एक ऋषि… यमुना के जल के भीतर तप कर रहे थे।
-
-सौभरि: वह ऋषि जिसे एक मछली से ईर्ष्या हुई
-सूर्यवंश कथा · एपिसोड 9 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.6 (सौभरि का तप और इच्छा)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#मान्धाता #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-एक ऋषि… यमुना के जल के भीतर तप कर रहे थे।
-न भूख। न प्यास। न संसार।
-और एक दिन… उनकी आँख खुली। सामने एक मछली थी… अपने परिवार के साथ।
-और उस एक दृश्य ने… वर्षों का तप हिला दिया।
-
-👉 सौभरि: वह ऋषि जिसे एक मछली से ईर्ष्या हुई (सूर्यवंश कथा, एपिसोड 9)
-📜 स्रोत: श्रीमद्भागवत 9.6 (सौभरि का तप और इच्छा) · 10.17 (सौभरि और गरुड़) · ऋग्वेद, अष्टम मंडल (सोभरि काण्व)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #मान्धाता #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-एक ऋषि… यमुना के जल के भीतर तप कर रहे थे। 🔱 सौभरि: वह ऋषि जिसे एक मछली से ईर्ष्या हुई | सूर्यवंश कथा · एपिसोड 9
-स्रोत: श्रीमद्भागवत 9.6 (सौभरि का तप और इच्छा) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#मान्धाता #सूर्यवंश #mythology #hinduism #storytime #hindi
+एक ऋषि… यमुना के जल के भीतर तप कर रहे थे। 🔱 सौभरि: वह ऋषि जिसे एक मछली से ईर्ष्या हुई
+पूरी कथा: सूर्यवंश कथा · एपिसोड 9 (Related video में लिंक)
+#Shorts #सूर्यवंश #मान्धाता #पौराणिककथा
 ```
 
 ### E10 · सौभरि और मांधाता की 50 पुत्रियाँ
@@ -954,38 +678,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E11 सौभरि का पश्चाताप: जिसने इसे अपना पतन कहा
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-पचास राजकुमारियाँ।
-
-सौभरि और मांधाता की 50 पुत्रियाँ
-सूर्यवंश कथा · एपिसोड 10 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.6
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#मान्धाता #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-पचास राजकुमारियाँ।
-एक-एक करके… सबने एक ही व्यक्ति को चुना।
-और कुछ ही क्षण पहले… वही व्यक्ति… एक बूढ़ा, काँपता हुआ ऋषि था।
-
-👉 सौभरि और मांधाता की 50 पुत्रियाँ (सूर्यवंश कथा, एपिसोड 10)
-📜 स्रोत: श्रीमद्भागवत 9.6
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #मान्धाता #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-पचास राजकुमारियाँ। 🔱 सौभरि और मांधाता की 50 पुत्रियाँ | सूर्यवंश कथा · एपिसोड 10
-स्रोत: श्रीमद्भागवत 9.6 · पूरी कथा प्रोफ़ाइल के लिंक पर
-#मान्धाता #सूर्यवंश #mythology #hinduism #storytime #hindi
+पचास राजकुमारियाँ। 🔱 सौभरि और मांधाता की 50 पुत्रियाँ
+पूरी कथा: सूर्यवंश कथा · एपिसोड 10 (Related video में लिंक)
+#Shorts #सूर्यवंश #मान्धाता #पौराणिककथा
 ```
 
 ### E11 · सौभरि का पश्चाताप: जिसने इसे अपना पतन कहा
@@ -1039,38 +736,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E12 पुरुकुत्स और नर्मदा: पाताल भेजा गया एक राजा
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-उसके पास पचास पत्नियाँ थीं। महल थे। संतानें थीं।
-
-सौभरि का पश्चाताप: जिसने इसे अपना पतन कहा
-सूर्यवंश कथा · एपिसोड 11 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.6 (अंतिम भाग)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#मान्धाता #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-उसके पास पचास पत्नियाँ थीं। महल थे। संतानें थीं।
-और एक रात… उसने कहा…
-"मेरा पतन देखो।"
-
-👉 सौभरि का पश्चाताप: जिसने इसे अपना पतन कहा (सूर्यवंश कथा, एपिसोड 11)
-📜 स्रोत: श्रीमद्भागवत 9.6 (अंतिम भाग)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #मान्धाता #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-उसके पास पचास पत्नियाँ थीं। महल थे। संतानें थीं। 🔱 सौभरि का पश्चाताप: जिसने इसे अपना पतन कहा | सूर्यवंश कथा · एपिसोड 11
-स्रोत: श्रीमद्भागवत 9.6 (अंतिम भाग) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#मान्धाता #सूर्यवंश #mythology #hinduism #storytime #hindi
+उसके पास पचास पत्नियाँ थीं। महल थे। संतानें थीं। 🔱 सौभरि का पश्चाताप: जिसने इसे अपना पतन कहा
+पूरी कथा: सूर्यवंश कथा · एपिसोड 11 (Related video में लिंक)
+#Shorts #सूर्यवंश #मान्धाता #पौराणिककथा
 ```
 
 ### E12 · पुरुकुत्स और नर्मदा: पाताल भेजा गया एक राजा
@@ -1124,38 +794,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E13 मुचुकुंद: मांधाता का पुत्र जो युगों तक सोया
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-नागों के पास शक्ति थी। विष था। रत्न थे।
-
-पुरुकुत्स और नर्मदा: पाताल भेजा गया एक राजा
-सूर्यवंश कथा · एपिसोड 12 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.7
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#मान्धाता #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-नागों के पास शक्ति थी। विष था। रत्न थे।
-फिर भी एक युद्ध था… जो वे नहीं जीत सकते थे।
-तो उन्होंने एक मनुष्य राजा को पाताल बुलाया। और उसे लेने भेजा… एक नदी को।
-
-👉 पुरुकुत्स और नर्मदा: पाताल भेजा गया एक राजा (सूर्यवंश कथा, एपिसोड 12)
-📜 स्रोत: श्रीमद्भागवत 9.7 · विष्णु पुराण, अंश 4 (विस्तृत कथा) · ऋग्वेद 4.42 (पुरुकुत्स और त्रसदस्यु)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #मान्धाता #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-नागों के पास शक्ति थी। विष था। रत्न थे। 🔱 पुरुकुत्स और नर्मदा: पाताल भेजा गया एक राजा | सूर्यवंश कथा · एपिसोड 12
-स्रोत: श्रीमद्भागवत 9.7 · पूरी कथा प्रोफ़ाइल के लिंक पर
-#मान्धाता #सूर्यवंश #mythology #hinduism #storytime #hindi
+नागों के पास शक्ति थी। विष था। रत्न थे। 🔱 पुरुकुत्स और नर्मदा: पाताल भेजा गया एक राजा
+पूरी कथा: सूर्यवंश कथा · एपिसोड 12 (Related video में लिंक)
+#Shorts #सूर्यवंश #मान्धाता #पौराणिककथा
 ```
 
 ### E13 · मुचुकुंद: मांधाता का पुत्र जो युगों तक सोया
@@ -1209,39 +852,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E14 वह राजा जिसने मरते समय रावण को शाप दिया
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-एक गुफा में… एक राजा सो रहा था। युगों से।
-
-मुचुकुंद: मांधाता का पुत्र जो युगों तक सोया
-सूर्यवंश कथा · एपिसोड 13 🔱
-
-📜 स्रोत: श्रीमद्भागवत 10.51 (और 10.52 का आरंभ)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#मान्धाता #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-एक गुफा में… एक राजा सो रहा था। युगों से।
-और एक दिन… श्रीकृष्ण एक शत्रु को भगाते-भगाते… जानबूझकर… उसी गुफा में ले आए।
-शत्रु ने सोए हुए राजा को लात मारी।
-और राजा ने आँखें खोलीं।
-
-👉 मुचुकुंद: मांधाता का पुत्र जो युगों तक सोया (सूर्यवंश कथा, एपिसोड 13)
-📜 स्रोत: श्रीमद्भागवत 10.51 (और 10.52 का आरंभ)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #मान्धाता #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-एक गुफा में… एक राजा सो रहा था। युगों से। 🔱 मुचुकुंद: मांधाता का पुत्र जो युगों तक सोया | सूर्यवंश कथा · एपिसोड 13
-स्रोत: श्रीमद्भागवत 10.51 (और 10.52 का आरंभ) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#मान्धाता #सूर्यवंश #mythology #hinduism #storytime #hindi
+एक गुफा में… एक राजा सो रहा था। युगों से। 🔱 मुचुकुंद: मांधाता का पुत्र जो युगों तक सोया
+पूरी कथा: सूर्यवंश कथा · एपिसोड 13 (Related video में लिंक)
+#Shorts #सूर्यवंश #मान्धाता #पौराणिककथा
 ```
 
 ### E14 · वह राजा जिसने मरते समय रावण को शाप दिया
@@ -1296,39 +911,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E15 त्रिशंकु स्वर्ग क्यों नहीं पहुँचे
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-रावण ने एक राजा को युद्ध में गिरा दिया।
-
-वह राजा जिसने मरते समय रावण को शाप दिया
-सूर्यवंश कथा · एपिसोड 14 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.7 (वंश-रेखा)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#त्रिशंकु #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-रावण ने एक राजा को युद्ध में गिरा दिया।
-राजा मर रहा था। उसकी सेना नष्ट हो चुकी थी।
-और उसने अंतिम साँस में… रावण की ओर देखकर कहा…
-"मेरे ही वंश में एक राजकुमार जन्म लेगा… और वह तुम्हें मारेगा।"
-
-👉 वह राजा जिसने मरते समय रावण को शाप दिया (सूर्यवंश कथा, एपिसोड 14)
-📜 स्रोत: श्रीमद्भागवत 9.7 (वंश-रेखा) · वाल्मीकि रामायण, उत्तर कांड (रावण की दिग्विजय और अनरण्य का शाप)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #त्रिशंकु #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-रावण ने एक राजा को युद्ध में गिरा दिया। 🔱 वह राजा जिसने मरते समय रावण को शाप दिया | सूर्यवंश कथा · एपिसोड 14
-स्रोत: श्रीमद्भागवत 9.7 (वंश-रेखा) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#त्रिशंकु #सूर्यवंश #mythology #hinduism #storytime #hindi
+रावण ने एक राजा को युद्ध में गिरा दिया। 🔱 वह राजा जिसने मरते समय रावण को शाप दिया
+पूरी कथा: सूर्यवंश कथा · एपिसोड 14 (Related video में लिंक)
+#Shorts #सूर्यवंश #त्रिशंकु #पौराणिककथा
 ```
 
 ### E15 · त्रिशंकु स्वर्ग क्यों नहीं पहुँचे
@@ -1383,39 +970,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E16 त्रिशंकु के तीन पाप: नाम कहाँ से आया
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-एक राजा… शरीर सहित स्वर्ग गया।
-
-त्रिशंकु स्वर्ग क्यों नहीं पहुँचे
-सूर्यवंश कथा · एपिसोड 15 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.7 (त्रिशंकु के दो श्लोक)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#त्रिशंकु #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-एक राजा… शरीर सहित स्वर्ग गया।
-देवताओं ने उसे वहाँ से सिर के बल नीचे फेंक दिया।
-और वह गिरा भी नहीं।
-भागवत कहता है… वह आज भी आकाश में दिखाई देता है।
-
-👉 त्रिशंकु स्वर्ग क्यों नहीं पहुँचे (सूर्यवंश कथा, एपिसोड 15)
-📜 स्रोत: श्रीमद्भागवत 9.7 (त्रिशंकु के दो श्लोक) · परंपरा (आकाश में त्रिशंकु तारामंडल) · आधुनिक हिंदी प्रयोग
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #त्रिशंकु #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-एक राजा… शरीर सहित स्वर्ग गया। 🔱 त्रिशंकु स्वर्ग क्यों नहीं पहुँचे | सूर्यवंश कथा · एपिसोड 15
-स्रोत: श्रीमद्भागवत 9.7 (त्रिशंकु के दो श्लोक) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#त्रिशंकु #सूर्यवंश #mythology #hinduism #storytime #hindi
+एक राजा… शरीर सहित स्वर्ग गया। 🔱 त्रिशंकु स्वर्ग क्यों नहीं पहुँचे
+पूरी कथा: सूर्यवंश कथा · एपिसोड 15 (Related video में लिंक)
+#Shorts #सूर्यवंश #त्रिशंकु #पौराणिककथा
 ```
 
 ### E16 · त्रिशंकु के तीन पाप: नाम कहाँ से आया
@@ -1470,39 +1029,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E17 वसिष्ठ के पुत्रों ने मना किया, विश्वामित्र ने हाँ कहा
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-एक राजकुमार ने… विवाह-मंडप से… किसी और की दुल्हन उठा ली।
-
-त्रिशंकु के तीन पाप: नाम कहाँ से आया
-सूर्यवंश कथा · एपिसोड 16 🔱
-
-📜 स्रोत: हरिवंश (हरिवंश पर्व, सत्यव्रत की कथा)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#त्रिशंकु #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-एक राजकुमार ने… विवाह-मंडप से… किसी और की दुल्हन उठा ली।
-उसके पिता ने उसे राज्य से निकाल दिया।
-और फिर… बारह वर्ष के अकाल में… उसी निकाले हुए राजकुमार ने… एक ऋषि के भूखे परिवार को बचाया।
-एक ही व्यक्ति। पाप भी। पुण्य भी।
-
-👉 त्रिशंकु के तीन पाप: नाम कहाँ से आया (सूर्यवंश कथा, एपिसोड 16)
-📜 स्रोत: हरिवंश (हरिवंश पर्व, सत्यव्रत की कथा) · संदर्भ: श्रीमद्भागवत 9.7
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #त्रिशंकु #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-एक राजकुमार ने… विवाह-मंडप से… किसी और की दुल्हन उठा ली। 🔱 त्रिशंकु के तीन पाप: नाम कहाँ से आया | सूर्यवंश कथा · एपिसोड 16
-स्रोत: हरिवंश (हरिवंश पर्व, सत्यव्रत की कथा) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#त्रिशंकु #सूर्यवंश #mythology #hinduism #storytime #hindi
+एक राजकुमार ने… विवाह-मंडप से… किसी और की दुल्हन उठा ली। 🔱 त्रिशंकु के तीन पाप: नाम कहाँ से आया
+पूरी कथा: सूर्यवंश कथा · एपिसोड 16 (Related video में लिंक)
+#Shorts #सूर्यवंश #त्रिशंकु #पौराणिककथा
 ```
 
 ### E17 · वसिष्ठ के पुत्रों ने मना किया, विश्वामित्र ने हाँ कहा
@@ -1558,39 +1089,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E18 विश्वामित्र ने एक राजा के लिए दूसरा स्वर्ग बनाया
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-रात को वह एक राजा था।
-
-वसिष्ठ के पुत्रों ने मना किया, विश्वामित्र ने हाँ कहा
-सूर्यवंश कथा · एपिसोड 17 🔱
-
-📜 स्रोत: वाल्मीकि रामायण, बाल कांड (त्रिशंकु की कथा, शतानंद द्वारा सुनाई गई)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#त्रिशंकु #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-रात को वह एक राजा था।
-सुबह जब उठा… तो उसका रंग बदल चुका था। वस्त्र काले थे। आभूषण लोहे के। गले में श्मशान के फूलों की माला।
-उसके मंत्री उसे देखकर भाग गए। प्रजा ने मुँह फेर लिया।
-एक रात। एक शाप। और एक राजा… चांडाल।
-
-👉 वसिष्ठ के पुत्रों ने मना किया, विश्वामित्र ने हाँ कहा (सूर्यवंश कथा, एपिसोड 17)
-📜 स्रोत: वाल्मीकि रामायण, बाल कांड (त्रिशंकु की कथा, शतानंद द्वारा सुनाई गई) · संदर्भ: श्रीमद्भागवत 9.7
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #त्रिशंकु #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-रात को वह एक राजा था। 🔱 वसिष्ठ के पुत्रों ने मना किया, विश्वामित्र ने हाँ कहा | सूर्यवंश कथा · एपिसोड 17
-स्रोत: वाल्मीकि रामायण, बाल कांड (त्रिशंकु की कथा, शतानंद द्वारा सुनाई गई) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#त्रिशंकु #सूर्यवंश #mythology #hinduism #storytime #hindi
+रात को वह एक राजा था। 🔱 वसिष्ठ के पुत्रों ने मना किया, विश्वामित्र ने हाँ कहा
+पूरी कथा: सूर्यवंश कथा · एपिसोड 17 (Related video में लिंक)
+#Shorts #सूर्यवंश #त्रिशंकु #पौराणिककथा
 ```
 
 ### E18 · विश्वामित्र ने एक राजा के लिए दूसरा स्वर्ग बनाया
@@ -1646,39 +1149,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E19 वसिष्ठ बनाम विश्वामित्र: झगड़ा कैसे शुरू हुआ
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-देवताओं ने एक राजा को स्वर्ग में आने नहीं दिया।
-
-विश्वामित्र ने एक राजा के लिए दूसरा स्वर्ग बनाया
-सूर्यवंश कथा · एपिसोड 18 🔱
-
-📜 स्रोत: वाल्मीकि रामायण, बाल कांड (त्रिशंकु का यज्ञ और नया स्वर्ग)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#त्रिशंकु #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-देवताओं ने एक राजा को स्वर्ग में आने नहीं दिया।
-तो एक ऋषि ने कहा… "ठीक है। मैं उसके लिए दूसरा स्वर्ग बना दूँगा।"
-और उसने आकाश में… नए तारे जलाने शुरू कर दिए।
-नए सप्तर्षि। नए नक्षत्र। और फिर… वह एक नया इंद्र बनाने वाला था।
-
-👉 विश्वामित्र ने एक राजा के लिए दूसरा स्वर्ग बनाया (सूर्यवंश कथा, एपिसोड 18)
-📜 स्रोत: वाल्मीकि रामायण, बाल कांड (त्रिशंकु का यज्ञ और नया स्वर्ग) · संदर्भ: श्रीमद्भागवत 9.7
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #त्रिशंकु #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-देवताओं ने एक राजा को स्वर्ग में आने नहीं दिया। 🔱 विश्वामित्र ने एक राजा के लिए दूसरा स्वर्ग बनाया | सूर्यवंश कथा · एपिसोड 18
-स्रोत: वाल्मीकि रामायण, बाल कांड (त्रिशंकु का यज्ञ और नया स्वर्ग) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#त्रिशंकु #सूर्यवंश #mythology #hinduism #storytime #hindi
+देवताओं ने एक राजा को स्वर्ग में आने नहीं दिया। 🔱 विश्वामित्र ने एक राजा के लिए दूसरा स्वर्ग बनाया
+पूरी कथा: सूर्यवंश कथा · एपिसोड 18 (Related video में लिंक)
+#Shorts #सूर्यवंश #त्रिशंकु #पौराणिककथा
 ```
 
 ### E19 · वसिष्ठ बनाम विश्वामित्र: झगड़ा कैसे शुरू हुआ
@@ -1733,39 +1208,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E20 हरिश्चंद्र का वरुण से सौदा: पहले पुत्र, फिर बलि
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-एक राजा ने… एक ऋषि पर… सारे दिव्य अस्त्र चला दिए।
-
-वसिष्ठ बनाम विश्वामित्र: झगड़ा कैसे शुरू हुआ
-सूर्यवंश कथा · एपिसोड 19 🔱
-
-📜 स्रोत: वाल्मीकि रामायण, बाल कांड (शबला की कथा और विश्वामित्र का ब्रह्मर्षि बनना)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#त्रिशंकु #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-एक राजा ने… एक ऋषि पर… सारे दिव्य अस्त्र चला दिए।
-अग्नि-अस्त्र। वरुण-अस्त्र। और अंत में… ब्रह्मास्त्र।
-और ऋषि के हाथ में था… केवल एक लकड़ी का दंड।
-हर अस्त्र… उस दंड में समा गया।
-
-👉 वसिष्ठ बनाम विश्वामित्र: झगड़ा कैसे शुरू हुआ (सूर्यवंश कथा, एपिसोड 19)
-📜 स्रोत: वाल्मीकि रामायण, बाल कांड (शबला की कथा और विश्वामित्र का ब्रह्मर्षि बनना) · श्रीमद्भागवत 9.15-16 (विश्वामित्र का वंश) · ऋग्वेद 3.62.10 (गायत्री मंत्र)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #त्रिशंकु #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-एक राजा ने… एक ऋषि पर… सारे दिव्य अस्त्र चला दिए। 🔱 वसिष्ठ बनाम विश्वामित्र: झगड़ा कैसे शुरू हुआ | सूर्यवंश कथा · एपिसोड 19
-स्रोत: वाल्मीकि रामायण, बाल कांड (शबला की कथा और विश्वामित्र का ब्रह्मर्षि बनना) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#त्रिशंकु #सूर्यवंश #mythology #hinduism #storytime #hindi
+एक राजा ने… एक ऋषि पर… सारे दिव्य अस्त्र चला दिए। 🔱 वसिष्ठ बनाम विश्वामित्र: झगड़ा कैसे शुरू हुआ
+पूरी कथा: सूर्यवंश कथा · एपिसोड 19 (Related video में लिंक)
+#Shorts #सूर्यवंश #त्रिशंकु #पौराणिककथा
 ```
 
 ### E20 · हरिश्चंद्र का वरुण से सौदा: पहले पुत्र, फिर बलि
@@ -1820,39 +1267,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E21 हरिश्चंद्र की पाँच टालमटोल: वरुण को दिया वचन
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-एक राजा… पुत्र के लिए तड़प रहा था।
-
-हरिश्चंद्र का वरुण से सौदा: पहले पुत्र, फिर बलि
-सूर्यवंश कथा · एपिसोड 20 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.7
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#राजाहरिश्चंद्र #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-एक राजा… पुत्र के लिए तड़प रहा था।
-उसने जल के देवता वरुण से कहा… "मुझे एक पुत्र दीजिए।"
-और फिर उसने एक ऐसा वचन दिया… जिसे सुनकर रोंगटे खड़े हो जाते हैं…
-"और उसी पुत्र से… मैं आपके लिए यज्ञ करूँगा। उसकी बलि दूँगा।"
-
-👉 हरिश्चंद्र का वरुण से सौदा: पहले पुत्र, फिर बलि (सूर्यवंश कथा, एपिसोड 20)
-📜 स्रोत: श्रीमद्भागवत 9.7 · ऐतरेय ब्राह्मण 7.13 (नारद के पुत्र-विषयक वचन, शुनःशेप-आख्यान का आरंभ)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #राजाहरिश्चंद्र #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-एक राजा… पुत्र के लिए तड़प रहा था। 🔱 हरिश्चंद्र का वरुण से सौदा: पहले पुत्र, फिर बलि | सूर्यवंश कथा · एपिसोड 20
-स्रोत: श्रीमद्भागवत 9.7 · पूरी कथा प्रोफ़ाइल के लिंक पर
-#राजाहरिश्चंद्र #सूर्यवंश #mythology #hinduism #storytime #hindi
+एक राजा… पुत्र के लिए तड़प रहा था। 🔱 हरिश्चंद्र का वरुण से सौदा: पहले पुत्र, फिर बलि
+पूरी कथा: सूर्यवंश कथा · एपिसोड 20 (Related video में लिंक)
+#Shorts #सूर्यवंश #राजाहरिश्चंद्र #पौराणिककथा
 ```
 
 ### E21 · हरिश्चंद्र की पाँच टालमटोल: वरुण को दिया वचन
@@ -1908,39 +1327,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E22 रोहित के छह वर्ष वन में: चलते रहो
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-एक देवता… पाँच बार एक राजा के द्वार पर आए।
-
-हरिश्चंद्र की पाँच टालमटोल: वरुण को दिया वचन
-सूर्यवंश कथा · एपिसोड 21 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.7
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#राजाहरिश्चंद्र #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-एक देवता… पाँच बार एक राजा के द्वार पर आए।
-हर बार राजा ने कहा… "थोड़ा और समय।"
-और हर बार… देवता मान गए।
-पर छठी बार… देवता नहीं आए। और जो आया… वह उससे भी भयानक था।
-
-👉 हरिश्चंद्र की पाँच टालमटोल: वरुण को दिया वचन (सूर्यवंश कथा, एपिसोड 21)
-📜 स्रोत: श्रीमद्भागवत 9.7 · ऐतरेय ब्राह्मण 7.14 (वही पाँच टालमटोल, राजा के कारणों सहित)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #राजाहरिश्चंद्र #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-एक देवता… पाँच बार एक राजा के द्वार पर आए। 🔱 हरिश्चंद्र की पाँच टालमटोल: वरुण को दिया वचन | सूर्यवंश कथा · एपिसोड 21
-स्रोत: श्रीमद्भागवत 9.7 · पूरी कथा प्रोफ़ाइल के लिंक पर
-#राजाहरिश्चंद्र #सूर्यवंश #mythology #hinduism #storytime #hindi
+एक देवता… पाँच बार एक राजा के द्वार पर आए। 🔱 हरिश्चंद्र की पाँच टालमटोल: वरुण को दिया वचन
+पूरी कथा: सूर्यवंश कथा · एपिसोड 21 (Related video में लिंक)
+#Shorts #सूर्यवंश #राजाहरिश्चंद्र #पौराणिककथा
 ```
 
 ### E22 · रोहित के छह वर्ष वन में: चलते रहो
@@ -1996,39 +1387,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E23 शुनःशेप: वह बालक जो दूसरे की जगह मरने के लिए खरीदा गया
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-"जो बैठा है… उसका भाग्य भी बैठ जाता है।
-
-रोहित के छह वर्ष वन में: चलते रहो
-सूर्यवंश कथा · एपिसोड 22 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.7
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#राजाहरिश्चंद्र #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-"जो बैठा है… उसका भाग्य भी बैठ जाता है।
-जो खड़ा होता है… उसका भाग्य भी खड़ा होता है।
-जो सोता है… उसका भाग्य सो जाता है।
-और जो चलता है… उसका भाग्य भी चलता है।
-
-👉 रोहित के छह वर्ष वन में: चलते रहो (सूर्यवंश कथा, एपिसोड 22)
-📜 स्रोत: श्रीमद्भागवत 9.7 · ऐतरेय ब्राह्मण 7.15 (इंद्र के "चरैवेति" श्लोक)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #राजाहरिश्चंद्र #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-"जो बैठा है… उसका भाग्य भी बैठ जाता है। 🔱 रोहित के छह वर्ष वन में: चलते रहो | सूर्यवंश कथा · एपिसोड 22
-स्रोत: श्रीमद्भागवत 9.7 · पूरी कथा प्रोफ़ाइल के लिंक पर
-#राजाहरिश्चंद्र #सूर्यवंश #mythology #hinduism #storytime #hindi
+"जो बैठा है… उसका भाग्य भी बैठ जाता है। 🔱 रोहित के छह वर्ष वन में: चलते रहो
+पूरी कथा: सूर्यवंश कथा · एपिसोड 22 (Related video में लिंक)
+#Shorts #सूर्यवंश #राजाहरिश्चंद्र #पौराणिककथा
 ```
 
 ### E23 · शुनःशेप: वह बालक जो दूसरे की जगह मरने के लिए खरीदा गया
@@ -2084,39 +1447,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E24 दूसरा हरिश्चंद्र, भाग 1: जिसने राज्य दान कर दिया
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-एक बालक… यज्ञ के खंभे से बँधा था।
-
-शुनःशेप: वह बालक जो दूसरे की जगह मरने के लिए खरीदा गया
-सूर्यवंश कथा · एपिसोड 23 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.7 (यज्ञ)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#राजाहरिश्चंद्र #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-एक बालक… यज्ञ के खंभे से बँधा था।
-कोई उसे बाँधने को तैयार नहीं था। तो उसके पिता ने… सौ गायें और लेकर… उसे बाँधा।
-कोई उसे मारने को तैयार नहीं था। तो उसके पिता ने… सौ गायें और लेकर… छुरी तेज़ करनी शुरू की।
-और उस बालक ने… आँखें बंद कीं… और देवताओं को पुकारा।
-
-👉 शुनःशेप: वह बालक जो दूसरे की जगह मरने के लिए खरीदा गया (सूर्यवंश कथा, एपिसोड 23)
-📜 स्रोत: श्रीमद्भागवत 9.7 (यज्ञ) · 9.16 (देवरात) · ऐतरेय ब्राह्मण 7.15-18 (शुनःशेप-आख्यान) · वाल्मीकि रामायण, बाल कांड (अलग संस्करण)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #राजाहरिश्चंद्र #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-एक बालक… यज्ञ के खंभे से बँधा था। 🔱 शुनःशेप: वह बालक जो दूसरे की जगह मरने के लिए खरीदा गया | सूर्यवंश कथा · एपिसोड 23
-स्रोत: श्रीमद्भागवत 9.7 (यज्ञ) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#राजाहरिश्चंद्र #सूर्यवंश #mythology #hinduism #storytime #hindi
+एक बालक… यज्ञ के खंभे से बँधा था। 🔱 शुनःशेप: वह बालक जो दूसरे की जगह मरने के लिए खरीदा गया
+पूरी कथा: सूर्यवंश कथा · एपिसोड 23 (Related video में लिंक)
+#Shorts #सूर्यवंश #राजाहरिश्चंद्र #पौराणिककथा
 ```
 
 ### E24 · दूसरा हरिश्चंद्र, भाग 1: जिसने राज्य दान कर दिया
@@ -2172,39 +1507,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E25 दूसरा हरिश्चंद्र, भाग 2: श्मशान
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-एक राजा ने… एक वचन के लिए… अपना पूरा राज्य दान कर दिया।
-
-दूसरा हरिश्चंद्र, भाग 1: जिसने राज्य दान कर दिया
-सूर्यवंश कथा · एपिसोड 24 🔱
-
-📜 स्रोत: मार्कंडेय पुराण, अध्याय 7-8 (हरिश्चंद्रोपाख्यान)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#राजाहरिश्चंद्र #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-एक राजा ने… एक वचन के लिए… अपना पूरा राज्य दान कर दिया।
-फिर ऋषि ने कहा… "अब दक्षिणा दो।"
-राजा के पास कुछ नहीं बचा था। न राज्य। न धन। न घर।
-तो उसने अपनी पत्नी को बेचा। अपने पुत्र को बेचा।
-
-👉 दूसरा हरिश्चंद्र, भाग 1: जिसने राज्य दान कर दिया (सूर्यवंश कथा, एपिसोड 24)
-📜 स्रोत: मार्कंडेय पुराण, अध्याय 7-8 (हरिश्चंद्रोपाख्यान) · यह कथा भागवत में नहीं है
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #राजाहरिश्चंद्र #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-एक राजा ने… एक वचन के लिए… अपना पूरा राज्य दान कर दिया। 🔱 दूसरा हरिश्चंद्र, भाग 1: जिसने राज्य दान कर दिया | सूर्यवंश कथा · एपिसोड 24
-स्रोत: मार्कंडेय पुराण, अध्याय 7-8 (हरिश्चंद्रोपाख्यान) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#राजाहरिश्चंद्र #सूर्यवंश #mythology #hinduism #storytime #hindi
+एक राजा ने… एक वचन के लिए… अपना पूरा राज्य दान कर दिया। 🔱 दूसरा हरिश्चंद्र, भाग 1: जिसने राज्य दान कर दिया
+पूरी कथा: सूर्यवंश कथा · एपिसोड 24 (Related video में लिंक)
+#Shorts #सूर्यवंश #राजाहरिश्चंद्र #पौराणिककथा
 ```
 
 ### E25 · दूसरा हरिश्चंद्र, भाग 2: श्मशान
@@ -2260,39 +1567,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E26 दो ऋषि एक राजा के लिए पक्षी बनकर लड़े
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-आधी रात। श्मशान।
-
-दूसरा हरिश्चंद्र, भाग 2: श्मशान
-सूर्यवंश कथा · एपिसोड 25 🔱
-
-📜 स्रोत: मार्कंडेय पुराण, अध्याय 8 (हरिश्चंद्रोपाख्यान)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#राजाहरिश्चंद्र #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-आधी रात। श्मशान।
-एक स्त्री आई… अपने मृत पुत्र को गोद में लिए। चिता के लिए।
-और श्मशान के रखवाले ने कहा… "पहले कर दो।"
-स्त्री ने उसकी ओर देखा। और पहचान लिया।
-
-👉 दूसरा हरिश्चंद्र, भाग 2: श्मशान (सूर्यवंश कथा, एपिसोड 25)
-📜 स्रोत: मार्कंडेय पुराण, अध्याय 8 (हरिश्चंद्रोपाख्यान) · गांधी, "सत्य के प्रयोग" (आत्मकथा), भाग 1 · यह कथा भागवत में नहीं है
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #राजाहरिश्चंद्र #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-आधी रात। श्मशान। 🔱 दूसरा हरिश्चंद्र, भाग 2: श्मशान | सूर्यवंश कथा · एपिसोड 25
-स्रोत: मार्कंडेय पुराण, अध्याय 8 (हरिश्चंद्रोपाख्यान) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#राजाहरिश्चंद्र #सूर्यवंश #mythology #hinduism #storytime #hindi
+आधी रात। श्मशान। 🔱 दूसरा हरिश्चंद्र, भाग 2: श्मशान
+पूरी कथा: सूर्यवंश कथा · एपिसोड 25 (Related video में लिंक)
+#Shorts #सूर्यवंश #राजाहरिश्चंद्र #पौराणिककथा
 ```
 
 ### E26 · दो ऋषि एक राजा के लिए पक्षी बनकर लड़े
@@ -2348,39 +1627,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E27 रोहित से बाहुक तक: सूर्यवंश ने अयोध्या कैसे खोई
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-दो ऋषि।
-
-दो ऋषि एक राजा के लिए पक्षी बनकर लड़े
-सूर्यवंश कथा · एपिसोड 26 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.7 (युद्ध का उल्लेख)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#राजाहरिश्चंद्र #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-दो ऋषि।
-एक ने दूसरे को शाप दिया… "तुम बगुला बन जाओ।"
-दूसरे ने उत्तर में शाप दिया… "और तुम आडी पक्षी।"
-और फिर… दो विशाल पक्षी… आकाश में भिड़ गए। पर्वत हिले। समुद्र उफने। और यह युद्ध… वर्षों चला।
-
-👉 दो ऋषि एक राजा के लिए पक्षी बनकर लड़े (सूर्यवंश कथा, एपिसोड 26)
-📜 स्रोत: श्रीमद्भागवत 9.7 (युद्ध का उल्लेख) · मार्कंडेय पुराण, अध्याय 9 (आडी-बक युद्ध का विस्तार)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #राजाहरिश्चंद्र #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-दो ऋषि। 🔱 दो ऋषि एक राजा के लिए पक्षी बनकर लड़े | सूर्यवंश कथा · एपिसोड 26
-स्रोत: श्रीमद्भागवत 9.7 (युद्ध का उल्लेख) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#राजाहरिश्चंद्र #सूर्यवंश #mythology #hinduism #storytime #hindi
+दो ऋषि। 🔱 दो ऋषि एक राजा के लिए पक्षी बनकर लड़े
+पूरी कथा: सूर्यवंश कथा · एपिसोड 26 (Related video में लिंक)
+#Shorts #सूर्यवंश #राजाहरिश्चंद्र #पौराणिककथा
 ```
 
 ### E27 · रोहित से बाहुक तक: सूर्यवंश ने अयोध्या कैसे खोई
@@ -2436,39 +1687,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E28 सगर: वह राजा जो विष के साथ जन्मा
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-इक्ष्वाकु का वंश। मांधाता का वंश। हरिश्चंद्र का वंश।
-
-रोहित से बाहुक तक: सूर्यवंश ने अयोध्या कैसे खोई
-सूर्यवंश कथा · एपिसोड 27 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.8 (वंश-रेखा और बाहुक का पराजय)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#राजासगर #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-इक्ष्वाकु का वंश। मांधाता का वंश। हरिश्चंद्र का वंश।
-और एक दिन… इसी वंश के एक राजा को… अपनी ही अयोध्या छोड़कर भागना पड़ा।
-शत्रुओं ने राज्य छीन लिया। और राजा… अपनी गर्भवती रानी के साथ… वन में मरा।
-सूर्यवंश… लगभग समाप्त हो गया था।
-
-👉 रोहित से बाहुक तक: सूर्यवंश ने अयोध्या कैसे खोई (सूर्यवंश कथा, एपिसोड 27)
-📜 स्रोत: श्रीमद्भागवत 9.8 (वंश-रेखा और बाहुक का पराजय) · 9.15-9.16 और 9.23 (हैहय वंश) · विष्णु पुराण, अंश 4 · परंपरा (रोहतास)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #राजासगर #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-इक्ष्वाकु का वंश। मांधाता का वंश। हरिश्चंद्र का वंश। 🔱 रोहित से बाहुक तक: सूर्यवंश ने अयोध्या कैसे खोई | सूर्यवंश कथा · एपिसोड 27
-स्रोत: श्रीमद्भागवत 9.8 (वंश-रेखा और बाहुक का पराजय) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#राजासगर #सूर्यवंश #mythology #hinduism #storytime #hindi
+इक्ष्वाकु का वंश। मांधाता का वंश। हरिश्चंद्र का वंश। 🔱 रोहित से बाहुक तक: सूर्यवंश ने अयोध्या कैसे खोई
+पूरी कथा: सूर्यवंश कथा · एपिसोड 27 (Related video में लिंक)
+#Shorts #सूर्यवंश #राजासगर #पौराणिककथा
 ```
 
 ### E28 · सगर: वह राजा जो विष के साथ जन्मा
@@ -2524,39 +1747,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E29 सगर की विजय: उसने शत्रुओं के सिर क्यों मुँडवाए
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-एक गर्भवती रानी को… उसकी सौतों ने विष दिया।
-
-सगर: वह राजा जो विष के साथ जन्मा
-सूर्यवंश कथा · एपिसोड 28 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.8
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#राजासगर #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-एक गर्भवती रानी को… उसकी सौतों ने विष दिया।
-ताकि गर्भ में पलता बालक… कभी जन्म न ले।
-पर बालक जन्मा।
-और जन्मा… उसी विष के साथ।
-
-👉 सगर: वह राजा जो विष के साथ जन्मा (सूर्यवंश कथा, एपिसोड 28)
-📜 स्रोत: श्रीमद्भागवत 9.8 · महाभारत, आदि पर्व (और्व की कथा)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #राजासगर #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-एक गर्भवती रानी को… उसकी सौतों ने विष दिया। 🔱 सगर: वह राजा जो विष के साथ जन्मा | सूर्यवंश कथा · एपिसोड 28
-स्रोत: श्रीमद्भागवत 9.8 · पूरी कथा प्रोफ़ाइल के लिंक पर
-#राजासगर #सूर्यवंश #mythology #hinduism #storytime #hindi
+एक गर्भवती रानी को… उसकी सौतों ने विष दिया। 🔱 सगर: वह राजा जो विष के साथ जन्मा
+पूरी कथा: सूर्यवंश कथा · एपिसोड 28 (Related video में लिंक)
+#Shorts #सूर्यवंश #राजासगर #पौराणिककथा
 ```
 
 ### E29 · सगर की विजय: उसने शत्रुओं के सिर क्यों मुँडवाए
@@ -2612,39 +1807,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E30 सगर की दो रानियाँ: एक पुत्र या साठ हज़ार
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-एक राजा ने… अपने पिता का राज्य छीनने वालों को… युद्ध में हरा दिया।
-
-सगर की विजय: उसने शत्रुओं के सिर क्यों मुँडवाए
-सूर्यवंश कथा · एपिसोड 29 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.8
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#राजासगर #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-एक राजा ने… अपने पिता का राज्य छीनने वालों को… युद्ध में हरा दिया।
-वे सब उसके सामने थे। घुटनों पर। उसका सबसे बड़ा प्रतिशोध… एक तलवार की दूरी पर।
-और उसने… उन्हें मारा नहीं।
-उसने उनके… सिर मुँडवा दिए।
-
-👉 सगर की विजय: उसने शत्रुओं के सिर क्यों मुँडवाए (सूर्यवंश कथा, एपिसोड 29)
-📜 स्रोत: श्रीमद्भागवत 9.8 · विष्णु पुराण, अंश 4 (विस्तृत विवरण और वसिष्ठ की भूमिका)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #राजासगर #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-एक राजा ने… अपने पिता का राज्य छीनने वालों को… युद्ध में हरा दिया। 🔱 सगर की विजय: उसने शत्रुओं के सिर क्यों मुँडवाए | सूर्यवंश कथा · एपिसोड 29
-स्रोत: श्रीमद्भागवत 9.8 · पूरी कथा प्रोफ़ाइल के लिंक पर
-#राजासगर #सूर्यवंश #mythology #hinduism #storytime #hindi
+एक राजा ने… अपने पिता का राज्य छीनने वालों को… युद्ध में हरा दिया। 🔱 सगर की विजय: उसने शत्रुओं के सिर क्यों मुँडवाए
+पूरी कथा: सूर्यवंश कथा · एपिसोड 29 (Related video में लिंक)
+#Shorts #सूर्यवंश #राजासगर #पौराणिककथा
 ```
 
 ### E30 · सगर की दो रानियाँ: एक पुत्र या साठ हज़ार
@@ -2701,39 +1868,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E31 साठ हज़ार राजकुमारों ने कपिल को चोर कहा
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-एक ऋषि ने दो रानियों से कहा…
-
-सगर की दो रानियाँ: एक पुत्र या साठ हज़ार
-सूर्यवंश कथा · एपिसोड 30 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.8 (दो रानियाँ, इंद्र द्वारा घोड़े की चोरी)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#राजासगर #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-एक ऋषि ने दो रानियों से कहा…
-"तुम में से एक को एक पुत्र मिलेगा… जो वंश चलाएगा।
-और दूसरी को… साठ हज़ार पुत्र मिलेंगे।
-चुनो।"
-
-👉 सगर की दो रानियाँ: एक पुत्र या साठ हज़ार (सूर्यवंश कथा, एपिसोड 30)
-📜 स्रोत: श्रीमद्भागवत 9.8 (दो रानियाँ, इंद्र द्वारा घोड़े की चोरी) · 4.19 (पृथु का घोड़ा) · वाल्मीकि रामायण, बाल कांड (भृगु का वर, तुंबी से जन्म)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #राजासगर #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-एक ऋषि ने दो रानियों से कहा… 🔱 सगर की दो रानियाँ: एक पुत्र या साठ हज़ार | सूर्यवंश कथा · एपिसोड 30
-स्रोत: श्रीमद्भागवत 9.8 (दो रानियाँ, इंद्र द्वारा घोड़े की चोरी) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#राजासगर #सूर्यवंश #mythology #hinduism #storytime #hindi
+एक ऋषि ने दो रानियों से कहा… 🔱 सगर की दो रानियाँ: एक पुत्र या साठ हज़ार
+पूरी कथा: सूर्यवंश कथा · एपिसोड 30 (Related video में लिंक)
+#Shorts #सूर्यवंश #राजासगर #पौराणिककथा
 ```
 
 ### E31 · साठ हज़ार राजकुमारों ने कपिल को चोर कहा
@@ -2790,39 +1929,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E32 असमंजस: वह क्रूर राजकुमार जो भीतर से योगी था
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-साठ हज़ार राजकुमार।
-
-साठ हज़ार राजकुमारों ने कपिल को चोर कहा
-सूर्यवंश कथा · एपिसोड 31 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.8
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#राजासगर #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-साठ हज़ार राजकुमार।
-उन्हें अपना खोया घोड़ा मिला। और उसके पास… एक ऋषि बैठे थे। आँखें बंद।
-राजकुमारों ने चिल्लाया… "यही है चोर!"
-और अगले ही क्षण… साठ हज़ार राजकुमार… राख हो गए।
-
-👉 साठ हज़ार राजकुमारों ने कपिल को चोर कहा (सूर्यवंश कथा, एपिसोड 31)
-📜 स्रोत: श्रीमद्भागवत 9.8 · 3.24-33 (कपिल और देवहूति) · वाल्मीकि रामायण, बाल कांड (तुलना) · परंपरा (गंगासागर, कपिल मुनि मंदिर)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #राजासगर #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-साठ हज़ार राजकुमार। 🔱 साठ हज़ार राजकुमारों ने कपिल को चोर कहा | सूर्यवंश कथा · एपिसोड 31
-स्रोत: श्रीमद्भागवत 9.8 · पूरी कथा प्रोफ़ाइल के लिंक पर
-#राजासगर #सूर्यवंश #mythology #hinduism #storytime #hindi
+साठ हज़ार राजकुमार। 🔱 साठ हज़ार राजकुमारों ने कपिल को चोर कहा
+पूरी कथा: सूर्यवंश कथा · एपिसोड 31 (Related video में लिंक)
+#Shorts #सूर्यवंश #राजासगर #पौराणिककथा
 ```
 
 ### E32 · असमंजस: वह क्रूर राजकुमार जो भीतर से योगी था
@@ -2879,39 +1990,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E33 अंशुमान की कपिल से प्रार्थना
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-अयोध्या का एक राजकुमार… खेलते हुए बच्चों को पकड़ता… और उन्हें सरयू नदी में फेंक देता।
-
-असमंजस: वह क्रूर राजकुमार जो भीतर से योगी था
-सूर्यवंश कथा · एपिसोड 32 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.8
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#राजासगर #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-अयोध्या का एक राजकुमार… खेलते हुए बच्चों को पकड़ता… और उन्हें सरयू नदी में फेंक देता।
-प्रजा डर से काँपती थी। माता-पिता अपने बच्चों को घर में छिपाते थे।
-और फिर राजा ने… अपने ही पुत्र को… राज्य से निकाल दिया।
-पर भागवत कहता है… वह राजकुमार क्रूर नहीं था। वह एक योगी था।
-
-👉 असमंजस: वह क्रूर राजकुमार जो भीतर से योगी था (सूर्यवंश कथा, एपिसोड 32)
-📜 स्रोत: श्रीमद्भागवत 9.8 · वाल्मीकि रामायण, बाल कांड और अयोध्या कांड (तुलना)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #राजासगर #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-अयोध्या का एक राजकुमार… खेलते हुए बच्चों को पकड़ता… और उन्हें सरयू नदी में फेंक देता। 🔱 असमंजस: वह क्रूर राजकुमार जो भीतर से योगी था | सूर्यवंश कथा · एपिसोड 32
-स्रोत: श्रीमद्भागवत 9.8 · पूरी कथा प्रोफ़ाइल के लिंक पर
-#राजासगर #सूर्यवंश #mythology #hinduism #storytime #hindi
+अयोध्या का एक राजकुमार… खेलते हुए बच्चों को पकड़ता… और उन्हें सरयू नदी में फेंक देता। 🔱 असमंजस: वह क्रूर राजकुमार जो भीतर से योगी था
+पूरी कथा: सूर्यवंश कथा · एपिसोड 32 (Related video में लिंक)
+#Shorts #सूर्यवंश #राजासगर #पौराणिककथा
 ```
 
 ### E33 · अंशुमान की कपिल से प्रार्थना
@@ -2968,39 +2051,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E34 अंशुमान और दिलीप: गंगा लाने में असफल दो राजा
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-साठ हज़ार राजकुमार यहाँ आए थे। हथियार उठाए। चिल्लाते हुए… "चोर!"
-
-अंशुमान की कपिल से प्रार्थना
-सूर्यवंश कथा · एपिसोड 33 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.8 (अंशुमान की स्तुति, कपिल का उत्तर, सगर का यज्ञ और मुक्ति)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#राजासगर #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-साठ हज़ार राजकुमार यहाँ आए थे। हथियार उठाए। चिल्लाते हुए… "चोर!"
-और वे राख हो गए।
-अब उसी स्थान पर… एक अकेला युवक आया। न हथियार। न क्रोध।
-उसने हाथ जोड़े। और बोला… "हे प्रभु…"
-
-👉 अंशुमान की कपिल से प्रार्थना (सूर्यवंश कथा, एपिसोड 33)
-📜 स्रोत: श्रीमद्भागवत 9.8 (अंशुमान की स्तुति, कपिल का उत्तर, सगर का यज्ञ और मुक्ति) · वाल्मीकि रामायण, बाल कांड (गरुड़ का संदेश)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #राजासगर #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-साठ हज़ार राजकुमार यहाँ आए थे। हथियार उठाए। चिल्लाते हुए… "चोर!" 🔱 अंशुमान की कपिल से प्रार्थना | सूर्यवंश कथा · एपिसोड 33
-स्रोत: श्रीमद्भागवत 9.8 (अंशुमान की स्तुति, कपिल का उत्तर, सगर का यज्ञ और मुक्ति) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#राजासगर #सूर्यवंश #mythology #hinduism #storytime #hindi
+साठ हज़ार राजकुमार यहाँ आए थे। हथियार उठाए। चिल्लाते हुए… "चोर!" 🔱 अंशुमान की कपिल से प्रार्थना
+पूरी कथा: सूर्यवंश कथा · एपिसोड 33 (Related video में लिंक)
+#Shorts #सूर्यवंश #राजासगर #पौराणिककथा
 ```
 
 ### E34 · अंशुमान और दिलीप: गंगा लाने में असफल दो राजा
@@ -3057,39 +2112,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E35 गंगा की दो आपत्तियाँ
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-एक राजा ने… जीवन भर तप किया। एक ही लक्ष्य के लिए।
-
-अंशुमान और दिलीप: गंगा लाने में असफल दो राजा
-सूर्यवंश कथा · एपिसोड 34 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.9 (अंशुमान और दिलीप का तप)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#भगीरथ #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-एक राजा ने… जीवन भर तप किया। एक ही लक्ष्य के लिए।
-गंगा को स्वर्ग से पृथ्वी पर लाना।
-वह असफल रहा। और मर गया।
-उसके पुत्र ने वही तप किया। वही लक्ष्य।
-
-👉 अंशुमान और दिलीप: गंगा लाने में असफल दो राजा (सूर्यवंश कथा, एपिसोड 34)
-📜 स्रोत: श्रीमद्भागवत 9.9 (अंशुमान और दिलीप का तप) · वाल्मीकि रामायण, बाल कांड (गंगा हिमवान की पुत्री) · परंपरा (आकाशगंगा)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #भगीरथ #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-एक राजा ने… जीवन भर तप किया। एक ही लक्ष्य के लिए। 🔱 अंशुमान और दिलीप: गंगा लाने में असफल दो राजा | सूर्यवंश कथा · एपिसोड 34
-स्रोत: श्रीमद्भागवत 9.9 (अंशुमान और दिलीप का तप) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#भगीरथ #सूर्यवंश #mythology #hinduism #storytime #hindi
+एक राजा ने… जीवन भर तप किया। एक ही लक्ष्य के लिए। 🔱 अंशुमान और दिलीप: गंगा लाने में असफल दो राजा
+पूरी कथा: सूर्यवंश कथा · एपिसोड 34 (Related video में लिंक)
+#Shorts #सूर्यवंश #भगीरथ #पौराणिककथा
 ```
 
 ### E35 · गंगा की दो आपत्तियाँ
@@ -3146,39 +2173,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E36 गंगा कहाँ से आती हैं: विष्णु के चरण से शिव की जटा तक
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-गंगा प्रकट हुईं। राजा भगीरथ के सामने।
-
-गंगा की दो आपत्तियाँ
-सूर्यवंश कथा · एपिसोड 35 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.9 (भगीरथ का तप, गंगा की दो आपत्तियाँ और उत्तर, शिव का तप)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#भगीरथ #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-गंगा प्रकट हुईं। राजा भगीरथ के सामने।
-भगीरथ ने कहा… "माँ, पृथ्वी पर चलिए।"
-और गंगा ने कहा… "चलूँगी। पर पहले मेरे दो प्रश्नों का उत्तर दो।"
-पहला प्रश्न सब जानते हैं।
-
-👉 गंगा की दो आपत्तियाँ (सूर्यवंश कथा, एपिसोड 35)
-📜 स्रोत: श्रीमद्भागवत 9.9 (भगीरथ का तप, गंगा की दो आपत्तियाँ और उत्तर, शिव का तप)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #भगीरथ #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-गंगा प्रकट हुईं। राजा भगीरथ के सामने। 🔱 गंगा की दो आपत्तियाँ | सूर्यवंश कथा · एपिसोड 35
-स्रोत: श्रीमद्भागवत 9.9 (भगीरथ का तप, गंगा की दो आपत्तियाँ और उत्तर, शिव का तप) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#भगीरथ #सूर्यवंश #mythology #hinduism #storytime #hindi
+गंगा प्रकट हुईं। राजा भगीरथ के सामने। 🔱 गंगा की दो आपत्तियाँ
+पूरी कथा: सूर्यवंश कथा · एपिसोड 35 (Related video में लिंक)
+#Shorts #सूर्यवंश #भगीरथ #पौराणिककथा
 ```
 
 ### E36 · गंगा कहाँ से आती हैं: विष्णु के चरण से शिव की जटा तक
@@ -3234,38 +2233,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E37 जह्नु ने गंगा को पी लिया
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-भागवत कहता है… गंगा हिमालय से नहीं निकलतीं।
-
-गंगा कहाँ से आती हैं: विष्णु के चरण से शिव की जटा तक
-सूर्यवंश कथा · एपिसोड 36 🔱
-
-📜 स्रोत: श्रीमद्भागवत 5.17 (गंगा का उद्गम और मार्ग)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#भगीरथ #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-भागवत कहता है… गंगा हिमालय से नहीं निकलतीं।
-वे निकलती हैं… ब्रह्मांड के बाहर से।
-एक चरण ने… पूरे ब्रह्मांड की दीवार भेद दी। और उस छेद से… जो जल भीतर आया… वही गंगा है।
-
-👉 गंगा कहाँ से आती हैं: विष्णु के चरण से शिव की जटा तक (सूर्यवंश कथा, एपिसोड 36)
-📜 स्रोत: श्रीमद्भागवत 5.17 (गंगा का उद्गम और मार्ग) · 8.20-21 (वामन-त्रिविक्रम) · वाल्मीकि रामायण, बाल कांड (शिव की जटा में गंगा)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #भगीरथ #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-भागवत कहता है… गंगा हिमालय से नहीं निकलतीं। 🔱 गंगा कहाँ से आती हैं: विष्णु के चरण से शिव की जटा तक | सूर्यवंश कथा · एपिसोड 36
-स्रोत: श्रीमद्भागवत 5.17 (गंगा का उद्गम और मार्ग) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#भगीरथ #सूर्यवंश #mythology #hinduism #storytime #hindi
+भागवत कहता है… गंगा हिमालय से नहीं निकलतीं। 🔱 गंगा कहाँ से आती हैं: विष्णु के चरण से शिव की जटा तक
+पूरी कथा: सूर्यवंश कथा · एपिसोड 36 (Related video में लिंक)
+#Shorts #सूर्यवंश #भगीरथ #पौराणिककथा
 ```
 
 ### E37 · जह्नु ने गंगा को पी लिया
@@ -3322,39 +2294,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E38 वह दिन जब साठ हज़ार पूर्वज मुक्त हुए
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-गंगा… जिन्हें स्वर्ग से उतारने में तीन पीढ़ियाँ लगीं।
-
-जह्नु ने गंगा को पी लिया
-सूर्यवंश कथा · एपिसोड 37 🔱
-
-📜 स्रोत: वाल्मीकि रामायण, बाल कांड (जह्नु और गंगा)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#भगीरथ #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-गंगा… जिन्हें स्वर्ग से उतारने में तीन पीढ़ियाँ लगीं।
-जिन्हें शिव की जटाएँ भी वर्षों तक रोके रहीं।
-उन्हें एक ऋषि ने… एक ही घूँट में… पी लिया।
-और भगीरथ… खाली नदी के तट पर खड़े रह गए।
-
-👉 जह्नु ने गंगा को पी लिया (सूर्यवंश कथा, एपिसोड 37)
-📜 स्रोत: वाल्मीकि रामायण, बाल कांड (जह्नु और गंगा) · श्रीमद्भागवत 9.15 (जह्नु का गंगा-पान और वंश) · परंपरा (सुल्तानगंज)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #भगीरथ #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-गंगा… जिन्हें स्वर्ग से उतारने में तीन पीढ़ियाँ लगीं। 🔱 जह्नु ने गंगा को पी लिया | सूर्यवंश कथा · एपिसोड 37
-स्रोत: वाल्मीकि रामायण, बाल कांड (जह्नु और गंगा) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#भगीरथ #सूर्यवंश #mythology #hinduism #storytime #hindi
+गंगा… जिन्हें स्वर्ग से उतारने में तीन पीढ़ियाँ लगीं। 🔱 जह्नु ने गंगा को पी लिया
+पूरी कथा: सूर्यवंश कथा · एपिसोड 37 (Related video में लिंक)
+#Shorts #सूर्यवंश #भगीरथ #पौराणिककथा
 ```
 
 ### E38 · वह दिन जब साठ हज़ार पूर्वज मुक्त हुए
@@ -3412,39 +2356,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E39 ऋतुपर्ण: वह पासे का उस्ताद जिसने नल की सहायता की
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-राख का एक ढेर।
-
-वह दिन जब साठ हज़ार पूर्वज मुक्त हुए
-सूर्यवंश कथा · एपिसोड 38 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.9 (राख का स्पर्श और मुक्ति)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#भगीरथ #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-राख का एक ढेर।
-साठ हज़ार राजकुमारों की।
-वह वर्षों से वहाँ पड़ा था। पीढ़ियों से। एक दादा मरा। एक पिता मरा। और राख… प्रतीक्षा करती रही।
-और फिर… एक दिन… एक बूँद… उस पर गिरी।
-
-👉 वह दिन जब साठ हज़ार पूर्वज मुक्त हुए (सूर्यवंश कथा, एपिसोड 38)
-📜 स्रोत: श्रीमद्भागवत 9.9 (राख का स्पर्श और मुक्ति) · वाल्मीकि रामायण, बाल कांड (ब्रह्मा का वचन) · भूगोल और परंपरा (गंगोत्री, गौमुख, देवप्रयाग)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #भगीरथ #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-राख का एक ढेर। 🔱 वह दिन जब साठ हज़ार पूर्वज मुक्त हुए | सूर्यवंश कथा · एपिसोड 38
-स्रोत: श्रीमद्भागवत 9.9 (राख का स्पर्श और मुक्ति) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#भगीरथ #सूर्यवंश #mythology #hinduism #storytime #hindi
+राख का एक ढेर। 🔱 वह दिन जब साठ हज़ार पूर्वज मुक्त हुए
+पूरी कथा: सूर्यवंश कथा · एपिसोड 38 (Related video में लिंक)
+#Shorts #सूर्यवंश #भगीरथ #पौराणिककथा
 ```
 
 ### E39 · ऋतुपर्ण: वह पासे का उस्ताद जिसने नल की सहायता की
@@ -3501,39 +2417,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E40 सौदास: वह सूर्यवंशी राजा जो नरभक्षी बना
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-एक राजा ने… दौड़ते रथ से… एक पेड़ को देखा।
-
-ऋतुपर्ण: वह पासे का उस्ताद जिसने नल की सहायता की
-सूर्यवंश कथा · एपिसोड 39 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.9 (भगीरथ के बाद का वंश और ऋतुपर्ण)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#भगीरथ #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-एक राजा ने… दौड़ते रथ से… एक पेड़ को देखा।
-और बिना गिने बता दिया… "इस पेड़ पर इतने पत्ते हैं… इतने फल।"
-उसका सारथी रथ रोककर नीचे उतरा। और गिनने लगा।
-संख्या… बिल्कुल सही थी।
-
-👉 ऋतुपर्ण: वह पासे का उस्ताद जिसने नल की सहायता की (सूर्यवंश कथा, एपिसोड 39)
-📜 स्रोत: श्रीमद्भागवत 9.9 (भगीरथ के बाद का वंश और ऋतुपर्ण) · महाभारत, वन पर्व (नलोपाख्यान)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #भगीरथ #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-एक राजा ने… दौड़ते रथ से… एक पेड़ को देखा। 🔱 ऋतुपर्ण: वह पासे का उस्ताद जिसने नल की सहायता की | सूर्यवंश कथा · एपिसोड 39
-स्रोत: श्रीमद्भागवत 9.9 (भगीरथ के बाद का वंश और ऋतुपर्ण) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#भगीरथ #सूर्यवंश #mythology #hinduism #storytime #hindi
+एक राजा ने… दौड़ते रथ से… एक पेड़ को देखा। 🔱 ऋतुपर्ण: वह पासे का उस्ताद जिसने नल की सहायता की
+पूरी कथा: सूर्यवंश कथा · एपिसोड 39 (Related video में लिंक)
+#Shorts #सूर्यवंश #भगीरथ #पौराणिककथा
 ```
 
 ### E40 · सौदास: वह सूर्यवंशी राजा जो नरभक्षी बना
@@ -3591,39 +2479,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E41 खट्वांग: जीने के लिए 48 मिनट
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-एक राजा… अपने गुरु को शाप देने वाला था। हाथ में जल। मुँह में मंत्र।
-
-सौदास: वह सूर्यवंशी राजा जो नरभक्षी बना
-सूर्यवंश कथा · एपिसोड 40 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.9 (सौदास, कल्माषपाद, अश्मक)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#भगीरथ #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-एक राजा… अपने गुरु को शाप देने वाला था। हाथ में जल। मुँह में मंत्र।
-उसकी पत्नी ने उसका हाथ पकड़ लिया।
-और वह जल… किसी और पर नहीं… उसके अपने पैरों पर गिरा।
-और उसके पैर… हमेशा के लिए… चितकबरे हो गए।
-
-👉 सौदास: वह सूर्यवंशी राजा जो नरभक्षी बना (सूर्यवंश कथा, एपिसोड 40)
-📜 स्रोत: श्रीमद्भागवत 9.9 (सौदास, कल्माषपाद, अश्मक) · महाभारत, आदि पर्व (शक्ति और पराशर से संबंध)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #भगीरथ #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-एक राजा… अपने गुरु को शाप देने वाला था। हाथ में जल। मुँह में मंत्र। 🔱 सौदास: वह सूर्यवंशी राजा जो नरभक्षी बना | सूर्यवंश कथा · एपिसोड 40
-स्रोत: श्रीमद्भागवत 9.9 (सौदास, कल्माषपाद, अश्मक) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#भगीरथ #सूर्यवंश #mythology #hinduism #storytime #hindi
+एक राजा… अपने गुरु को शाप देने वाला था। हाथ में जल। मुँह में मंत्र। 🔱 सौदास: वह सूर्यवंशी राजा जो नरभक्षी बना
+पूरी कथा: सूर्यवंश कथा · एपिसोड 40 (Related video में लिंक)
+#Shorts #सूर्यवंश #भगीरथ #पौराणिककथा
 ```
 
 ### E41 · खट्वांग: जीने के लिए 48 मिनट
@@ -3681,39 +2541,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E42 रघु कौन थे? भागवत उन्हें एक पंक्ति देता है
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-देवताओं ने एक राजा से कहा… "वर माँगो।"
-
-खट्वांग: जीने के लिए 48 मिनट
-सूर्यवंश कथा · एपिसोड 41 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.9 (मूलक "नारीकवच" और खट्वांग)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#भगीरथ #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-देवताओं ने एक राजा से कहा… "वर माँगो।"
-राजा ने पूछा… "पहले यह बताइए… मेरे पास जीवन कितना बचा है?"
-देवताओं ने कहा… "एक मुहूर्त।"
-यानी… 48 मिनट।
-
-👉 खट्वांग: जीने के लिए 48 मिनट (सूर्यवंश कथा, एपिसोड 41)
-📜 स्रोत: श्रीमद्भागवत 9.9 (मूलक "नारीकवच" और खट्वांग) · 2.1 (शुकदेव द्वारा परीक्षित को खट्वांग का उदाहरण)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #भगीरथ #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-देवताओं ने एक राजा से कहा… "वर माँगो।" 🔱 खट्वांग: जीने के लिए 48 मिनट | सूर्यवंश कथा · एपिसोड 41
-स्रोत: श्रीमद्भागवत 9.9 (मूलक "नारीकवच" और खट्वांग) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#भगीरथ #सूर्यवंश #mythology #hinduism #storytime #hindi
+देवताओं ने एक राजा से कहा… "वर माँगो।" 🔱 खट्वांग: जीने के लिए 48 मिनट
+पूरी कथा: सूर्यवंश कथा · एपिसोड 41 (Related video में लिंक)
+#Shorts #सूर्यवंश #भगीरथ #पौराणिककथा
 ```
 
 ### E42 · रघु कौन थे? भागवत उन्हें एक पंक्ति देता है
@@ -3770,39 +2602,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E43 दिलीप और नंदिनी: वह गाय जिसने रघु दिया
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-श्रीराम को हम क्या-क्या कहते हैं?
-
-रघु कौन थे? भागवत उन्हें एक पंक्ति देता है
-सूर्यवंश कथा · एपिसोड 42 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.10 (पहला श्लोक)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#रघुवंश #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-श्रीराम को हम क्या-क्या कहते हैं?
-राघव। रघुनंदन। रघुपति। रघुवीर। रघुकुल-तिलक।
-हर नाम… एक राजा की ओर इशारा करता है… रघु।
-और भागवत… इस राजा को कितना स्थान देता है?
-
-👉 रघु कौन थे? भागवत उन्हें एक पंक्ति देता है (सूर्यवंश कथा, एपिसोड 42)
-📜 स्रोत: श्रीमद्भागवत 9.10 (पहला श्लोक) · कालिदास, रघुवंश (सर्ग 1) · वाल्मीकि रामायण, बाल कांड (वंशावली) · तुलसीदास, रामचरितमानस
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #रघुवंश #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-श्रीराम को हम क्या-क्या कहते हैं? 🔱 रघु कौन थे? भागवत उन्हें एक पंक्ति देता है | सूर्यवंश कथा · एपिसोड 42
-स्रोत: श्रीमद्भागवत 9.10 (पहला श्लोक) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#रघुवंश #सूर्यवंश #mythology #hinduism #storytime #hindi
+श्रीराम को हम क्या-क्या कहते हैं? 🔱 रघु कौन थे? भागवत उन्हें एक पंक्ति देता है
+पूरी कथा: सूर्यवंश कथा · एपिसोड 42 (Related video में लिंक)
+#Shorts #सूर्यवंश #रघुवंश #पौराणिककथा
 ```
 
 ### E43 · दिलीप और नंदिनी: वह गाय जिसने रघु दिया
@@ -3859,39 +2663,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E44 युवा रघु ने इंद्र से युद्ध किया
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-एक सिंह… एक गाय पर झपटा।
-
-दिलीप और नंदिनी: वह गाय जिसने रघु दिया
-सूर्यवंश कथा · एपिसोड 43 🔱
-
-📜 स्रोत: कालिदास, रघुवंश (सर्ग 1-3)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#रघुवंश #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-एक सिंह… एक गाय पर झपटा।
-राजा ने तीर निकालना चाहा। पर उसका हाथ… जम गया। तरकश पर चिपक गया।
-तब राजा ने… सिंह से कहा…
-"इस गाय को छोड़ दो। इसकी जगह… मुझे खा लो।"
-
-👉 दिलीप और नंदिनी: वह गाय जिसने रघु दिया (सूर्यवंश कथा, एपिसोड 43)
-📜 स्रोत: कालिदास, रघुवंश (सर्ग 1-3) · यह कथा भागवत में नहीं है
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #रघुवंश #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-एक सिंह… एक गाय पर झपटा। 🔱 दिलीप और नंदिनी: वह गाय जिसने रघु दिया | सूर्यवंश कथा · एपिसोड 43
-स्रोत: कालिदास, रघुवंश (सर्ग 1-3) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#रघुवंश #सूर्यवंश #mythology #hinduism #storytime #hindi
+एक सिंह… एक गाय पर झपटा। 🔱 दिलीप और नंदिनी: वह गाय जिसने रघु दिया
+पूरी कथा: सूर्यवंश कथा · एपिसोड 43 (Related video में लिंक)
+#Shorts #सूर्यवंश #रघुवंश #पौराणिककथा
 ```
 
 ### E44 · युवा रघु ने इंद्र से युद्ध किया
@@ -3949,39 +2725,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E45 रघु की चारों दिशाओं में विजय
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-एक युवा राजकुमार… देवताओं के राजा इंद्र के सामने खड़ा था।
-
-युवा रघु ने इंद्र से युद्ध किया
-सूर्यवंश कथा · एपिसोड 44 🔱
-
-📜 स्रोत: कालिदास, रघुवंश (सर्ग 3)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#रघुवंश #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-एक युवा राजकुमार… देवताओं के राजा इंद्र के सामने खड़ा था।
-इंद्र के हाथ में वज्र। राजकुमार के हाथ में… केवल एक धनुष।
-इंद्र ने वज्र चलाया। राजकुमार गिरा।
-और फिर… उठ खड़ा हुआ।
-
-👉 युवा रघु ने इंद्र से युद्ध किया (सूर्यवंश कथा, एपिसोड 44)
-📜 स्रोत: कालिदास, रघुवंश (सर्ग 3) · संदर्भ: श्रीमद्भागवत 4.19, 9.8 (इंद्र द्वारा घोड़े की चोरी)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #रघुवंश #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-एक युवा राजकुमार… देवताओं के राजा इंद्र के सामने खड़ा था। 🔱 युवा रघु ने इंद्र से युद्ध किया | सूर्यवंश कथा · एपिसोड 44
-स्रोत: कालिदास, रघुवंश (सर्ग 3) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#रघुवंश #सूर्यवंश #mythology #hinduism #storytime #hindi
+एक युवा राजकुमार… देवताओं के राजा इंद्र के सामने खड़ा था। 🔱 युवा रघु ने इंद्र से युद्ध किया
+पूरी कथा: सूर्यवंश कथा · एपिसोड 44 (Related video में लिंक)
+#Shorts #सूर्यवंश #रघुवंश #पौराणिककथा
 ```
 
 ### E45 · रघु की चारों दिशाओं में विजय
@@ -4037,38 +2785,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E46 रघु ने सब दान कर दिया। फिर कौत्स आए।
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-एक राजा… अपनी सेना लेकर निकला।
-
-रघु की चारों दिशाओं में विजय
-सूर्यवंश कथा · एपिसोड 45 🔱
-
-📜 स्रोत: कालिदास, रघुवंश (सर्ग 4)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#रघुवंश #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-एक राजा… अपनी सेना लेकर निकला।
-पूर्व में… समुद्र तक। दक्षिण में… मलय पर्वत तक। पश्चिम में… फ़ारस तक। उत्तर में… हिमालय के पार तक।
-और जब लौटा… तो उसने जो किया… वह इस विजय से भी बड़ा था।
-
-👉 रघु की चारों दिशाओं में विजय (सूर्यवंश कथा, एपिसोड 45)
-📜 स्रोत: कालिदास, रघुवंश (सर्ग 4) · यह कथा भागवत में नहीं है
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #रघुवंश #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-एक राजा… अपनी सेना लेकर निकला। 🔱 रघु की चारों दिशाओं में विजय | सूर्यवंश कथा · एपिसोड 45
-स्रोत: कालिदास, रघुवंश (सर्ग 4) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#रघुवंश #सूर्यवंश #mythology #hinduism #storytime #hindi
+एक राजा… अपनी सेना लेकर निकला। 🔱 रघु की चारों दिशाओं में विजय
+पूरी कथा: सूर्यवंश कथा · एपिसोड 45 (Related video में लिंक)
+#Shorts #सूर्यवंश #रघुवंश #पौराणिककथा
 ```
 
 ### E46 · रघु ने सब दान कर दिया। फिर कौत्स आए।
@@ -4125,39 +2846,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E47 अज की यात्रा: वह हाथी जो गंधर्व था
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-एक युवा विद्यार्थी… चारों दिशाओं के विजेता… सम्राट रघु के पास आया।
-
-रघु ने सब दान कर दिया। फिर कौत्स आए।
-सूर्यवंश कथा · एपिसोड 46 🔱
-
-📜 स्रोत: कालिदास, रघुवंश (सर्ग 4 का अंत और सर्ग 5)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#रघुवंश #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-एक युवा विद्यार्थी… चारों दिशाओं के विजेता… सम्राट रघु के पास आया।
-उसे अपने गुरु को चौदह करोड़ स्वर्ण मुद्राएँ देनी थीं।
-पर जब वह महल पहुँचा… तो सम्राट ने उसका स्वागत… मिट्टी के बर्तन में जल देकर किया।
-और विद्यार्थी समझ गया… यहाँ कुछ नहीं बचा।
-
-👉 रघु ने सब दान कर दिया। फिर कौत्स आए। (सूर्यवंश कथा, एपिसोड 46)
-📜 स्रोत: कालिदास, रघुवंश (सर्ग 4 का अंत और सर्ग 5) · यह कथा भागवत में नहीं है
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #रघुवंश #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-एक युवा विद्यार्थी… चारों दिशाओं के विजेता… सम्राट रघु के पास आया। 🔱 रघु ने सब दान कर दिया। फिर कौत्स आए। | सूर्यवंश कथा · एपिसोड 46
-स्रोत: कालिदास, रघुवंश (सर्ग 4 का अंत और सर्ग 5) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#रघुवंश #सूर्यवंश #mythology #hinduism #storytime #hindi
+एक युवा विद्यार्थी… चारों दिशाओं के विजेता… सम्राट रघु के पास आया। 🔱 रघु ने सब दान कर दिया। फिर कौत्स आए।
+पूरी कथा: सूर्यवंश कथा · एपिसोड 46 (Related video में लिंक)
+#Shorts #सूर्यवंश #रघुवंश #पौराणिककथा
 ```
 
 ### E47 · अज की यात्रा: वह हाथी जो गंधर्व था
@@ -4215,39 +2908,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E48 इंदुमती का स्वयंवर: वह हर राजा के पास से गुज़र गई
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-नर्मदा के तट पर… एक जंगली हाथी… एक राजकुमार के शिविर पर झपटा।
-
-अज की यात्रा: वह हाथी जो गंधर्व था
-सूर्यवंश कथा · एपिसोड 47 🔱
-
-📜 स्रोत: कालिदास, रघुवंश (सर्ग 5)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#राजादशरथ #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-नर्मदा के तट पर… एक जंगली हाथी… एक राजकुमार के शिविर पर झपटा।
-राजकुमार ने बाण चलाया। मारने के लिए नहीं… केवल रोकने के लिए।
-और बाण लगते ही… हाथी का शरीर पिघल गया।
-और उसमें से निकला… एक गंधर्व। हाथ जोड़े हुए।
-
-👉 अज की यात्रा: वह हाथी जो गंधर्व था (सूर्यवंश कथा, एपिसोड 47)
-📜 स्रोत: कालिदास, रघुवंश (सर्ग 5) · संदर्भ: श्रीमद्भागवत 9.10.1 (अज का नाम) · यह कथा भागवत में नहीं है
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #राजादशरथ #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-नर्मदा के तट पर… एक जंगली हाथी… एक राजकुमार के शिविर पर झपटा। 🔱 अज की यात्रा: वह हाथी जो गंधर्व था | सूर्यवंश कथा · एपिसोड 47
-स्रोत: कालिदास, रघुवंश (सर्ग 5) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#राजादशरथ #सूर्यवंश #mythology #hinduism #storytime #hindi
+नर्मदा के तट पर… एक जंगली हाथी… एक राजकुमार के शिविर पर झपटा। 🔱 अज की यात्रा: वह हाथी जो गंधर्व था
+पूरी कथा: सूर्यवंश कथा · एपिसोड 47 (Related video में लिंक)
+#Shorts #सूर्यवंश #राजादशरथ #पौराणिककथा
 ```
 
 ### E48 · इंदुमती का स्वयंवर: वह हर राजा के पास से गुज़र गई
@@ -4305,39 +2970,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E49 अज और इंदुमती: एक गिरती माला ने छीन लिया
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-रात में… एक राजमार्ग पर… कोई दीपक लेकर चल रहा हो।
-
-इंदुमती का स्वयंवर: वह हर राजा के पास से गुज़र गई
-सूर्यवंश कथा · एपिसोड 48 🔱
-
-📜 स्रोत: कालिदास, रघुवंश (सर्ग 6-7)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#राजादशरथ #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-रात में… एक राजमार्ग पर… कोई दीपक लेकर चल रहा हो।
-जिस भवन के पास से दीपक गुज़रता है… वह चमक उठता है।
-और जैसे ही दीपक आगे बढ़ता है… वह भवन… अँधेरे में डूब जाता है।
-कालिदास ने यह उपमा… एक स्त्री के लिए लिखी थी। और राजाओं के लिए।
-
-👉 इंदुमती का स्वयंवर: वह हर राजा के पास से गुज़र गई (सूर्यवंश कथा, एपिसोड 48)
-📜 स्रोत: कालिदास, रघुवंश (सर्ग 6-7) · यह कथा भागवत में नहीं है
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #राजादशरथ #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-रात में… एक राजमार्ग पर… कोई दीपक लेकर चल रहा हो। 🔱 इंदुमती का स्वयंवर: वह हर राजा के पास से गुज़र गई | सूर्यवंश कथा · एपिसोड 48
-स्रोत: कालिदास, रघुवंश (सर्ग 6-7) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#राजादशरथ #सूर्यवंश #mythology #hinduism #storytime #hindi
+रात में… एक राजमार्ग पर… कोई दीपक लेकर चल रहा हो। 🔱 इंदुमती का स्वयंवर: वह हर राजा के पास से गुज़र गई
+पूरी कथा: सूर्यवंश कथा · एपिसोड 48 (Related video में लिंक)
+#Shorts #सूर्यवंश #राजादशरथ #पौराणिककथा
 ```
 
 ### E49 · अज और इंदुमती: एक गिरती माला ने छीन लिया
@@ -4394,39 +3031,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E50 दशरथ और श्रवण: वह बाण जिसने उन्हें शाप दिलाया
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-एक उद्यान। एक राजा। एक रानी। हँसते हुए।
-
-अज और इंदुमती: एक गिरती माला ने छीन लिया
-सूर्यवंश कथा · एपिसोड 49 🔱
-
-📜 स्रोत: कालिदास, रघुवंश (सर्ग 8: अज-विलाप)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#राजादशरथ #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-एक उद्यान। एक राजा। एक रानी। हँसते हुए।
-ऊपर आकाश में… नारद अपनी वीणा लेकर जा रहे थे।
-वीणा पर रखी एक फूलों की माला… हवा में उड़ी… और धीरे-धीरे… नीचे गिरी।
-रानी पर।
-
-👉 अज और इंदुमती: एक गिरती माला ने छीन लिया (सूर्यवंश कथा, एपिसोड 49)
-📜 स्रोत: कालिदास, रघुवंश (सर्ग 8: अज-विलाप) · यह कथा भागवत में नहीं है
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #राजादशरथ #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-एक उद्यान। एक राजा। एक रानी। हँसते हुए। 🔱 अज और इंदुमती: एक गिरती माला ने छीन लिया | सूर्यवंश कथा · एपिसोड 49
-स्रोत: कालिदास, रघुवंश (सर्ग 8: अज-विलाप) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#राजादशरथ #सूर्यवंश #mythology #hinduism #storytime #hindi
+एक उद्यान। एक राजा। एक रानी। हँसते हुए। 🔱 अज और इंदुमती: एक गिरती माला ने छीन लिया
+पूरी कथा: सूर्यवंश कथा · एपिसोड 49 (Related video में लिंक)
+#Shorts #सूर्यवंश #राजादशरथ #पौराणिककथा
 ```
 
 ### E50 · दशरथ और श्रवण: वह बाण जिसने उन्हें शाप दिलाया
@@ -4483,39 +3092,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E51 कैकेयी के दो वरदान: शंबर युद्ध
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-अँधेरी रात। नदी का किनारा।
-
-दशरथ और श्रवण: वह बाण जिसने उन्हें शाप दिलाया
-सूर्यवंश कथा · एपिसोड 50 🔱
-
-📜 स्रोत: वाल्मीकि रामायण, अयोध्या कांड (दशरथ द्वारा कौसल्या को सुनाई गई कथा)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#राजादशरथ #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-अँधेरी रात। नदी का किनारा।
-एक युवा राजकुमार ने… पानी में एक आवाज़ सुनी। जैसे कोई हाथी पानी पी रहा हो।
-उसने बिना देखे… केवल आवाज़ की दिशा में… बाण चलाया।
-और अँधेरे से… एक मनुष्य की चीख़ आई।
-
-👉 दशरथ और श्रवण: वह बाण जिसने उन्हें शाप दिलाया (सूर्यवंश कथा, एपिसोड 50)
-📜 स्रोत: वाल्मीकि रामायण, अयोध्या कांड (दशरथ द्वारा कौसल्या को सुनाई गई कथा) · कालिदास, रघुवंश (सर्ग 9) · लोक-परंपरा ("श्रवण कुमार" नाम)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #राजादशरथ #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-अँधेरी रात। नदी का किनारा। 🔱 दशरथ और श्रवण: वह बाण जिसने उन्हें शाप दिलाया | सूर्यवंश कथा · एपिसोड 50
-स्रोत: वाल्मीकि रामायण, अयोध्या कांड (दशरथ द्वारा कौसल्या को सुनाई गई कथा) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#राजादशरथ #सूर्यवंश #mythology #hinduism #storytime #hindi
+अँधेरी रात। नदी का किनारा। 🔱 दशरथ और श्रवण: वह बाण जिसने उन्हें शाप दिलाया
+पूरी कथा: सूर्यवंश कथा · एपिसोड 50 (Related video में लिंक)
+#Shorts #सूर्यवंश #राजादशरथ #पौराणिककथा
 ```
 
 ### E51 · कैकेयी के दो वरदान: शंबर युद्ध
@@ -4572,39 +3153,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E52 दशरथ के चार पुत्र: भागवत का वर्णन
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-एक राजा… युद्ध में घायल होकर गिरा। अचेत।
-
-कैकेयी के दो वरदान: शंबर युद्ध
-सूर्यवंश कथा · एपिसोड 51 🔱
-
-📜 स्रोत: वाल्मीकि रामायण, अयोध्या कांड (मंथरा का स्मरण कराना)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#राजादशरथ #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-एक राजा… युद्ध में घायल होकर गिरा। अचेत।
-उसकी रानी ने… रथ की बागडोर पकड़ी। और उसे रणभूमि से निकाल लाई।
-होश में आने पर… राजा ने कहा… "तुमने मेरी जान बचाई। दो वर माँगो।"
-रानी ने कहा… "अभी नहीं। जब ज़रूरत होगी… तब माँगूँगी।"
-
-👉 कैकेयी के दो वरदान: शंबर युद्ध (सूर्यवंश कथा, एपिसोड 51)
-📜 स्रोत: वाल्मीकि रामायण, अयोध्या कांड (मंथरा का स्मरण कराना) · लोक-परंपरा (रथ की धुरी वाली कथा)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #राजादशरथ #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-एक राजा… युद्ध में घायल होकर गिरा। अचेत। 🔱 कैकेयी के दो वरदान: शंबर युद्ध | सूर्यवंश कथा · एपिसोड 51
-स्रोत: वाल्मीकि रामायण, अयोध्या कांड (मंथरा का स्मरण कराना) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#राजादशरथ #सूर्यवंश #mythology #hinduism #storytime #hindi
+एक राजा… युद्ध में घायल होकर गिरा। अचेत। 🔱 कैकेयी के दो वरदान: शंबर युद्ध
+पूरी कथा: सूर्यवंश कथा · एपिसोड 51 (Related video में लिंक)
+#Shorts #सूर्यवंश #राजादशरथ #पौराणिककथा
 ```
 
 ### E52 · दशरथ के चार पुत्र: भागवत का वर्णन
@@ -4661,39 +3214,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E53 भागवत ने रामायण को दो अध्यायों में कहा
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-एक यज्ञ की अग्नि से… एक दिव्य पुरुष निकला।
-
-दशरथ के चार पुत्र: भागवत का वर्णन
-सूर्यवंश कथा · एपिसोड 52 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.10 (दूसरा श्लोक)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#राजादशरथ #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-एक यज्ञ की अग्नि से… एक दिव्य पुरुष निकला।
-उसके हाथ में… सोने का एक पात्र। उसमें खीर।
-उसने वृद्ध राजा से कहा… "यह अपनी रानियों को दो।"
-और उस खीर से… चार पुत्र जन्मे।
-
-👉 दशरथ के चार पुत्र: भागवत का वर्णन (सूर्यवंश कथा, एपिसोड 52)
-📜 स्रोत: श्रीमद्भागवत 9.10 (दूसरा श्लोक) · वाल्मीकि रामायण, बाल कांड (ऋष्यशृंग, पुत्रकामेष्टि, खीर)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #राजादशरथ #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-एक यज्ञ की अग्नि से… एक दिव्य पुरुष निकला। 🔱 दशरथ के चार पुत्र: भागवत का वर्णन | सूर्यवंश कथा · एपिसोड 52
-स्रोत: श्रीमद्भागवत 9.10 (दूसरा श्लोक) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#राजादशरथ #सूर्यवंश #mythology #hinduism #storytime #hindi
+एक यज्ञ की अग्नि से… एक दिव्य पुरुष निकला। 🔱 दशरथ के चार पुत्र: भागवत का वर्णन
+पूरी कथा: सूर्यवंश कथा · एपिसोड 52 (Related video में लिंक)
+#Shorts #सूर्यवंश #राजादशरथ #पौराणिककथा
 ```
 
 ### E53 · भागवत ने रामायण को दो अध्यायों में कहा
@@ -4750,39 +3275,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E54 अयोध्या में राम का बचपन
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-वाल्मीकि की रामायण… परंपरा के अनुसार… चौबीस हज़ार श्लोक।
-
-भागवत ने रामायण को दो अध्यायों में कहा
-सूर्यवंश कथा · एपिसोड 53 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.10-9.11 (रामकथा)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#श्रीराम #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-वाल्मीकि की रामायण… परंपरा के अनुसार… चौबीस हज़ार श्लोक।
-और भागवत… उसी रामकथा को… कहता है… दो अध्यायों में।
-चौबीस हज़ार से… लगभग सौ श्लोक।
-तो प्रश्न है… भागवत ने उसमें क्या रखा? और क्या… छोड़ दिया?
-
-👉 भागवत ने रामायण को दो अध्यायों में कहा (सूर्यवंश कथा, एपिसोड 53)
-📜 स्रोत: श्रीमद्भागवत 9.10-9.11 (रामकथा) · 5.19 (राम-अवतार का उद्देश्य) · वाल्मीकि रामायण (परिचय) · परंपरा (अनेक रामायण)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #श्रीराम #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-वाल्मीकि की रामायण… परंपरा के अनुसार… चौबीस हज़ार श्लोक। 🔱 भागवत ने रामायण को दो अध्यायों में कहा | सूर्यवंश कथा · एपिसोड 53
-स्रोत: श्रीमद्भागवत 9.10-9.11 (रामकथा) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#श्रीराम #सूर्यवंश #mythology #hinduism #storytime #hindi
+वाल्मीकि की रामायण… परंपरा के अनुसार… चौबीस हज़ार श्लोक। 🔱 भागवत ने रामायण को दो अध्यायों में कहा
+पूरी कथा: सूर्यवंश कथा · एपिसोड 53 (Related video में लिंक)
+#Shorts #सूर्यवंश #श्रीराम #पौराणिककथा
 ```
 
 ### E54 · अयोध्या में राम का बचपन
@@ -4838,39 +3335,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E55 विश्वामित्र राजकुमारों को ले गए: ताड़का
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-एक माँ ने… अपने शिशु को पालने में सुलाया।
-
-अयोध्या में राम का बचपन
-सूर्यवंश कथा · एपिसोड 54 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.10
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#श्रीराम #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-एक माँ ने… अपने शिशु को पालने में सुलाया।
-फिर पूजा-घर गई। और देखा… वही शिशु… वहाँ बैठा… भगवान का भोग खा रहा है।
-घबराकर पालने की ओर दौड़ी। शिशु… वहीं सो रहा था।
-फिर पूजा-घर। शिशु… वहीं खा रहा था।
-
-👉 अयोध्या में राम का बचपन (सूर्यवंश कथा, एपिसोड 54)
-📜 स्रोत: श्रीमद्भागवत 9.10 · वाल्मीकि रामायण, बाल कांड और अयोध्या कांड (आरंभ) · तुलसीदास, रामचरितमानस, बाल कांड
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #श्रीराम #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-एक माँ ने… अपने शिशु को पालने में सुलाया। 🔱 अयोध्या में राम का बचपन | सूर्यवंश कथा · एपिसोड 54
-स्रोत: श्रीमद्भागवत 9.10 · पूरी कथा प्रोफ़ाइल के लिंक पर
-#श्रीराम #सूर्यवंश #mythology #hinduism #storytime #hindi
+एक माँ ने… अपने शिशु को पालने में सुलाया। 🔱 अयोध्या में राम का बचपन
+पूरी कथा: सूर्यवंश कथा · एपिसोड 54 (Related video में लिंक)
+#Shorts #सूर्यवंश #श्रीराम #पौराणिककथा
 ```
 
 ### E55 · विश्वामित्र राजकुमारों को ले गए: ताड़का
@@ -4927,39 +3396,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E56 मारीच और सुबाहु: विश्वामित्र की अग्नि की रक्षा
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-एक ऋषि ने… एक वृद्ध राजा से कहा…
-
-विश्वामित्र राजकुमारों को ले गए: ताड़का
-सूर्यवंश कथा · एपिसोड 55 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.10 (संक्षेप)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#श्रीराम #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-एक ऋषि ने… एक वृद्ध राजा से कहा…
-"मुझे अपना पुत्र दे दो। दस दिन के लिए।"
-राजा ने कहा… "मेरा पूरा राज्य ले लो। मेरी पूरी सेना ले लो। मैं स्वयं चलूँगा। पर राम को मत माँगो।"
-ऋषि ने कहा… "मुझे राम ही चाहिए।"
-
-👉 विश्वामित्र राजकुमारों को ले गए: ताड़का (सूर्यवंश कथा, एपिसोड 55)
-📜 स्रोत: श्रीमद्भागवत 9.10 (संक्षेप) · वाल्मीकि रामायण, बाल कांड (विश्वामित्र का आगमन, बला-अतिबला, ताड़का-वध)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #श्रीराम #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-एक ऋषि ने… एक वृद्ध राजा से कहा… 🔱 विश्वामित्र राजकुमारों को ले गए: ताड़का | सूर्यवंश कथा · एपिसोड 55
-स्रोत: श्रीमद्भागवत 9.10 (संक्षेप) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#श्रीराम #सूर्यवंश #mythology #hinduism #storytime #hindi
+एक ऋषि ने… एक वृद्ध राजा से कहा… 🔱 विश्वामित्र राजकुमारों को ले गए: ताड़का
+पूरी कथा: सूर्यवंश कथा · एपिसोड 55 (Related video में लिंक)
+#Shorts #सूर्यवंश #श्रीराम #पौराणिककथा
 ```
 
 ### E56 · मारीच और सुबाहु: विश्वामित्र की अग्नि की रक्षा
@@ -5017,39 +3458,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E57 वह धनुष जिसे तीन सौ लोग उठाकर लाए
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-एक बाण… एक राक्षस को लगा।
-
-मारीच और सुबाहु: विश्वामित्र की अग्नि की रक्षा
-सूर्यवंश कथा · एपिसोड 56 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.10 (संक्षेप)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#श्रीराम #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-एक बाण… एक राक्षस को लगा।
-और उसे मारा नहीं। उसे उठाकर… सौ योजन दूर… समुद्र में फेंक दिया।
-वह राक्षस बच गया।
-और वर्षों बाद… वही राक्षस… एक सोने का हिरण बनकर लौटा।
-
-👉 मारीच और सुबाहु: विश्वामित्र की अग्नि की रक्षा (सूर्यवंश कथा, एपिसोड 56)
-📜 स्रोत: श्रीमद्भागवत 9.10 (संक्षेप) · वाल्मीकि रामायण, बाल कांड (सिद्धाश्रम, यज्ञ-रक्षा, अहल्या) · रामचरितमानस (अहल्या, तुलना)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #श्रीराम #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-एक बाण… एक राक्षस को लगा। 🔱 मारीच और सुबाहु: विश्वामित्र की अग्नि की रक्षा | सूर्यवंश कथा · एपिसोड 56
-स्रोत: श्रीमद्भागवत 9.10 (संक्षेप) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#श्रीराम #सूर्यवंश #mythology #hinduism #storytime #hindi
+एक बाण… एक राक्षस को लगा। 🔱 मारीच और सुबाहु: विश्वामित्र की अग्नि की रक्षा
+पूरी कथा: सूर्यवंश कथा · एपिसोड 56 (Related video में लिंक)
+#Shorts #सूर्यवंश #श्रीराम #पौराणिककथा
 ```
 
 ### E57 · वह धनुष जिसे तीन सौ लोग उठाकर लाए
@@ -5107,39 +3520,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E58 घर लौटते समय राम और परशुराम
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-एक धनुष… इतना भारी… कि उसे सभा में लाने के लिए… सैकड़ों लोग लगे।
-
-वह धनुष जिसे तीन सौ लोग उठाकर लाए
-सूर्यवंश कथा · एपिसोड 57 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.10 (धनुष-भंग)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#श्रीराम #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-एक धनुष… इतना भारी… कि उसे सभा में लाने के लिए… सैकड़ों लोग लगे।
-देश-देश के राजा आए। किसी ने उसे हिलाया तक नहीं।
-और फिर… एक सोलह वर्ष का राजकुमार आगे आया।
-उसने धनुष उठाया… प्रत्यंचा चढ़ाई…
-
-👉 वह धनुष जिसे तीन सौ लोग उठाकर लाए (सूर्यवंश कथा, एपिसोड 57)
-📜 स्रोत: श्रीमद्भागवत 9.10 (धनुष-भंग) · वाल्मीकि रामायण, बाल कांड (धनुष का इतिहास, सीता, चार विवाह) · रामचरितमानस (पुष्पवाटिका)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #श्रीराम #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-एक धनुष… इतना भारी… कि उसे सभा में लाने के लिए… सैकड़ों लोग लगे। 🔱 वह धनुष जिसे तीन सौ लोग उठाकर लाए | सूर्यवंश कथा · एपिसोड 57
-स्रोत: श्रीमद्भागवत 9.10 (धनुष-भंग) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#श्रीराम #सूर्यवंश #mythology #hinduism #storytime #hindi
+एक धनुष… इतना भारी… कि उसे सभा में लाने के लिए… सैकड़ों लोग लगे। 🔱 वह धनुष जिसे तीन सौ लोग उठाकर लाए
+पूरी कथा: सूर्यवंश कथा · एपिसोड 57 (Related video में लिंक)
+#Shorts #सूर्यवंश #श्रीराम #पौराणिककथा
 ```
 
 ### E58 · घर लौटते समय राम और परशुराम
@@ -5196,39 +3581,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E59 कैकेयी के दो वरदान: वह रात जब सब बदल गया
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-एक ऋषि… जिन्होंने इक्कीस बार… पृथ्वी को क्षत्रियों से ख़ाली किया था।
-
-घर लौटते समय राम और परशुराम
-सूर्यवंश कथा · एपिसोड 58 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.10 (परशुराम का गर्व टूटना)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#श्रीराम #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-एक ऋषि… जिन्होंने इक्कीस बार… पृथ्वी को क्षत्रियों से ख़ाली किया था।
-वे एक युवा क्षत्रिय राजकुमार के सामने खड़े थे।
-और बोले… "तुमने शिव का धनुष तोड़ा? अब यह विष्णु का धनुष उठाकर दिखाओ।"
-दो राम। आमने-सामने। और दोनों… एक ही भगवान के अवतार।
-
-👉 घर लौटते समय राम और परशुराम (सूर्यवंश कथा, एपिसोड 58)
-📜 स्रोत: श्रीमद्भागवत 9.10 (परशुराम का गर्व टूटना) · 9.15-16 (परशुराम की कथा) · वाल्मीकि रामायण, बाल कांड · रामचरितमानस (लक्ष्मण-परशुराम संवाद, तुलना)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #श्रीराम #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-एक ऋषि… जिन्होंने इक्कीस बार… पृथ्वी को क्षत्रियों से ख़ाली किया था। 🔱 घर लौटते समय राम और परशुराम | सूर्यवंश कथा · एपिसोड 58
-स्रोत: श्रीमद्भागवत 9.10 (परशुराम का गर्व टूटना) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#श्रीराम #सूर्यवंश #mythology #hinduism #storytime #hindi
+एक ऋषि… जिन्होंने इक्कीस बार… पृथ्वी को क्षत्रियों से ख़ाली किया था। 🔱 घर लौटते समय राम और परशुराम
+पूरी कथा: सूर्यवंश कथा · एपिसोड 58 (Related video में लिंक)
+#Shorts #सूर्यवंश #श्रीराम #पौराणिककथा
 ```
 
 ### E59 · कैकेयी के दो वरदान: वह रात जब सब बदल गया
@@ -5286,39 +3643,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E60 दशरथ की मृत्यु और भरत का इनकार
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-उस रात… पूरी अयोध्या जगमगा रही थी।
-
-कैकेयी के दो वरदान: वह रात जब सब बदल गया
-सूर्यवंश कथा · एपिसोड 59 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.10 (वनवास)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#श्रीराम #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-उस रात… पूरी अयोध्या जगमगा रही थी।
-कल सुबह… राम का राज्याभिषेक था।
-और महल के एक कोने में… एक रानी… ज़मीन पर पड़ी थी। आभूषण उतारकर फेंके हुए। बाल बिखरे।
-और जब राजा उसके पास आए… तो उसने दो वाक्य कहे।
-
-👉 कैकेयी के दो वरदान: वह रात जब सब बदल गया (सूर्यवंश कथा, एपिसोड 59)
-📜 स्रोत: श्रीमद्भागवत 9.10 (वनवास) · वाल्मीकि रामायण, अयोध्या कांड (राज्याभिषेक की घोषणा, मंथरा, कोप-भवन, वरदान, राम का स्वीकार)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #श्रीराम #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-उस रात… पूरी अयोध्या जगमगा रही थी। 🔱 कैकेयी के दो वरदान: वह रात जब सब बदल गया | सूर्यवंश कथा · एपिसोड 59
-स्रोत: श्रीमद्भागवत 9.10 (वनवास) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#श्रीराम #सूर्यवंश #mythology #hinduism #storytime #hindi
+उस रात… पूरी अयोध्या जगमगा रही थी। 🔱 कैकेयी के दो वरदान: वह रात जब सब बदल गया
+पूरी कथा: सूर्यवंश कथा · एपिसोड 59 (Related video में लिंक)
+#Shorts #सूर्यवंश #श्रीराम #पौराणिककथा
 ```
 
 ### E60 · दशरथ की मृत्यु और भरत का इनकार
@@ -5376,39 +3705,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E61 शूर्पणखा और चौदह हज़ार राक्षस
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-उसकी माँ ने… उसके लिए… पूरा राज्य माँग लिया था।
-
-दशरथ की मृत्यु और भरत का इनकार
-सूर्यवंश कथा · एपिसोड 60 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.10
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#श्रीराम #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-उसकी माँ ने… उसके लिए… पूरा राज्य माँग लिया था।
-उसके भाई को… चौदह वर्ष का वनवास दिलवाया था।
-और जब वह लौटा… तो उसने… सिंहासन पर बैठने से मना कर दिया।
-उस पर रखी… भाई की खड़ाऊँ। और स्वयं… चौदह वर्ष… एक तपस्वी की तरह… ज़मीन पर सोया।
-
-👉 दशरथ की मृत्यु और भरत का इनकार (सूर्यवंश कथा, एपिसोड 60)
-📜 स्रोत: श्रीमद्भागवत 9.10 · वाल्मीकि रामायण, अयोध्या कांड (गुह, चित्रकूट, दशरथ की मृत्यु, भरत का आगमन, खड़ाऊँ) · रामचरितमानस (केवट)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #श्रीराम #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-उसकी माँ ने… उसके लिए… पूरा राज्य माँग लिया था। 🔱 दशरथ की मृत्यु और भरत का इनकार | सूर्यवंश कथा · एपिसोड 60
-स्रोत: श्रीमद्भागवत 9.10 · पूरी कथा प्रोफ़ाइल के लिंक पर
-#श्रीराम #सूर्यवंश #mythology #hinduism #storytime #hindi
+उसकी माँ ने… उसके लिए… पूरा राज्य माँग लिया था। 🔱 दशरथ की मृत्यु और भरत का इनकार
+पूरी कथा: सूर्यवंश कथा · एपिसोड 60 (Related video में लिंक)
+#Shorts #सूर्यवंश #श्रीराम #पौराणिककथा
 ```
 
 ### E61 · शूर्पणखा और चौदह हज़ार राक्षस
@@ -5466,39 +3767,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E62 सोने का हिरण और सीता का हरण
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-एक धनुर्धर। अकेला।
-
-शूर्पणखा और चौदह हज़ार राक्षस
-सूर्यवंश कथा · एपिसोड 61 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.10 (शूर्पणखा, खर-दूषण-त्रिशिरा, 14,000 राक्षस)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#श्रीराम #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-एक धनुर्धर। अकेला।
-उसके सामने… चौदह हज़ार राक्षस।
-उसने अपने भाई से कहा… "सीता को लेकर गुफा में चले जाओ। मैं अकेला लड़ूँगा।"
-और भागवत कहता है… वह अकेला धनुर्धर… उन चौदह हज़ार को… समाप्त कर गया।
-
-👉 शूर्पणखा और चौदह हज़ार राक्षस (सूर्यवंश कथा, एपिसोड 61)
-📜 स्रोत: श्रीमद्भागवत 9.10 (शूर्पणखा, खर-दूषण-त्रिशिरा, 14,000 राक्षस) · वाल्मीकि रामायण, अरण्य कांड · परंपरा (नासिक)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #श्रीराम #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-एक धनुर्धर। अकेला। 🔱 शूर्पणखा और चौदह हज़ार राक्षस | सूर्यवंश कथा · एपिसोड 61
-स्रोत: श्रीमद्भागवत 9.10 (शूर्पणखा, खर-दूषण-त्रिशिरा, 14,000 राक्षस) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#श्रीराम #सूर्यवंश #mythology #hinduism #storytime #hindi
+एक धनुर्धर। अकेला। 🔱 शूर्पणखा और चौदह हज़ार राक्षस
+पूरी कथा: सूर्यवंश कथा · एपिसोड 61 (Related video में लिंक)
+#Shorts #सूर्यवंश #श्रीराम #पौराणिककथा
 ```
 
 ### E62 · सोने का हिरण और सीता का हरण
@@ -5556,39 +3829,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E63 राम का विलाप: वन में सीता की खोज
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-वन में… एक हिरण दिखा।
-
-सोने का हिरण और सीता का हरण
-सूर्यवंश कथा · एपिसोड 62 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.10
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#श्रीराम #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-वन में… एक हिरण दिखा।
-सोने का शरीर। चाँदी के धब्बे। रत्नों जैसे सींग।
-सीता ने कहा… "मुझे वह हिरण चाहिए।"
-राम उसके पीछे गए।
-
-👉 सोने का हिरण और सीता का हरण (सूर्यवंश कथा, एपिसोड 62)
-📜 स्रोत: श्रीमद्भागवत 9.10 · वाल्मीकि रामायण, अरण्य कांड · रामचरितमानस और लोक-परंपरा ("लक्ष्मण रेखा")
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #श्रीराम #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-वन में… एक हिरण दिखा। 🔱 सोने का हिरण और सीता का हरण | सूर्यवंश कथा · एपिसोड 62
-स्रोत: श्रीमद्भागवत 9.10 · पूरी कथा प्रोफ़ाइल के लिंक पर
-#श्रीराम #सूर्यवंश #mythology #hinduism #storytime #hindi
+वन में… एक हिरण दिखा। 🔱 सोने का हिरण और सीता का हरण
+पूरी कथा: सूर्यवंश कथा · एपिसोड 62 (Related video में लिंक)
+#Shorts #सूर्यवंश #श्रीराम #पौराणिककथा
 ```
 
 ### E63 · राम का विलाप: वन में सीता की खोज
@@ -5645,39 +3890,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E64 सुग्रीव और वाली: पेड़ के पीछे से चला बाण
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-"हे कदंब… क्या तुमने मेरी सीता को देखा?"
-
-राम का विलाप: वन में सीता की खोज
-सूर्यवंश कथा · एपिसोड 63 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.10 (राम का विलाप, जटायु का संस्कार, कबंध)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#श्रीराम #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-"हे कदंब… क्या तुमने मेरी सीता को देखा?"
-"हे अशोक… तुम तो शोक हरने वाले हो… मेरा शोक हरो… बताओ, सीता कहाँ है?"
-"हे गोदावरी… तुम तो सब देखती हो… बोलो…"
-एक राजकुमार… जिसने चौदह हज़ार राक्षसों को अकेले मारा था… आज पेड़ों से… नदियों से… रो-रोकर पूछ रहा था।
-
-👉 राम का विलाप: वन में सीता की खोज (सूर्यवंश कथा, एपिसोड 63)
-📜 स्रोत: श्रीमद्भागवत 9.10 (राम का विलाप, जटायु का संस्कार, कबंध) · वाल्मीकि रामायण, अरण्य कांड (जटायु, कबंध, शबरी) · रामचरितमानस (शबरी के बेर, नवधा भक्ति)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #श्रीराम #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-"हे कदंब… क्या तुमने मेरी सीता को देखा?" 🔱 राम का विलाप: वन में सीता की खोज | सूर्यवंश कथा · एपिसोड 63
-स्रोत: श्रीमद्भागवत 9.10 (राम का विलाप, जटायु का संस्कार, कबंध) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#श्रीराम #सूर्यवंश #mythology #hinduism #storytime #hindi
+"हे कदंब… क्या तुमने मेरी सीता को देखा?" 🔱 राम का विलाप: वन में सीता की खोज
+पूरी कथा: सूर्यवंश कथा · एपिसोड 63 (Related video में लिंक)
+#Shorts #सूर्यवंश #श्रीराम #पौराणिककथा
 ```
 
 ### E64 · सुग्रीव और वाली: पेड़ के पीछे से चला बाण
@@ -5735,39 +3952,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E65 हनुमान की लंका की ओर छलाँग
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-दो भाई लड़ रहे थे।
-
-सुग्रीव और वाली: पेड़ के पीछे से चला बाण
-सूर्यवंश कथा · एपिसोड 64 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.10 (सुग्रीव से मित्रता, वाली-वध)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#श्रीराम #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-दो भाई लड़ रहे थे।
-और एक पेड़ के पीछे से… एक बाण आया। और बड़ा भाई… गिर पड़ा।
-मरते हुए… उसने पेड़ के पीछे खड़े धनुर्धर से पूछा…
-"तुम तो धर्म के रक्षक कहलाते हो। फिर छिपकर क्यों मारा?"
-
-👉 सुग्रीव और वाली: पेड़ के पीछे से चला बाण (सूर्यवंश कथा, एपिसोड 64)
-📜 स्रोत: श्रीमद्भागवत 9.10 (सुग्रीव से मित्रता, वाली-वध) · वाल्मीकि रामायण, किष्किंधा कांड
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #श्रीराम #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-दो भाई लड़ रहे थे। 🔱 सुग्रीव और वाली: पेड़ के पीछे से चला बाण | सूर्यवंश कथा · एपिसोड 64
-स्रोत: श्रीमद्भागवत 9.10 (सुग्रीव से मित्रता, वाली-वध) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#श्रीराम #सूर्यवंश #mythology #hinduism #storytime #hindi
+दो भाई लड़ रहे थे। 🔱 सुग्रीव और वाली: पेड़ के पीछे से चला बाण
+पूरी कथा: सूर्यवंश कथा · एपिसोड 64 (Related video में लिंक)
+#Shorts #सूर्यवंश #श्रीराम #पौराणिककथा
 ```
 
 ### E65 · हनुमान की लंका की ओर छलाँग
@@ -5824,39 +4013,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E66 लंका जली: रावण के दरबार में हनुमान
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-एक वानर… समुद्र के किनारे… चुप बैठा था।
-
-हनुमान की लंका की ओर छलाँग
-सूर्यवंश कथा · एपिसोड 65 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.10 (संक्षेप)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#श्रीराम #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-एक वानर… समुद्र के किनारे… चुप बैठा था।
-सब वानर कह रहे थे… "सौ योजन का समुद्र। कौन पार करेगा?"
-और वह चुप था। क्योंकि उसे याद ही नहीं था… कि वह कौन है।
-तब एक बूढ़े भालू ने… उसके पास आकर कहा…
-
-👉 हनुमान की लंका की ओर छलाँग (सूर्यवंश कथा, एपिसोड 65)
-📜 स्रोत: श्रीमद्भागवत 9.10 (संक्षेप) · वाल्मीकि रामायण, किष्किंधा कांड और सुंदर कांड · उत्तर कांड (हनुमान का बचपन और शाप)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #श्रीराम #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-एक वानर… समुद्र के किनारे… चुप बैठा था। 🔱 हनुमान की लंका की ओर छलाँग | सूर्यवंश कथा · एपिसोड 65
-स्रोत: श्रीमद्भागवत 9.10 (संक्षेप) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#श्रीराम #सूर्यवंश #mythology #hinduism #storytime #hindi
+एक वानर… समुद्र के किनारे… चुप बैठा था। 🔱 हनुमान की लंका की ओर छलाँग
+पूरी कथा: सूर्यवंश कथा · एपिसोड 65 (Related video में लिंक)
+#Shorts #सूर्यवंश #श्रीराम #पौराणिककथा
 ```
 
 ### E66 · लंका जली: रावण के दरबार में हनुमान
@@ -5913,38 +4074,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E67 विभीषण शरण में आए
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-रावण ने एक वानर की पूँछ में आग लगवाई।
-
-लंका जली: रावण के दरबार में हनुमान
-सूर्यवंश कथा · एपिसोड 66 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.10 (संक्षेप)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#श्रीराम #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-रावण ने एक वानर की पूँछ में आग लगवाई।
-उसे अपमानित करने के लिए। नगर में घुमाने के लिए।
-और उस वानर ने… उसी आग से… सोने की लंका को… जला दिया।
-
-👉 लंका जली: रावण के दरबार में हनुमान (सूर्यवंश कथा, एपिसोड 66)
-📜 स्रोत: श्रीमद्भागवत 9.10 (संक्षेप) · वाल्मीकि रामायण, सुंदर कांड
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #श्रीराम #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-रावण ने एक वानर की पूँछ में आग लगवाई। 🔱 लंका जली: रावण के दरबार में हनुमान | सूर्यवंश कथा · एपिसोड 66
-स्रोत: श्रीमद्भागवत 9.10 (संक्षेप) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#श्रीराम #सूर्यवंश #mythology #hinduism #storytime #hindi
+रावण ने एक वानर की पूँछ में आग लगवाई। 🔱 लंका जली: रावण के दरबार में हनुमान
+पूरी कथा: सूर्यवंश कथा · एपिसोड 66 (Related video में लिंक)
+#Shorts #सूर्यवंश #श्रीराम #पौराणिककथा
 ```
 
 ### E67 · विभीषण शरण में आए
@@ -6001,39 +4135,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E68 तीन दिन का मौन: राम और समुद्र
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-युद्ध से ठीक पहले… शत्रु के खेमे से… पाँच राक्षस आए।
-
-विभीषण शरण में आए
-सूर्यवंश कथा · एपिसोड 67 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.10 (विभीषण का उल्लेख)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#श्रीराम #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-युद्ध से ठीक पहले… शत्रु के खेमे से… पाँच राक्षस आए।
-उनमें एक था… रावण का सगा भाई।
-वानरों ने कहा… "यह जासूस है। इसे मार दो।"
-और राम ने कहा…
-
-👉 विभीषण शरण में आए (सूर्यवंश कथा, एपिसोड 67)
-📜 स्रोत: श्रीमद्भागवत 9.10 (विभीषण का उल्लेख) · वाल्मीकि रामायण, युद्ध कांड (रावण की सभा, विभीषण की शरणागति, राम का अभय-व्रत) · रामचरितमानस (तुलना)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #श्रीराम #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-युद्ध से ठीक पहले… शत्रु के खेमे से… पाँच राक्षस आए। 🔱 विभीषण शरण में आए | सूर्यवंश कथा · एपिसोड 67
-स्रोत: श्रीमद्भागवत 9.10 (विभीषण का उल्लेख) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#श्रीराम #सूर्यवंश #mythology #hinduism #storytime #hindi
+युद्ध से ठीक पहले… शत्रु के खेमे से… पाँच राक्षस आए। 🔱 विभीषण शरण में आए
+पूरी कथा: सूर्यवंश कथा · एपिसोड 67 (Related video में लिंक)
+#Shorts #सूर्यवंश #श्रीराम #पौराणिककथा
 ```
 
 ### E68 · तीन दिन का मौन: राम और समुद्र
@@ -6091,39 +4197,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E69 लंका का युद्ध: कुंभकर्ण और इंद्रजीत
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-राम… समुद्र के तट पर… तीन दिन बैठे रहे।
-
-तीन दिन का मौन: राम और समुद्र
-सूर्यवंश कथा · एपिसोड 68 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.10 (समुद्र का मौन, राम का क्रोध, समुद्र की शरण, सेतु)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#श्रीराम #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-राम… समुद्र के तट पर… तीन दिन बैठे रहे।
-उपवास में। हाथ जोड़े। प्रार्थना करते हुए। "हे सागर… रास्ता दो।"
-और समुद्र… चुप रहा।
-तीसरे दिन… भागवत कहता है… राम की भौंहें टेढ़ी हुईं।
-
-👉 तीन दिन का मौन: राम और समुद्र (सूर्यवंश कथा, एपिसोड 68)
-📜 स्रोत: श्रीमद्भागवत 9.10 (समुद्र का मौन, राम का क्रोध, समुद्र की शरण, सेतु) · वाल्मीकि रामायण, युद्ध कांड · परंपरा (रामेश्वरम, गिलहरी, तैरते पत्थर, राम सेतु)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #श्रीराम #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-राम… समुद्र के तट पर… तीन दिन बैठे रहे। 🔱 तीन दिन का मौन: राम और समुद्र | सूर्यवंश कथा · एपिसोड 68
-स्रोत: श्रीमद्भागवत 9.10 (समुद्र का मौन, राम का क्रोध, समुद्र की शरण, सेतु) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#श्रीराम #सूर्यवंश #mythology #hinduism #storytime #hindi
+राम… समुद्र के तट पर… तीन दिन बैठे रहे। 🔱 तीन दिन का मौन: राम और समुद्र
+पूरी कथा: सूर्यवंश कथा · एपिसोड 68 (Related video में लिंक)
+#Shorts #सूर्यवंश #श्रीराम #पौराणिककथा
 ```
 
 ### E69 · लंका का युद्ध: कुंभकर्ण और इंद्रजीत
@@ -6180,39 +4258,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E70 रावण का अंतिम युद्ध
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-वह छह महीने सोता था।
-
-लंका का युद्ध: कुंभकर्ण और इंद्रजीत
-सूर्यवंश कथा · एपिसोड 69 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.10 (युद्ध, संक्षेप)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#श्रीराम #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-वह छह महीने सोता था।
-उसे जगाने के लिए… हज़ारों राक्षसों ने ढोल बजाए। शंख फूँके। उसके शरीर पर हाथी चलाए।
-और जब वह जागा… तो उसने सबसे पहले कहा… "भूख लगी है।"
-और फिर… उसने अपने भाई रावण से कहा… "तुमने ग़लत किया है। पर मैं तुम्हारे लिए लड़ूँगा।"
-
-👉 लंका का युद्ध: कुंभकर्ण और इंद्रजीत (सूर्यवंश कथा, एपिसोड 69)
-📜 स्रोत: श्रीमद्भागवत 9.10 (युद्ध, संक्षेप) · वाल्मीकि रामायण, युद्ध कांड · रामचरितमानस (अंगद का पैर, तुलना)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #श्रीराम #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-वह छह महीने सोता था। 🔱 लंका का युद्ध: कुंभकर्ण और इंद्रजीत | सूर्यवंश कथा · एपिसोड 69
-स्रोत: श्रीमद्भागवत 9.10 (युद्ध, संक्षेप) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#श्रीराम #सूर्यवंश #mythology #hinduism #storytime #hindi
+वह छह महीने सोता था। 🔱 लंका का युद्ध: कुंभकर्ण और इंद्रजीत
+पूरी कथा: सूर्यवंश कथा · एपिसोड 69 (Related video में लिंक)
+#Shorts #सूर्यवंश #श्रीराम #पौराणिककथा
 ```
 
 ### E70 · रावण का अंतिम युद्ध
@@ -6269,39 +4319,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E71 अयोध्या वापसी: नंदीग्राम में भरत
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-राम ने रावण का एक सिर काटा।
-
-रावण का अंतिम युद्ध
-सूर्यवंश कथा · एपिसोड 70 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.10 (रावण-वध, रानियों का विलाप, विभीषण, सीता से मिलन)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#श्रीराम #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-राम ने रावण का एक सिर काटा।
-वहाँ… नया सिर उग आया।
-फिर काटा। फिर उगा।
-वाल्मीकि कहते हैं… राम ने रावण के सिर… सौ बार काटे।
-
-👉 रावण का अंतिम युद्ध (सूर्यवंश कथा, एपिसोड 70)
-📜 स्रोत: श्रीमद्भागवत 9.10 (रावण-वध, रानियों का विलाप, विभीषण, सीता से मिलन) · वाल्मीकि रामायण, युद्ध कांड (इंद्र का रथ, आदित्य हृदय, ब्रह्मास्त्र, विभीषण का शोक, अग्नि-परीक्षा) · रामचरितमानस (तुलना)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #श्रीराम #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-राम ने रावण का एक सिर काटा। 🔱 रावण का अंतिम युद्ध | सूर्यवंश कथा · एपिसोड 70
-स्रोत: श्रीमद्भागवत 9.10 (रावण-वध, रानियों का विलाप, विभीषण, सीता से मिलन) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#श्रीराम #सूर्यवंश #mythology #hinduism #storytime #hindi
+राम ने रावण का एक सिर काटा। 🔱 रावण का अंतिम युद्ध
+पूरी कथा: सूर्यवंश कथा · एपिसोड 70 (Related video में लिंक)
+#Shorts #सूर्यवंश #श्रीराम #पौराणिककथा
 ```
 
 ### E71 · अयोध्या वापसी: नंदीग्राम में भरत
@@ -6358,39 +4380,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E72 राम का राज्याभिषेक और भागवत का रामराज्य
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-चौदह वर्ष… पूरे हो चुके थे।
-
-अयोध्या वापसी: नंदीग्राम में भरत
-सूर्यवंश कथा · एपिसोड 71 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.10 (नंदीग्राम में भरत का विस्तृत वर्णन)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#श्रीराम #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-चौदह वर्ष… पूरे हो चुके थे।
-नंदीग्राम में… एक तपस्वी… आकाश की ओर देख रहा था। सामने… एक अग्नि-कुंड तैयार था।
-उसने प्रतिज्ञा की थी… "यदि राम नहीं लौटे… तो मैं इस अग्नि में प्रवेश करूँगा।"
-और सूर्य… डूबने वाला था।
-
-👉 अयोध्या वापसी: नंदीग्राम में भरत (सूर्यवंश कथा, एपिसोड 71)
-📜 स्रोत: श्रीमद्भागवत 9.10 (नंदीग्राम में भरत का विस्तृत वर्णन) · वाल्मीकि रामायण, युद्ध कांड (हनुमान का संदेश) · रामचरितमानस, उत्तर कांड · परंपरा (दीपावली)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #श्रीराम #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-चौदह वर्ष… पूरे हो चुके थे। 🔱 अयोध्या वापसी: नंदीग्राम में भरत | सूर्यवंश कथा · एपिसोड 71
-स्रोत: श्रीमद्भागवत 9.10 (नंदीग्राम में भरत का विस्तृत वर्णन) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#श्रीराम #सूर्यवंश #mythology #hinduism #storytime #hindi
+चौदह वर्ष… पूरे हो चुके थे। 🔱 अयोध्या वापसी: नंदीग्राम में भरत
+पूरी कथा: सूर्यवंश कथा · एपिसोड 71 (Related video में लिंक)
+#Shorts #सूर्यवंश #श्रीराम #पौराणिककथा
 ```
 
 ### E72 · राम का राज्याभिषेक और भागवत का रामराज्य
@@ -6447,39 +4441,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E73 भागवत में राम का शासन: लौटाए गए दान
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-एक राज्य… जहाँ कोई रोगी नहीं था।
-
-राम का राज्याभिषेक और भागवत का रामराज्य
-सूर्यवंश कथा · एपिसोड 72 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.10 (राज्याभिषेक और रामराज्य का वर्णन)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#श्रीराम #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-एक राज्य… जहाँ कोई रोगी नहीं था।
-कोई दुखी नहीं। कोई भूखा नहीं।
-जहाँ नदियाँ… हर समय भरी रहती थीं। और पेड़… हर ऋतु में फल देते थे।
-भागवत कहता है… वह त्रेता युग था। पर लगता था… जैसे सत्य युग लौट आया हो।
-
-👉 राम का राज्याभिषेक और भागवत का रामराज्य (सूर्यवंश कथा, एपिसोड 72)
-📜 स्रोत: श्रीमद्भागवत 9.10 (राज्याभिषेक और रामराज्य का वर्णन) · वाल्मीकि रामायण, युद्ध कांड (अंतिम सर्ग) · रामचरितमानस, उत्तर कांड · गांधी (रामराज्य का आदर्श)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #श्रीराम #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-एक राज्य… जहाँ कोई रोगी नहीं था। 🔱 राम का राज्याभिषेक और भागवत का रामराज्य | सूर्यवंश कथा · एपिसोड 72
-स्रोत: श्रीमद्भागवत 9.10 (राज्याभिषेक और रामराज्य का वर्णन) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#श्रीराम #सूर्यवंश #mythology #hinduism #storytime #hindi
+एक राज्य… जहाँ कोई रोगी नहीं था। 🔱 राम का राज्याभिषेक और भागवत का रामराज्य
+पूरी कथा: सूर्यवंश कथा · एपिसोड 72 (Related video में लिंक)
+#Shorts #सूर्यवंश #श्रीराम #पौराणिककथा
 ```
 
 ### E73 · भागवत में राम का शासन: लौटाए गए दान
@@ -6536,39 +4502,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E74 हनुमान की राम-स्तुति: भागवत का किंपुरुष
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-एक राजा ने… अपने पुरोहितों को… दक्षिणा में… पूरी पृथ्वी दे दी।
-
-भागवत में राम का शासन: लौटाए गए दान
-सूर्यवंश कथा · एपिसोड 73 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.11 (राम के यज्ञ, पृथ्वी-दान, ब्राह्मणों का लौटाना)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#श्रीराम #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-एक राजा ने… अपने पुरोहितों को… दक्षिणा में… पूरी पृथ्वी दे दी।
-पूर्व… पश्चिम… उत्तर… दक्षिण… सब।
-और पुरोहितों ने… मुस्कुराकर… वह पृथ्वी… लौटा दी।
-"हमें इसकी आवश्यकता नहीं।"
-
-👉 भागवत में राम का शासन: लौटाए गए दान (सूर्यवंश कथा, एपिसोड 73)
-📜 स्रोत: श्रीमद्भागवत 9.11 (राम के यज्ञ, पृथ्वी-दान, ब्राह्मणों का लौटाना) · संदर्भ: कालिदास, रघुवंश (रघु का विश्वजित, दिलीप का कर)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #श्रीराम #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-एक राजा ने… अपने पुरोहितों को… दक्षिणा में… पूरी पृथ्वी दे दी। 🔱 भागवत में राम का शासन: लौटाए गए दान | सूर्यवंश कथा · एपिसोड 73
-स्रोत: श्रीमद्भागवत 9.11 (राम के यज्ञ, पृथ्वी-दान, ब्राह्मणों का लौटाना) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#श्रीराम #सूर्यवंश #mythology #hinduism #storytime #hindi
+एक राजा ने… अपने पुरोहितों को… दक्षिणा में… पूरी पृथ्वी दे दी। 🔱 भागवत में राम का शासन: लौटाए गए दान
+पूरी कथा: सूर्यवंश कथा · एपिसोड 73 (Related video में लिंक)
+#Shorts #सूर्यवंश #श्रीराम #पौराणिककथा
 ```
 
 ### E74 · हनुमान की राम-स्तुति: भागवत का किंपुरुष
@@ -6625,39 +4563,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E75 "मैं राम नहीं हूँ": वे शब्द जिन्होंने सीता को निर्वासित किया
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-भागवत कहता है…
-
-हनुमान की राम-स्तुति: भागवत का किंपुरुष
-सूर्यवंश कथा · एपिसोड 74 🔱
-
-📜 स्रोत: श्रीमद्भागवत 5.19 (किंपुरुष-वर्ष में हनुमान की राम-उपासना और स्तुति)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#श्रीराम #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-भागवत कहता है…
-आज भी… हिमालय के उत्तर में… एक भूमि है।
-और वहाँ… हनुमान… हाथ जोड़े… आँखें बंद किए… राम की उपासना करते हैं।
-युगों से। आज भी।
-
-👉 हनुमान की राम-स्तुति: भागवत का किंपुरुष (सूर्यवंश कथा, एपिसोड 74)
-📜 स्रोत: श्रीमद्भागवत 5.19 (किंपुरुष-वर्ष में हनुमान की राम-उपासना और स्तुति) · परंपरा (हनुमान चिरंजीवी, हनुमान चालीसा)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #श्रीराम #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-भागवत कहता है… 🔱 हनुमान की राम-स्तुति: भागवत का किंपुरुष | सूर्यवंश कथा · एपिसोड 74
-स्रोत: श्रीमद्भागवत 5.19 (किंपुरुष-वर्ष में हनुमान की राम-उपासना और स्तुति) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#श्रीराम #सूर्यवंश #mythology #hinduism #storytime #hindi
+भागवत कहता है… 🔱 हनुमान की राम-स्तुति: भागवत का किंपुरुष
+पूरी कथा: सूर्यवंश कथा · एपिसोड 74 (Related video में लिंक)
+#Shorts #सूर्यवंश #श्रीराम #पौराणिककथा
 ```
 
 ### E75 · "मैं राम नहीं हूँ": वे शब्द जिन्होंने सीता को निर्वासित किया
@@ -6714,39 +4624,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E76 लव और कुश: सीता के निर्वासन के बाद जन्मे दो जुड़वाँ
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-रात। अयोध्या की एक गली।
-
-"मैं राम नहीं हूँ": वे शब्द जिन्होंने सीता को निर्वासित किया
-सूर्यवंश कथा · एपिसोड 75 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.11 (राम का वेश बदलकर सुनना, सीता का त्याग)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#लवकुश #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-रात। अयोध्या की एक गली।
-एक घर के भीतर से… एक पुरुष… अपनी पत्नी से चिल्लाकर कह रहा था…
-"तुम पराए घर में रहीं। मैं तुम्हें नहीं रखूँगा। मैं राम नहीं हूँ… जो पराए घर में रही पत्नी को… वापस रख ले।"
-और बाहर… वेश बदले… वह व्यक्ति खड़ा था…
-
-👉 "मैं राम नहीं हूँ": वे शब्द जिन्होंने सीता को निर्वासित किया (सूर्यवंश कथा, एपिसोड 75)
-📜 स्रोत: श्रीमद्भागवत 9.11 (राम का वेश बदलकर सुनना, सीता का त्याग) · वाल्मीकि रामायण, उत्तर कांड (भद्र का संदेश, लक्ष्मण द्वारा वन में छोड़ना) · रामचरितमानस (इस प्रसंग का न होना) · लोक-परंपरा (धोबी)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #लवकुश #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-रात। अयोध्या की एक गली। 🔱 "मैं राम नहीं हूँ": वे शब्द जिन्होंने सीता को निर्वासित किया | सूर्यवंश कथा · एपिसोड 75
-स्रोत: श्रीमद्भागवत 9.11 (राम का वेश बदलकर सुनना, सीता का त्याग) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#लवकुश #सूर्यवंश #mythology #hinduism #storytime #hindi
+रात। अयोध्या की एक गली। 🔱 "मैं राम नहीं हूँ": वे शब्द जिन्होंने सीता को निर्वासित किया
+पूरी कथा: सूर्यवंश कथा · एपिसोड 75 (Related video में लिंक)
+#Shorts #सूर्यवंश #लवकुश #पौराणिककथा
 ```
 
 ### E76 · लव और कुश: सीता के निर्वासन के बाद जन्मे दो जुड़वाँ
@@ -6803,39 +4685,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E77 राम के भाइयों ने तीन नए राज्य बसाए
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-एक रात… एक आश्रम में… दो शिशुओं ने जन्म लिया।
-
-लव और कुश: सीता के निर्वासन के बाद जन्मे दो जुड़वाँ
-सूर्यवंश कथा · एपिसोड 76 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.11 (जुड़वाँ पुत्रों का जन्म, वाल्मीकि द्वारा संस्कार)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#लवकुश #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-एक रात… एक आश्रम में… दो शिशुओं ने जन्म लिया।
-उनकी माँ… एक निर्वासित रानी।
-उनके पिता… पृथ्वी के सम्राट… जो नहीं जानते थे… कि वे पिता बन गए हैं।
-और उन्हें नाम दिया… एक ऋषि ने… घास की एक मुट्ठी से।
-
-👉 लव और कुश: सीता के निर्वासन के बाद जन्मे दो जुड़वाँ (सूर्यवंश कथा, एपिसोड 76)
-📜 स्रोत: श्रीमद्भागवत 9.11 (जुड़वाँ पुत्रों का जन्म, वाल्मीकि द्वारा संस्कार) · वाल्मीकि रामायण, उत्तर कांड (जन्म, नामकरण, शत्रुघ्न का ठहरना) और बाल कांड (क्रौंच-वध, रामायण की रचना) · परंपरा (वाल्मीकि का पूर्व जीवन)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #लवकुश #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-एक रात… एक आश्रम में… दो शिशुओं ने जन्म लिया। 🔱 लव और कुश: सीता के निर्वासन के बाद जन्मे दो जुड़वाँ | सूर्यवंश कथा · एपिसोड 76
-स्रोत: श्रीमद्भागवत 9.11 (जुड़वाँ पुत्रों का जन्म, वाल्मीकि द्वारा संस्कार) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#लवकुश #सूर्यवंश #mythology #hinduism #storytime #hindi
+एक रात… एक आश्रम में… दो शिशुओं ने जन्म लिया। 🔱 लव और कुश: सीता के निर्वासन के बाद जन्मे दो जुड़वाँ
+पूरी कथा: सूर्यवंश कथा · एपिसोड 76 (Related video में लिंक)
+#Shorts #सूर्यवंश #लवकुश #पौराणिककथा
 ```
 
 ### E77 · राम के भाइयों ने तीन नए राज्य बसाए
@@ -6891,38 +4745,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E78 जुड़वाँ भाइयों ने राम को रामायण सुनाई
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-जिस असुर के त्रिशूल ने… सम्राट मांधाता को… उनकी पूरी सेना सहित… राख कर दिया था…
-
-राम के भाइयों ने तीन नए राज्य बसाए
-सूर्यवंश कथा · एपिसोड 77 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.11 (भाइयों के पुत्र, भरत की गंधर्व-विजय, शत्रुघ्न द्वारा लवण-वध और मथुरा)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#लवकुश #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-जिस असुर के त्रिशूल ने… सम्राट मांधाता को… उनकी पूरी सेना सहित… राख कर दिया था…
-उसी असुर के सामने… एक राजकुमार खड़ा था।
-और उस दिन… असुर का त्रिशूल… उसके हाथ में नहीं था।
-
-👉 राम के भाइयों ने तीन नए राज्य बसाए (सूर्यवंश कथा, एपिसोड 77)
-📜 स्रोत: श्रीमद्भागवत 9.11 (भाइयों के पुत्र, भरत की गंधर्व-विजय, शत्रुघ्न द्वारा लवण-वध और मथुरा) · वाल्मीकि रामायण, उत्तर कांड · इतिहास (तक्षशिला, पुष्कलावती)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #लवकुश #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-जिस असुर के त्रिशूल ने… सम्राट मांधाता को… उनकी पूरी सेना सहित… राख कर दिया था… 🔱 राम के भाइयों ने तीन नए राज्य बसाए | सूर्यवंश कथा · एपिसोड 77
-स्रोत: श्रीमद्भागवत 9.11 (भाइयों के पुत्र, भरत की गंधर्व-विजय, शत्रुघ्न द्वारा लवण-वध और मथुरा) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#लवकुश #सूर्यवंश #mythology #hinduism #storytime #hindi
+जिस असुर के त्रिशूल ने… सम्राट मांधाता को… उनकी पूरी सेना सहित… राख कर दिया था… 🔱 राम के भाइयों ने तीन नए राज्य बसाए
+पूरी कथा: सूर्यवंश कथा · एपिसोड 77 (Related video में लिंक)
+#Shorts #सूर्यवंश #लवकुश #पौराणिककथा
 ```
 
 ### E78 · जुड़वाँ भाइयों ने राम को रामायण सुनाई
@@ -6980,39 +4807,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E79 घोड़ा और युद्ध: यह कथा कहाँ से आई
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-दो बालक… एक सभा में… गा रहे थे।
-
-जुड़वाँ भाइयों ने राम को रामायण सुनाई
-सूर्यवंश कथा · एपिसोड 78 🔱
-
-📜 स्रोत: वाल्मीकि रामायण, उत्तर कांड (अश्वमेध, लव-कुश का गान, पहचान) और बाल कांड (गान का आरंभ)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#लवकुश #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-दो बालक… एक सभा में… गा रहे थे।
-एक राजा की कथा। उसके वनवास की। उसकी पत्नी के हरण की। उसके युद्ध की।
-और सिंहासन पर बैठा राजा… सुनते-सुनते… रोने लगा।
-क्योंकि वह कथा… उसी की थी।
-
-👉 जुड़वाँ भाइयों ने राम को रामायण सुनाई (सूर्यवंश कथा, एपिसोड 78)
-📜 स्रोत: वाल्मीकि रामायण, उत्तर कांड (अश्वमेध, लव-कुश का गान, पहचान) और बाल कांड (गान का आरंभ) · यह प्रसंग भागवत में नहीं है
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #लवकुश #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-दो बालक… एक सभा में… गा रहे थे। 🔱 जुड़वाँ भाइयों ने राम को रामायण सुनाई | सूर्यवंश कथा · एपिसोड 78
-स्रोत: वाल्मीकि रामायण, उत्तर कांड (अश्वमेध, लव-कुश का गान, पहचान) और बाल कांड (गान का आरंभ) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#लवकुश #सूर्यवंश #mythology #hinduism #storytime #hindi
+दो बालक… एक सभा में… गा रहे थे। 🔱 जुड़वाँ भाइयों ने राम को रामायण सुनाई
+पूरी कथा: सूर्यवंश कथा · एपिसोड 78 (Related video में लिंक)
+#Shorts #सूर्यवंश #लवकुश #पौराणिककथा
 ```
 
 ### E79 · घोड़ा और युद्ध: यह कथा कहाँ से आई
@@ -7069,39 +4868,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E80 सीता धरती में लौट गईं
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-एक घोड़ा… वन में भटकता हुआ… एक आश्रम पहुँचा।
-
-घोड़ा और युद्ध: यह कथा कहाँ से आई
-सूर्यवंश कथा · एपिसोड 79 🔱
-
-📜 स्रोत: पद्म पुराण, पाताल खंड
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#लवकुश #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-एक घोड़ा… वन में भटकता हुआ… एक आश्रम पहुँचा।
-उसके माथे पर… एक पत्र बँधा था… "यह राम का अश्वमेध का घोड़ा है। जो इसे रोके… वह युद्ध करे।"
-और दो बालकों ने… पत्र पढ़ा… मुस्कुराए…
-और घोड़े को… बाँध दिया।
-
-👉 घोड़ा और युद्ध: यह कथा कहाँ से आई (सूर्यवंश कथा, एपिसोड 79)
-📜 स्रोत: पद्म पुराण, पाताल खंड · जैमिनी अश्वमेध (जैमिनी भारत) · कृत्तिवास रामायण (बांग्ला) और लोक-परंपरा · यह कथा भागवत और वाल्मीकि में नहीं है
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #लवकुश #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-एक घोड़ा… वन में भटकता हुआ… एक आश्रम पहुँचा। 🔱 घोड़ा और युद्ध: यह कथा कहाँ से आई | सूर्यवंश कथा · एपिसोड 79
-स्रोत: पद्म पुराण, पाताल खंड · पूरी कथा प्रोफ़ाइल के लिंक पर
-#लवकुश #सूर्यवंश #mythology #hinduism #storytime #hindi
+एक घोड़ा… वन में भटकता हुआ… एक आश्रम पहुँचा। 🔱 घोड़ा और युद्ध: यह कथा कहाँ से आई
+पूरी कथा: सूर्यवंश कथा · एपिसोड 79 (Related video में लिंक)
+#Shorts #सूर्यवंश #लवकुश #पौराणिककथा
 ```
 
 ### E80 · सीता धरती में लौट गईं
@@ -7158,39 +4929,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E81 राम का प्रस्थान: अवतार का अंत कैसे हुआ
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-सभा में… सब राजा थे। ऋषि थे। प्रजा थी।
-
-सीता धरती में लौट गईं
-सूर्यवंश कथा · एपिसोड 80 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.11 (सीता का पुत्रों को वाल्मीकि को सौंपकर धरती में प्रवेश, राम का शोक, तेरह हज़ार वर्ष अग्निहोत्र)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#लवकुश #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-सभा में… सब राजा थे। ऋषि थे। प्रजा थी।
-और बीच में… एक स्त्री खड़ी थी। जो धरती से जन्मी थी।
-उसे कहा गया… "अपनी पवित्रता की शपथ लो।"
-और उसने… शपथ ली। पर वह शपथ… किसी को लौटाने के लिए नहीं थी।
-
-👉 सीता धरती में लौट गईं (सूर्यवंश कथा, एपिसोड 80)
-📜 स्रोत: श्रीमद्भागवत 9.11 (सीता का पुत्रों को वाल्मीकि को सौंपकर धरती में प्रवेश, राम का शोक, तेरह हज़ार वर्ष अग्निहोत्र) · वाल्मीकि रामायण, उत्तर कांड (सभा में शपथ, धरती का फटना) · परंपरा (सीता समाहित स्थल)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #लवकुश #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-सभा में… सब राजा थे। ऋषि थे। प्रजा थी। 🔱 सीता धरती में लौट गईं | सूर्यवंश कथा · एपिसोड 80
-स्रोत: श्रीमद्भागवत 9.11 (सीता का पुत्रों को वाल्मीकि को सौंपकर धरती में प्रवेश, राम का शोक, तेरह हज़ार वर्ष अग्निहोत्र) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#लवकुश #सूर्यवंश #mythology #hinduism #storytime #hindi
+सभा में… सब राजा थे। ऋषि थे। प्रजा थी। 🔱 सीता धरती में लौट गईं
+पूरी कथा: सूर्यवंश कथा · एपिसोड 80 (Related video में लिंक)
+#Shorts #सूर्यवंश #लवकुश #पौराणिककथा
 ```
 
 ### E81 · राम का प्रस्थान: अवतार का अंत कैसे हुआ
@@ -7247,39 +4990,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E82 कुश अयोध्या लौटे: नगर की देवी
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-एक राजा… सरयू नदी में… उतरा।
-
-राम का प्रस्थान: अवतार का अंत कैसे हुआ
-सूर्यवंश कथा · एपिसोड 81 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.11 (राम का परमधाम-गमन और फल-श्रुति)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#लवकुश #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-एक राजा… सरयू नदी में… उतरा।
-और उसके पीछे… उसकी पूरी प्रजा। हज़ारों लोग। पशु। पक्षी।
-कोई रो नहीं रहा था। सब… मुस्कुरा रहे थे।
-क्योंकि वे जानते थे… वे मर नहीं रहे थे।
-
-👉 राम का प्रस्थान: अवतार का अंत कैसे हुआ (सूर्यवंश कथा, एपिसोड 81)
-📜 स्रोत: श्रीमद्भागवत 9.11 (राम का परमधाम-गमन और फल-श्रुति) · 5.19 (कोसलवासियों को साथ ले जाना) · वाल्मीकि रामायण, उत्तर कांड (काल का आगमन, दुर्वासा, लक्ष्मण का त्याग, राज्य-विभाजन, सरयू-प्रवेश) · परंपरा (गुप्तार घाट)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #लवकुश #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-एक राजा… सरयू नदी में… उतरा। 🔱 राम का प्रस्थान: अवतार का अंत कैसे हुआ | सूर्यवंश कथा · एपिसोड 81
-स्रोत: श्रीमद्भागवत 9.11 (राम का परमधाम-गमन और फल-श्रुति) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#लवकुश #सूर्यवंश #mythology #hinduism #storytime #hindi
+एक राजा… सरयू नदी में… उतरा। 🔱 राम का प्रस्थान: अवतार का अंत कैसे हुआ
+पूरी कथा: सूर्यवंश कथा · एपिसोड 81 (Related video में लिंक)
+#Shorts #सूर्यवंश #लवकुश #पौराणिककथा
 ```
 
 ### E82 · कुश अयोध्या लौटे: नगर की देवी
@@ -7336,39 +5051,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E83 कुश का वंश: अतिथि से हिरण्यनाभ तक
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-आधी रात। राजा का कक्ष। सब द्वार बंद।
-
-कुश अयोध्या लौटे: नगर की देवी
-सूर्यवंश कथा · एपिसोड 82 🔱
-
-📜 स्रोत: कालिदास, रघुवंश (सर्ग 16)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#लवकुश #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-आधी रात। राजा का कक्ष। सब द्वार बंद।
-और फिर भी… एक स्त्री… वहाँ प्रकट हुई।
-मलिन वस्त्र। बिखरे बाल। आँखों में आँसू।
-राजा ने पूछा… "तुम कौन हो? द्वार बंद थे… तुम भीतर कैसे आईं?"
-
-👉 कुश अयोध्या लौटे: नगर की देवी (सूर्यवंश कथा, एपिसोड 82)
-📜 स्रोत: कालिदास, रघुवंश (सर्ग 16) · संदर्भ: श्रीमद्भागवत 9.12 (कुश का वंश) · यह कथा भागवत में नहीं है
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #लवकुश #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-आधी रात। राजा का कक्ष। सब द्वार बंद। 🔱 कुश अयोध्या लौटे: नगर की देवी | सूर्यवंश कथा · एपिसोड 82
-स्रोत: कालिदास, रघुवंश (सर्ग 16) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#लवकुश #सूर्यवंश #mythology #hinduism #storytime #hindi
+आधी रात। राजा का कक्ष। सब द्वार बंद। 🔱 कुश अयोध्या लौटे: नगर की देवी
+पूरी कथा: सूर्यवंश कथा · एपिसोड 82 (Related video में लिंक)
+#Shorts #सूर्यवंश #लवकुश #पौराणिककथा
 ```
 
 ### E83 · कुश का वंश: अतिथि से हिरण्यनाभ तक
@@ -7425,39 +5112,11 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: E84 अंतिम सूर्यवंशी राजा, और वह जो अभी भी प्रतीक्षा में है
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-राम के वंश में… एक राजा हुआ… जो योग का आचार्य था।
-
-कुश का वंश: अतिथि से हिरण्यनाभ तक
-सूर्यवंश कथा · एपिसोड 83 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.12 (कुश के बाद की वंशावली, हिरण्यनाभ)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#लवकुश #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-राम के वंश में… एक राजा हुआ… जो योग का आचार्य था।
-और उसका शिष्य था… वह ऋषि… जिसके संवाद… आज भी उपनिषदों में पढ़े जाते हैं।
-याज्ञवल्क्य।
-और उस राजा का नाम… एक उपनिषद में भी आता है।
-
-👉 कुश का वंश: अतिथि से हिरण्यनाभ तक (सूर्यवंश कथा, एपिसोड 83)
-📜 स्रोत: श्रीमद्भागवत 9.12 (कुश के बाद की वंशावली, हिरण्यनाभ) · प्रश्न उपनिषद 6.1 (हिरण्यनाभ कौसल्य) · कालिदास, रघुवंश (सर्ग 17-19: अतिथि से अग्निवर्ण)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #लवकुश #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-राम के वंश में… एक राजा हुआ… जो योग का आचार्य था। 🔱 कुश का वंश: अतिथि से हिरण्यनाभ तक | सूर्यवंश कथा · एपिसोड 83
-स्रोत: श्रीमद्भागवत 9.12 (कुश के बाद की वंशावली, हिरण्यनाभ) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#लवकुश #सूर्यवंश #mythology #hinduism #storytime #hindi
+राम के वंश में… एक राजा हुआ… जो योग का आचार्य था। 🔱 कुश का वंश: अतिथि से हिरण्यनाभ तक
+पूरी कथा: सूर्यवंश कथा · एपिसोड 83 (Related video में लिंक)
+#Shorts #सूर्यवंश #लवकुश #पौराणिककथा
 ```
 
 ### E84 · अंतिम सूर्यवंशी राजा, और वह जो अभी भी प्रतीक्षा में है
@@ -7514,37 +5173,9 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
 अगला एपिसोड: (शृंखला समाप्त)
 ```
-**Instagram Reel caption** (9:16 clip of the hook)
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
 ```
-भागवत कहता है…
-
-अंतिम सूर्यवंशी राजा, और वह जो अभी भी प्रतीक्षा में है
-सूर्यवंश कथा · एपिसोड 84 🔱
-
-📜 स्रोत: श्रीमद्भागवत 9.12 (मरु, बृहद्बल, भविष्य के राजा, सुमित्र)
-पूरा एपिसोड YouTube पर, लिंक बायो में।
-इस कथा में आप किसके साथ खड़े होते? कमेंट में बताइए 👇
-
-#लवकुश #सूर्यवंश #पौराणिककथा #IndianMythology #Hindi
-```
-**Facebook post** (full video)
-```
-भागवत कहता है…
-इक्ष्वाकु का एक वंशज… राम का एक वंशज… आज भी जीवित है।
-हिमालय में… एक गाँव में… जिसका नाम है… कलाप।
-वह योग से जीवित है। और प्रतीक्षा कर रहा है।
-
-👉 अंतिम सूर्यवंशी राजा, और वह जो अभी भी प्रतीक्षा में है (सूर्यवंश कथा, एपिसोड 84)
-📜 स्रोत: श्रीमद्भागवत 9.12 (मरु, बृहद्बल, भविष्य के राजा, सुमित्र) · 12.2 (मरु और देवापि, कलियुग के अंत में पुनर्स्थापना) · इतिहास (शाक्य, शुद्धोदन, प्रसेनजित)
-
-पूरा वीडियो देखें: [link]
-अगर कथा अच्छी लगे, तो परिवार के साथ ज़रूर साझा करें 🙏
-
-#सूर्यवंश #लवकुश #पौराणिककथा
-```
-**TikTok caption** (9:16 clip of the hook)
-```
-भागवत कहता है… 🔱 अंतिम सूर्यवंशी राजा, और वह जो अभी भी प्रतीक्षा में है | सूर्यवंश कथा · एपिसोड 84
-स्रोत: श्रीमद्भागवत 9.12 (मरु, बृहद्बल, भविष्य के राजा, सुमित्र) · पूरी कथा प्रोफ़ाइल के लिंक पर
-#लवकुश #सूर्यवंश #mythology #hinduism #storytime #hindi
+भागवत कहता है… 🔱 अंतिम सूर्यवंशी राजा, और वह जो अभी भी प्रतीक्षा में है
+पूरी कथा: सूर्यवंश कथा · एपिसोड 84 (Related video में लिंक)
+#Shorts #सूर्यवंश #लवकुश #पौराणिककथा
 ```
