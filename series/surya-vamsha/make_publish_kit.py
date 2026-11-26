@@ -36,6 +36,9 @@ DISCLOSE = ("वाचन: AI आवाज़ (ElevenLabs) · चित्र: A
             "Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts")
 
 
+LAST = int(os.environ.get("KIT_LAST", 20))   # episodes in this kit (the rest come later)
+
+
 def clean(s):
     s = re.sub(r"\[विराम\]", "", s).replace("**", "").replace("`", "")
     return re.sub(r"\s+", " ", s).strip()
@@ -151,6 +154,7 @@ def main():
     for es in arc_eps.values():
         for j, e in enumerate(es, 1):
             e["part"], e["of"] = j, len(es)
+    eps = [e for e in eps if e["n"] <= LAST]      # this kit covers episodes 1..LAST only
 
     out, csv_rows = [], []
     w = out.append
@@ -159,6 +163,8 @@ def main():
     w("| playlist | title | description |\n| --- | --- | --- |")
     w(f"| all | सूर्यवंश कथा: संपूर्ण शृंखला (84 एपिसोड) | मनु से लव-कुश तक, सूर्यवंश की पूरी कथा क्रम से। श्रीमद्भागवत स्कंध 9 पर आधारित, हर कथा के स्रोत स्क्रीन पर। |")
     for a, es in arc_eps.items():
+        if es[0]["n"] > LAST:
+            continue
         hi, _ = KINGS[es[0]["king"]]
         w(f"| arc {a} | {hi}: सूर्यवंश कथा भाग {a} ({len(es)} एपिसोड) | {hi} की पूरी कथा, {len(es)} एपिसोड में, एपिसोड {es[0]['n']} से {es[-1]['n']} तक। स्रोत: {es[0]['en_src'].split(';')[0]} आदि, हर एपिसोड में स्क्रीन पर। |")
     w("")
@@ -221,7 +227,8 @@ def main():
         cw = csv.DictWriter(f, fieldnames=list(csv_rows[0]))
         cw.writeheader(); cw.writerows(csv_rows)
     for p in sorted(glob.glob(os.path.join(HERE, "audio", "ep??.timing.json"))):
-        print("wrote", write_srt(int(os.path.basename(p)[2:4])))
+        if int(os.path.basename(p)[2:4]) <= LAST:
+            print("wrote", write_srt(int(os.path.basename(p)[2:4])))
     upload_folders(csv_rows, arc_eps)
     print("wrote publishing-kit.md and publishing-kit.csv,", len(eps), "episodes")
 
@@ -262,7 +269,7 @@ def upload_folders(rows, arc_eps):
 HEADER = f"""# YouTube upload kit: सूर्यवंश कथा
 
 Everything to type into YouTube: the channel set-up, the settings for every upload, the playlists,
-and for each of the 84 episodes its title, description (with chapters once the episode is made),
+and for episodes 1 to {LAST} (the rest of the 84 come later) the title, description (with chapters once the episode is made),
 tags, pinned comment and thumbnail words. Made by `make_publish_kit.py` from the scripts, so every
 description quotes that episode's own opening lines and sources.
 

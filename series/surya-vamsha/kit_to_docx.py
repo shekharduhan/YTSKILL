@@ -100,8 +100,8 @@ def main():
         doc.styles[s].font.color.rgb = RGBColor(0x8A, 0x2B, 0x0E)
     md = open(os.path.join(HERE, "publishing-kit.md"), encoding="utf-8").read()
     head, eps = md.split("## 6. Every episode", 1)
-    md_to_doc(doc, head.replace("# Publishing kit: सूर्यवंश कथा",
-                                "# सूर्यवंश कथा: complete publishing kit", 1))
+    md_to_doc(doc, head.replace("# YouTube upload kit: सूर्यवंश कथा",
+                                "# सूर्यवंश कथा: YouTube publishing kit (episodes 1-20)", 1))
     doc.add_page_break()
     md_to_doc(doc, "## 6. Every episode" + eps)
 

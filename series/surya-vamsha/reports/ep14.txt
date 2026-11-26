@@ -1,0 +1,21 @@
+E14 production report
+timing plan problems:
+  none
+wrote /home/user/YTSKILL/series/surya-vamsha/video/ep14.mp4 413.0s narration, 38 shots, video 413.0s
+wrote brand/out/thumbnails/ep14-thumbnail-1280x720.jpg (1280, 720)
+--- qa_audio.py
+E14 2:57.6 does not match               want: युद्ध हुआ।
+                                        said: यो धुरूआ
+E14 3:44.5 does not match               want: रावण हँसा।
+                                        said: गावन हसा
+E14: 2 of 59 pieces flagged; longest pause between pieces 1.2 s
+--- voice_report.py
+E14 voice: 59 pieces, 2 failed the script check, longest silence 1.8s, loudness spread -1.6/+2.7 dB, speed spread 0.77-1.37x, clipped samples 0
+  ! 3:55.9 speed 1.37x the usual: और उसने इक्ष्वाकु वंश का भी अपमान किया।
+--- verify_video.py
+E14: 38 pictures, 0 mismatches; video 413.02s, narration 413.05s
+--- sync_check.py
+E14 streams: video starts 0.000s lasts 412.88s | audio starts 0.000s lasts 413.02s -> MISMATCH
+  ! 2:57.6 expected: युद्ध हुआ।
+                heard:    योग धुरुआ  (match 0.44)
+E14: 59 pieces checked in the video file, 1 out of sync

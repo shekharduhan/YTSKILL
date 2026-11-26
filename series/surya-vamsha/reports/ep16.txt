@@ -1,0 +1,17 @@
+E16 production report
+timing plan problems:
+  ! image 7: words occur 2 times, using the first: हरिवंश कहता है… सत्यव्रत…
+wrote /home/user/YTSKILL/series/surya-vamsha/video/ep16.mp4 405.2s narration, 38 shots, video 405.2s
+wrote brand/out/thumbnails/ep16-thumbnail-1280x720.jpg (1280, 720)
+--- qa_audio.py
+E16 2:25.4 missing words                want: बारह वर्ष। अकाल। भूख। लोग मरने लगे।
+                                        said: 12 वर्ष, अकाल, भूक, लोग मरने लगे।
+E16: 1 of 55 pieces flagged; longest pause between pieces 1.2 s
+--- voice_report.py
+E16 voice: 55 pieces, 1 failed the script check, longest silence 1.9s, loudness spread -1.4/+1.4 dB, speed spread 0.72-1.27x, clipped samples 0
+  ! 2:10.0 silence of 1.9s
+--- verify_video.py
+E16: 38 pictures, 0 mismatches; video 405.21s, narration 405.24s
+--- sync_check.py
+E16 streams: video starts 0.000s lasts 405.08s | audio starts 0.000s lasts 405.21s -> MISMATCH
+E16: 55 pieces checked in the video file, 0 out of sync

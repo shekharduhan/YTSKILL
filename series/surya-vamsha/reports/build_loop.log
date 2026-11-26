@@ -103,3 +103,158 @@ E07: 59 pieces checked in the video file, 0 out of sync
 21:36 building E08
 21:36 building E16
 21:36 building E08
+E16 production report
+timing plan problems:
+  ! image 7: words occur 2 times, using the first: हरिवंश कहता है… सत्यव्रत…
+wrote /home/user/YTSKILL/series/surya-vamsha/video/ep16.mp4 405.2s narration, 38 shots, video 405.2s
+wrote brand/out/thumbnails/ep16-thumbnail-1280x720.jpg (1280, 720)
+--- qa_audio.py
+E16 2:25.4 missing words                want: बारह वर्ष। अकाल। भूख। लोग मरने लगे।
+                                        said: 12 वर्ष, अकाल, भूक, लोग मरने लगे।
+E16: 1 of 55 pieces flagged; longest pause between pieces 1.2 s
+--- voice_report.py
+E16 voice: 55 pieces, 1 failed the script check, longest silence 1.9s, loudness spread -1.4/+1.4 dB, speed spread 0.72-1.27x, clipped samples 0
+  ! 2:10.0 silence of 1.9s
+--- verify_video.py
+E16: 38 pictures, 0 mismatches; video 405.21s, narration 405.24s
+--- sync_check.py
+E16 streams: video starts 0.000s lasts 405.08s | audio starts 0.000s lasts 405.21s -> MISMATCH
+E16: 55 pieces checked in the video file, 0 out of sync
+22:09 done E16
+22:09 building E15
+E08 production report
+timing plan problems:
+  none
+wrote /home/user/YTSKILL/series/surya-vamsha/video/ep08.mp4 433.7s narration, 41 shots, video 433.6s
+wrote brand/out/thumbnails/ep08-thumbnail-1280x720.jpg (1280, 720)
+--- qa_audio.py
+E08 4:17.4 does not match               want: युद्ध हुआ।
+                                        said: यो धुरूआ
+E08: 1 of 64 pieces flagged; longest pause between pieces 1.2 s
+--- voice_report.py
+E08 voice: 64 pieces, 1 failed the script check, longest silence 1.9s, loudness spread -2.6/+2.0 dB, speed spread 0.79-1.28x, clipped samples 0
+  ! 3:01.2 silence of 1.9s
+--- verify_video.py
+E08: 41 pictures, 0 mismatches; video 433.65s, narration 433.68s
+--- sync_check.py
+E08 streams: video starts 0.000s lasts 433.60s | audio starts 0.000s lasts 433.65s -> OK
+  ! 4:17.4 expected: युद्ध हुआ।
+                heard:    योग धुरुआ  (match 0.44)
+E08: 64 pieces checked in the video file, 1 out of sync
+22:09 done E08
+22:09 building E09
+E09 production report
+timing plan problems:
+  none
+wrote /home/user/YTSKILL/series/surya-vamsha/video/ep09.mp4 415.8s narration, 39 shots, video 415.8s
+wrote brand/out/thumbnails/ep09-thumbnail-1280x720.jpg (1280, 720)
+--- qa_audio.py
+E09: 0 of 61 pieces flagged; longest pause between pieces 1.2 s
+--- voice_report.py
+E09 voice: 61 pieces, 0 failed the script check, longest silence 1.9s, loudness spread -1.4/+2.4 dB, speed spread 0.68-1.31x, clipped samples 0
+  ! 2:28.9 silence of 1.9s
+--- verify_video.py
+! 3:01.0 (start of image 18): looks like image 35 (0.78 vs 0.77)
+E09: 39 pictures, 1 mismatches; video 415.76s, narration 415.79s
+--- sync_check.py
+E09 streams: video starts 0.000s lasts 415.72s | audio starts 0.000s lasts 415.76s -> OK
+E09: 61 pieces checked in the video file, 0 out of sync
+22:39 done E09
+22:39 building E10
+E15 production report
+timing plan problems:
+  none
+wrote /home/user/YTSKILL/series/surya-vamsha/video/ep15.mp4 413.7s narration, 39 shots, video 413.6s
+wrote brand/out/thumbnails/ep15-thumbnail-1280x720.jpg (1280, 720)
+--- qa_audio.py
+E15 3:44.2 missing words, does not match want: "ठहरो!"
+                                        said: परो
+E15: 1 of 62 pieces flagged; longest pause between pieces 1.2 s
+--- voice_report.py
+E15 voice: 62 pieces, 1 failed the script check, longest silence 2.0s, loudness spread -1.6/+3.1 dB, speed spread 0.65-1.28x, clipped samples 0
+  ! 6:29.9 silence of 2.0s
+--- verify_video.py
+Traceback (most recent call last):
+  File "/home/user/YTSKILL/series/surya-vamsha/verify_video.py", line 53, in <module>
+    ok = all(main(int(e)) for e in sys.argv[1:])
+  File "/home/user/YTSKILL/series/surya-vamsha/verify_video.py", line 53, in <genexpr>
+    ok = all(main(int(e)) for e in sys.argv[1:])
+             ~~~~^^^^^^^^
+  File "/home/user/YTSKILL/series/surya-vamsha/verify_video.py", line 32, in main
+    refs[n] = thumb(Image.open(tmp))
+              ~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/user/YTSKILL/series/surya-vamsha/verify_video.py", line 20, in thumb
+    g = np.asarray(im.convert("L").resize((64, 36), Image.BILINEAR), np.float32)
+                   ~~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/site-packages/PIL/Image.py", line 1067, in convert
+    self.load()
+    ~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/site-packages/PIL/ImageFile.py", line 422, in load
+    raise OSError(msg)
+OSError: image file is truncated (31 bytes not processed)
+--- sync_check.py
+E15 streams: video starts 0.000s lasts 413.60s | audio starts 0.000s lasts 413.64s -> OK
+  ! 3:44.2 expected: "ठहरो!"
+                heard:    पैरो  (match 0.50)
+E15: 62 pieces checked in the video file, 1 out of sync
+22:43 done E15
+22:43 building E14
+E10 production report
+timing plan problems:
+  ! image 1: words occur 2 times, using the first: पचास राजकुमारियाँ।
+wrote /home/user/YTSKILL/series/surya-vamsha/video/ep10.mp4 438.5s narration, 40 shots, video 438.5s
+wrote brand/out/thumbnails/ep10-thumbnail-1280x720.jpg (1280, 720)
+--- qa_audio.py
+E10 3:35.1 missing words, does not match want: भागवत इनका विस्तार से वर्णन करता है। रत्नों से सजे भवन। सुंद
+                                        said: भागवत इनका विस्तार से गर्णन करता है।
+E10: 1 of 60 pieces flagged; longest pause between pieces 1.2 s
+--- voice_report.py
+E10 voice: 60 pieces, 1 failed the script check, longest silence 1.9s, loudness spread -1.7/+2.5 dB, speed spread 0.67-1.30x, clipped samples 0
+  ! 2:15.0 silence of 1.9s
+--- verify_video.py
+E10: 40 pictures, 0 mismatches; video 438.46s, narration 438.49s
+--- sync_check.py
+E10 streams: video starts 0.000s lasts 438.40s | audio starts 0.000s lasts 438.46s -> OK
+E10: 60 pieces checked in the video file, 0 out of sync
+23:09 done E10
+23:09 building E11
+E14 production report
+timing plan problems:
+  none
+wrote /home/user/YTSKILL/series/surya-vamsha/video/ep14.mp4 413.0s narration, 38 shots, video 413.0s
+wrote brand/out/thumbnails/ep14-thumbnail-1280x720.jpg (1280, 720)
+--- qa_audio.py
+E14 2:57.6 does not match               want: युद्ध हुआ।
+                                        said: यो धुरूआ
+E14 3:44.5 does not match               want: रावण हँसा।
+                                        said: गावन हसा
+E14: 2 of 59 pieces flagged; longest pause between pieces 1.2 s
+--- voice_report.py
+E14 voice: 59 pieces, 2 failed the script check, longest silence 1.8s, loudness spread -1.6/+2.7 dB, speed spread 0.77-1.37x, clipped samples 0
+  ! 3:55.9 speed 1.37x the usual: और उसने इक्ष्वाकु वंश का भी अपमान किया।
+--- verify_video.py
+E14: 38 pictures, 0 mismatches; video 413.02s, narration 413.05s
+--- sync_check.py
+E14 streams: video starts 0.000s lasts 412.88s | audio starts 0.000s lasts 413.02s -> MISMATCH
+  ! 2:57.6 expected: युद्ध हुआ।
+                heard:    योग धुरुआ  (match 0.44)
+E14: 59 pieces checked in the video file, 1 out of sync
+23:14 done E14
+23:14 building E13
+E11 production report
+timing plan problems:
+  none
+wrote /home/user/YTSKILL/series/surya-vamsha/video/ep11.mp4 398.4s narration, 40 shots, video 398.4s
+wrote brand/out/thumbnails/ep11-thumbnail-1280x720.jpg (1280, 720)
+--- qa_audio.py
+E11: 0 of 54 pieces flagged; longest pause between pieces 1.2 s
+--- voice_report.py
+E11 voice: 54 pieces, 0 failed the script check, longest silence 1.4s, loudness spread -1.5/+2.9 dB, speed spread 0.74-1.30x, clipped samples 0
+  no problems found
+--- verify_video.py
+E11: 40 pictures, 0 mismatches; video 398.40s, narration 398.45s
+--- sync_check.py
+E11 streams: video starts 0.000s lasts 398.32s | audio starts 0.000s lasts 398.40s -> OK
+E11: 54 pieces checked in the video file, 0 out of sync
+23:34 done E11
+23:34 building E12

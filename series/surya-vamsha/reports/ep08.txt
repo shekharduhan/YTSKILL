@@ -1,0 +1,19 @@
+E08 production report
+timing plan problems:
+  none
+wrote /home/user/YTSKILL/series/surya-vamsha/video/ep08.mp4 433.7s narration, 41 shots, video 433.6s
+wrote brand/out/thumbnails/ep08-thumbnail-1280x720.jpg (1280, 720)
+--- qa_audio.py
+E08 4:17.4 does not match               want: युद्ध हुआ।
+                                        said: यो धुरूआ
+E08: 1 of 64 pieces flagged; longest pause between pieces 1.2 s
+--- voice_report.py
+E08 voice: 64 pieces, 1 failed the script check, longest silence 1.9s, loudness spread -2.6/+2.0 dB, speed spread 0.79-1.28x, clipped samples 0
+  ! 3:01.2 silence of 1.9s
+--- verify_video.py
+E08: 41 pictures, 0 mismatches; video 433.65s, narration 433.68s
+--- sync_check.py
+E08 streams: video starts 0.000s lasts 433.60s | audio starts 0.000s lasts 433.65s -> OK
+  ! 4:17.4 expected: युद्ध हुआ।
+                heard:    योग धुरुआ  (match 0.44)
+E08: 64 pieces checked in the video file, 1 out of sync

@@ -1,0 +1,15 @@
+E11 production report
+timing plan problems:
+  none
+wrote /home/user/YTSKILL/series/surya-vamsha/video/ep11.mp4 398.4s narration, 40 shots, video 398.4s
+wrote brand/out/thumbnails/ep11-thumbnail-1280x720.jpg (1280, 720)
+--- qa_audio.py
+E11: 0 of 54 pieces flagged; longest pause between pieces 1.2 s
+--- voice_report.py
+E11 voice: 54 pieces, 0 failed the script check, longest silence 1.4s, loudness spread -1.5/+2.9 dB, speed spread 0.74-1.30x, clipped samples 0
+  no problems found
+--- verify_video.py
+E11: 40 pictures, 0 mismatches; video 398.40s, narration 398.45s
+--- sync_check.py
+E11 streams: video starts 0.000s lasts 398.32s | audio starts 0.000s lasts 398.40s -> OK
+E11: 54 pieces checked in the video file, 0 out of sync

@@ -1,0 +1,16 @@
+E09 production report
+timing plan problems:
+  none
+wrote /home/user/YTSKILL/series/surya-vamsha/video/ep09.mp4 415.8s narration, 39 shots, video 415.8s
+wrote brand/out/thumbnails/ep09-thumbnail-1280x720.jpg (1280, 720)
+--- qa_audio.py
+E09: 0 of 61 pieces flagged; longest pause between pieces 1.2 s
+--- voice_report.py
+E09 voice: 61 pieces, 0 failed the script check, longest silence 1.9s, loudness spread -1.4/+2.4 dB, speed spread 0.68-1.31x, clipped samples 0
+  ! 2:28.9 silence of 1.9s
+--- verify_video.py
+! 3:01.0 (start of image 18): looks like image 35 (0.78 vs 0.77)
+E09: 39 pictures, 1 mismatches; video 415.76s, narration 415.79s
+--- sync_check.py
+E09 streams: video starts 0.000s lasts 415.72s | audio starts 0.000s lasts 415.76s -> OK
+E09: 61 pieces checked in the video file, 0 out of sync

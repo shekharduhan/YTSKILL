@@ -27,7 +27,7 @@ def main(ep):
     video = os.path.join(HERE, "video", f"ep{ep:02d}.mp4")
     refs = {}
     for n, _, _ in shots:
-        tmp = os.path.join(tempfile.gettempdir(), "vv.jpg")
+        tmp = os.path.join(tempfile.gettempdir(), f"vv{os.getpid()}.jpg")
         assemble.autocrop(os.path.join(HERE, "images", f"ep{ep:02d}", f"{n:02d}.png"), tmp)
         refs[n] = thumb(Image.open(tmp))
     bad = 0

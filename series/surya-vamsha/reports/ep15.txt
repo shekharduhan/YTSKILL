@@ -1,0 +1,36 @@
+E15 production report
+timing plan problems:
+  none
+wrote /home/user/YTSKILL/series/surya-vamsha/video/ep15.mp4 413.7s narration, 39 shots, video 413.6s
+wrote brand/out/thumbnails/ep15-thumbnail-1280x720.jpg (1280, 720)
+--- qa_audio.py
+E15 3:44.2 missing words, does not match want: "ठहरो!"
+                                        said: परो
+E15: 1 of 62 pieces flagged; longest pause between pieces 1.2 s
+--- voice_report.py
+E15 voice: 62 pieces, 1 failed the script check, longest silence 2.0s, loudness spread -1.6/+3.1 dB, speed spread 0.65-1.28x, clipped samples 0
+  ! 6:29.9 silence of 2.0s
+--- verify_video.py
+Traceback (most recent call last):
+  File "/home/user/YTSKILL/series/surya-vamsha/verify_video.py", line 53, in <module>
+    ok = all(main(int(e)) for e in sys.argv[1:])
+  File "/home/user/YTSKILL/series/surya-vamsha/verify_video.py", line 53, in <genexpr>
+    ok = all(main(int(e)) for e in sys.argv[1:])
+             ~~~~^^^^^^^^
+  File "/home/user/YTSKILL/series/surya-vamsha/verify_video.py", line 32, in main
+    refs[n] = thumb(Image.open(tmp))
+              ~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/user/YTSKILL/series/surya-vamsha/verify_video.py", line 20, in thumb
+    g = np.asarray(im.convert("L").resize((64, 36), Image.BILINEAR), np.float32)
+                   ~~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/site-packages/PIL/Image.py", line 1067, in convert
+    self.load()
+    ~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/site-packages/PIL/ImageFile.py", line 422, in load
+    raise OSError(msg)
+OSError: image file is truncated (31 bytes not processed)
+--- sync_check.py
+E15 streams: video starts 0.000s lasts 413.60s | audio starts 0.000s lasts 413.64s -> OK
+  ! 3:44.2 expected: "ठहरो!"
+                heard:    पैरो  (match 0.50)
+E15: 62 pieces checked in the video file, 1 out of sync
