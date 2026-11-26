@@ -1,0 +1,19 @@
+E04 production report
+timing plan problems:
+  none
+wrote /home/user/YTSKILL/series/surya-vamsha/video/ep04.mp4 393.6s narration, 40 shots, video 393.6s
+wrote brand/out/thumbnails/ep04-thumbnail-1280x720.jpg (1280, 720)
+--- qa_audio.py
+E04 1:13.5 does not match               want: रुकिए।
+                                        said: प्रुकीई
+E04: 1 of 56 pieces flagged; longest pause between pieces 1.2 s
+--- voice_report.py
+E04 voice: 56 pieces, 1 failed the script check, longest silence 1.4s, loudness spread -1.1/+1.6 dB, speed spread 0.76-1.19x, clipped samples 0
+  no problems found
+--- verify_video.py
+! 5:09.1 (start of image 32): looks like image 25 (0.50 vs 0.39)
+  ! 5:15.0 (middle of image 32): looks like image 25 (0.58 vs 0.43)
+E04: 40 pictures, 2 mismatches; video 393.58s, narration 393.61s
+--- sync_check.py
+E04 streams: video starts 0.000s lasts 393.44s | audio starts 0.000s lasts 393.58s -> MISMATCH
+E04: 56 pieces checked in the video file, 0 out of sync
