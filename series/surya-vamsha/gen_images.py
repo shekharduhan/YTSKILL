@@ -38,13 +38,15 @@ if __name__ == "__main__":
         out = os.path.join(d, f"{n:02d}.png")
         if os.path.exists(out) and not only: return
         tmp = out + ".new"
-        for attempt in range(3):          # occasional empty replies: retry
+        import time
+        for attempt in range(8):          # empty replies and rate limits: retry (refused requests cost nothing)
             try:
                 gen(text, tmp); os.replace(tmp, out)   # the old picture is replaced only on success
                 print("ok", n, flush=True); return
             except Exception as e:
                 err = e
                 if "402" in str(e): break               # out of credit: retrying won't help
+                if "429" in str(e): time.sleep(30 * (attempt + 1))   # per-minute limit: wait it out
         print("fail", n, err, flush=True)
     todo = [(n, t) for n, t in sorted(prompts(ep).items()) if not only or n in only]
-    with ThreadPoolExecutor(4) as ex: list(ex.map(one, todo))
+    with ThreadPoolExecutor(2) as ex: list(ex.map(one, todo))

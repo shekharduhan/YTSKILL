@@ -64,3 +64,5 @@ E05 streams: video starts 0.000s lasts 444.44s | audio starts 0.000s lasts 444.5
   ! 1:18.3 expected: इक्कीस हज़ार में से… तीन।
                 heard:    मे से  (match 0.38)
 E05: 62 pieces checked in the video file, 1 out of sync
+15:22 done E05
+15:22 building E06
