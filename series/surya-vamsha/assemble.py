@@ -76,8 +76,9 @@ def bars(im):
     """Box inside the black letterbox bars. A bar is a full row/column of near-black pixels,
     counted inward from the edge, so dark scenes are never mistaken for bars."""
     a = np.asarray(im.convert("L"), np.float32)
-    rows = np.percentile(a, 99.5, axis=1) > 10      # letterbox bars are pure black (0-5)
-    cols = np.percentile(a, 99.5, axis=0) > 10
+    # letterbox bars are pure black (0-5) or, occasionally, pure white (250-255)
+    rows = (np.percentile(a, 97, axis=1) > 10) & (np.percentile(a, 3, axis=1) < 240)
+    cols = (np.percentile(a, 97, axis=0) > 10) & (np.percentile(a, 3, axis=0) < 240)
     r = np.where(rows)[0]; c = np.where(cols)[0]
     if not len(r) or not len(c):
         return 0, 0, im.width, im.height
