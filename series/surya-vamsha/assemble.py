@@ -72,12 +72,29 @@ def shot_plan(ep):
     return shots, total, problems
 
 
+def bars(im):
+    """Box inside the black letterbox bars. A bar is a full row/column of near-black pixels,
+    counted inward from the edge, so dark scenes are never mistaken for bars."""
+    a = np.asarray(im.convert("L"), np.float32)
+    rows = np.percentile(a, 99.5, axis=1) > 10      # letterbox bars are pure black (0-5)
+    cols = np.percentile(a, 99.5, axis=0) > 10
+    r = np.where(rows)[0]; c = np.where(cols)[0]
+    if not len(r) or not len(c):
+        return 0, 0, im.width, im.height
+    return int(c[0]), int(r[0]), int(c[-1]) + 1, int(r[-1]) + 1
+
+
 def autocrop(src, dst):
     im = Image.open(src).convert("RGB")
-    a = np.asarray(im).mean(axis=2)
-    rows = np.where(a.mean(axis=1) > 18)[0]; cols = np.where(a.mean(axis=0) > 18)[0]
-    im = im.crop((cols[0], rows[0], cols[-1] + 1, rows[-1] + 1))
+    im = im.crop(bars(im))
     w, h = im.size; target = W / H
+    if w / h > 2.0:   # very wide picture: show all of it over a soft blurred copy, never cut people off
+        from PIL import ImageFilter
+        bg = im.resize((int(h * target), h)).filter(ImageFilter.GaussianBlur(40))
+        bg = bg.resize((W * 2, H * 2), Image.LANCZOS)
+        fg = im.resize((W * 2, int(W * 2 * h / w)), Image.LANCZOS)
+        bg.paste(fg, (0, (H * 2 - fg.height) // 2))
+        bg.save(dst, quality=92); return
     if w / h > target:
         nw = int(h * target); im = im.crop(((w - nw) // 2, 0, (w - nw) // 2 + nw, h))
     else:

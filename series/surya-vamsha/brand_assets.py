@@ -113,10 +113,8 @@ def channel():
 
 
 def unletterbox(im):
-    import numpy as np
-    a = np.asarray(im.convert("L"))
-    rows = np.where(a.mean(axis=1) > 18)[0]; cols = np.where(a.mean(axis=0) > 18)[0]
-    return im.crop((cols[0], rows[0], cols[-1] + 1, rows[-1] + 1))
+    from assemble import bars
+    return im.crop(bars(im))
 
 
 def thumbnail(ep, image=None, cx=0.5, top=False, left=False):
