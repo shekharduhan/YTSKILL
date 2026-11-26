@@ -1,0 +1,20 @@
+14:02 building E03
+E03 production report
+timing plan problems:
+  none
+wrote /home/user/YTSKILL/series/surya-vamsha/video/ep03.mp4 415.0s narration, 41 shots, video 415.0s
+wrote brand/out/thumbnails/ep03-thumbnail-1280x720.jpg (1280, 720)
+--- qa_audio.py
+E03: 0 of 56 pieces flagged; longest pause between pieces 1.2 s
+--- voice_report.py
+E03 voice: 56 pieces, 0 failed the script check, longest silence 1.4s, loudness spread -1.2/+2.5 dB, speed spread 0.68-1.17x, clipped samples 0
+  no problems found
+--- verify_video.py
+E03: 41 pictures, 0 mismatches; video 414.99s, narration 415.03s
+--- sync_check.py
+E03 streams: video starts 0.000s lasts 414.96s | audio starts 0.000s lasts 414.99s -> OK
+  ! 3:07.7 expected: देवता वर दे रहे हैं। जीवन लौटाने का वर। जिस व
+                heard:    देवतावर दे रहे है जिवन देवताव वर दे रहे है  (match 0.43)
+  ! 5:23.1 expected: भागवत कहता है… महर्षि याज्ञवल्क्य की कृपा से 
+                heard:    भागवत कहता है महरशि याद भागवत कहता है महरशि य  (match 0.55)
+E03: 56 pieces checked in the video file, 2 out of sync
