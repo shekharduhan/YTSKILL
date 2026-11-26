@@ -258,3 +258,21 @@ E11 streams: video starts 0.000s lasts 398.32s | audio starts 0.000s lasts 398.4
 E11: 54 pieces checked in the video file, 0 out of sync
 23:34 done E11
 23:34 building E12
+E13 production report
+timing plan problems:
+  none
+wrote /home/user/YTSKILL/series/surya-vamsha/video/ep13.mp4 414.7s narration, 39 shots, video 414.7s
+wrote brand/out/thumbnails/ep13-thumbnail-1280x720.jpg (1280, 720)
+--- qa_audio.py
+E13 2:07.4 missing words                want: नींद।
+                                        said: निंद
+E13: 1 of 54 pieces flagged; longest pause between pieces 1.2 s
+--- voice_report.py
+E13 voice: 54 pieces, 1 failed the script check, longest silence 2.0s, loudness spread -1.6/+3.0 dB, speed spread 0.71-1.17x, clipped samples 0
+  ! 6:18.3 silence of 2.0s
+--- verify_video.py
+E13: 39 pictures, 0 mismatches; video 414.69s, narration 414.72s
+--- sync_check.py
+E13 streams: video starts 0.000s lasts 414.60s | audio starts 0.000s lasts 414.69s -> OK
+E13: 54 pieces checked in the video file, 0 out of sync
+23:44 done E13
