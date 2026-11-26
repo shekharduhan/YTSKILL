@@ -10,8 +10,8 @@ Output: `output/devil-or-angel-reel.mp4` — 1080×1920, 30 fps, exactly 60 s.
 
 | part | how |
 | --- | --- |
-| voices | [Piper TTS](https://github.com/rhasspy/piper) — offline, open source (Ryan + Amy voices) |
-| whisper effect | numpy breath-noise filter in `voices.py` |
+| voices | [Kokoro TTS](https://github.com/thewh1teagle/kokoro-onnx) — offline, open source (af_heart + am_michael) |
+| whisper effect | voice blend with Kokoro's soft voice (af_nicole) |
 | sound effects | synthesised in `sfx.py` (organ sting, harp chime) |
 | music | synthesised pizzicato loop in `music.py` |
 | animation | drawn frame by frame with Pillow in `render.py` |
@@ -25,7 +25,7 @@ No API keys, no paid services, no stock assets.
 ./make.sh
 ```
 
-Needs Python 3 and ffmpeg. First run downloads the two Piper voice models (~180 MB) to `~/.cache/piper-voices`.
+Needs Python 3 and ffmpeg. First run downloads the Kokoro model (~350 MB) to `~/.cache/kokoro`.
 
 ## Change it
 

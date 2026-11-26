@@ -2,7 +2,7 @@
 # Build the 60s "One More Episode" reel. 100% free: Piper TTS + Python + ffmpeg. No API keys.
 set -euo pipefail
 cd "$(dirname "$0")"
-pip install -q piper-tts numpy pillow
+pip install -q kokoro-onnx soundfile numpy pillow
 python3 voices.py     # dialogue  -> audio/00.wav .. 15.wav
 python3 sfx.py        # sting + chime
 python3 music.py      # background loop

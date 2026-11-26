@@ -15,7 +15,7 @@ Output: `output/one-more-episode-reel.mp4` — 1080×1920, 30 fps, exactly 60 s.
 
 ## Everything is free
 
-Piper TTS voices (offline, open source), synthesised sound effects and music, Pillow animation,
+Kokoro TTS voices (offline, open source), synthesised sound effects and music, Pillow animation,
 ffmpeg. No API keys, no paid services, no stock assets.
 
 ## Build

@@ -1,42 +1,44 @@
-"""Free, offline voices with Piper TTS (MIT). Downloads two voice models once."""
-import json, os, subprocess, urllib.request
-import numpy as np, wave
+"""Free, offline voices with Kokoro TTS (Apache-2.0, 82M params). Downloads the model once (~350 MB).
 
-VOICE_DIR = os.path.expanduser("~/.cache/piper-voices")
-BASE = "https://huggingface.co/rhasspy/piper-voices/resolve/v1.0.0/en/en_US"
-VOICES = {"H": "ryan/high/en_US-ryan-high", "W": "amy/medium/en_US-amy-medium"}
-# style -> (length_scale, noise_scale)  (bigger length = slower)
-STYLE = {"whisper": (1.12, 0.5), "flat": (1.0, 0.4), "annoyed": (0.95, 0.75),
-         "normal": (1.0, 0.667), "serious": (1.05, 0.6), "warm": (1.05, 0.7)}
+Whispered lines blend the speaker's voice with Kokoro's soft/whisper voice (af_nicole) so it stays
+the same character, just quieter and breathier - no fake noise filters.
+"""
+import json, os, urllib.request
+import numpy as np, soundfile as sf
+from kokoro_onnx import Kokoro
 
-def model(who):
-    os.makedirs(VOICE_DIR, exist_ok=True)
-    rel = VOICES[who]; name = os.path.basename(rel)
-    path = os.path.join(VOICE_DIR, name + ".onnx")
-    for ext in (".onnx", ".onnx.json"):
-        if not os.path.exists(path.replace(".onnx", ext)):
-            print("downloading", name + ext)
-            urllib.request.urlretrieve(f"{BASE}/{rel}{ext}", path.replace(".onnx", ext))
-    return path
+CACHE = os.path.expanduser("~/.cache/kokoro")
+URL = "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/"
+FILES = ["kokoro-v1.0.onnx", "voices-v1.0.bin"]
+VOICE = {"H": "am_michael", "W": "af_heart"}
+WHISPER_VOICE = "af_nicole"
+PACE = 1.08  # overall delivery speed for this reel (fits 60 s)
+# style -> speed
+SPEED = {"whisper": 0.95, "flat": 1.0, "annoyed": 1.08, "normal": 1.0, "serious": 0.97, "warm": 0.97}
 
-def whisperize(p):
-    """Breathy, close-to-the-ear version: highpass + mixed-in shaped noise."""
-    with wave.open(p) as w:
-        sr = w.getframerate(); a = np.frombuffer(w.readframes(w.getnframes()), np.int16).astype(np.float32) / 32768
-    a = np.append(a[0], a[1:] - 0.9 * a[:-1])               # pre-emphasis = thinner, airy
-    env = np.convolve(np.abs(a), np.ones(400) / 400, "same")
-    noise = np.random.default_rng(1).normal(0, 1, len(a)) * env * 0.9
-    out = 0.55 * a + noise
-    out = out / (np.abs(out).max() + 1e-6) * 0.8
-    with wave.open(p, "wb") as w:
-        w.setnchannels(1); w.setsampwidth(2); w.setframerate(sr); w.writeframes((out * 32767).astype(np.int16).tobytes())
+def load():
+    os.makedirs(CACHE, exist_ok=True)
+    for f in FILES:
+        p = os.path.join(CACHE, f)
+        if not os.path.exists(p):
+            print("downloading", f); urllib.request.urlretrieve(URL + f, p)
+    return Kokoro(*(os.path.join(CACHE, f) for f in FILES))
+
+def style(k, who, s):
+    base = k.get_voice_style(VOICE[who])
+    if s == "whisper":
+        mix = 0.55 if who == "W" else 0.35   # husband keeps more of his own timbre
+        return base * (1 - mix) + k.get_voice_style(WHISPER_VOICE) * mix
+    return base
 
 if __name__ == "__main__":
     os.makedirs("audio", exist_ok=True)
-    for i, (who, text, style) in enumerate(json.load(open("lines.json"))):
-        ls, ns = STYLE[style]
-        out = f"audio/{i:02d}.wav"
-        subprocess.run(["piper", "-m", model(who), "-f", out, "--length-scale", str(ls), "--noise-scale", str(ns)],
-                       input=text.encode(), check=True, capture_output=True)
-        if style == "whisper": whisperize(out)
-        print(out, text)
+    k = load()
+    for i, (who, text, s) in enumerate(json.load(open("lines.json"))):
+        a, sr = k.create(text, voice=style(k, who, s), speed=SPEED[s] * PACE, lang="en-us")
+        if s == "whisper": a = a * 0.75
+        # trim leading/trailing silence so the timeline stays tight
+        nz = np.where(np.abs(a) > 0.01)[0]
+        if len(nz): a = a[max(0, nz[0] - 800): nz[-1] + 1600]
+        sf.write(f"audio/{i:02d}.wav", a, sr)
+        print(f"audio/{i:02d}.wav", text)

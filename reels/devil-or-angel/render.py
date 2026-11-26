@@ -26,7 +26,7 @@ for i,(who,text,style) in enumerate(LINES):
     p = f"audio/{i:02d}.wav"
     d = dur(p)
     timeline.append(dict(i=i,who=who,text=text,style=style,start=t,end=t+d,env=env(p)))
-    t += d + GAP.get(i,0.22)
+    t += d + GAP.get(i,0.35)
 END_CARD = timeline[-1]["end"] + 0.35
 json.dump([dict(i=x["i"],start=x["start"],end=x["end"]) for x in timeline] + [{"endcard":END_CARD}], open("timeline.json","w"), indent=1)
 print("dialogue ends", timeline[-1]["end"], "endcard at", END_CARD)
