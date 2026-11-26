@@ -1,0 +1,82 @@
+[
+ [
+  "W",
+  "Psst... babe. One more episode. It ended on a cliffhanger.",
+  "whisper"
+ ],
+ [
+  "H",
+  "No. It's one A.M.",
+  "flat"
+ ],
+ [
+  "W",
+  "Psst... we can skip the intro. That's basically free time.",
+  "whisper"
+ ],
+ [
+  "H",
+  "Stop it.",
+  "flat"
+ ],
+ [
+  "W",
+  "Psst... your alarm is at six? That's five whole hours. Press play.",
+  "whisper"
+ ],
+ [
+  "H",
+  "Okay. Seriously. Are you the devil?",
+  "annoyed"
+ ],
+ [
+  "W",
+  "What? Why would I be the devil?",
+  "normal"
+ ],
+ [
+  "H",
+  "Because you keep whispering in my ear. That's exactly what the devil does. He speaks in your ear, and talks you into things you'll regret tomorrow.",
+  "annoyed"
+ ],
+ [
+  "W",
+  "Okay... so what am I supposed to be?",
+  "normal"
+ ],
+ [
+  "H",
+  "That's the real question. Are you the devil, or the angel? Which side are you on, the good side or the bad side?",
+  "serious"
+ ],
+ [
+  "W",
+  "Uh... the couch side?",
+  "normal"
+ ],
+ [
+  "H",
+  "Listen to me. Don't be a devil. Be an angel instead. Whisper the things that are good for us.",
+  "warm"
+ ],
+ [
+  "W",
+  "Psst... turn off the TV. Get some sleep. I'll make your coffee in the morning.",
+  "whisper"
+ ],
+ [
+  "H",
+  "See? Was that so hard?",
+  "warm"
+ ],
+ [
+  "W",
+  "Psst... the next episode starts in five seconds though.",
+  "whisper"
+ ],
+ [
+  "H",
+  "Devil!",
+  "annoyed"
+ ]
+]
