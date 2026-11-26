@@ -84,3 +84,18 @@ E06 streams: video starts 0.000s lasts 410.20s | audio starts 0.000s lasts 410.2
 E06: 56 pieces checked in the video file, 0 out of sync
 21:16 done E06
 21:16 building E07
+E07 production report
+timing plan problems:
+  none
+wrote /home/user/YTSKILL/series/surya-vamsha/video/ep07.mp4 410.9s narration, 40 shots, video 410.9s
+wrote brand/out/thumbnails/ep07-thumbnail-1280x720.jpg (1280, 720)
+--- qa_audio.py
+E07: 0 of 59 pieces flagged; longest pause between pieces 1.2 s
+--- voice_report.py
+E07 voice: 59 pieces, 0 failed the script check, longest silence 1.7s, loudness spread -2.6/+2.1 dB, speed spread 0.78-1.26x, clipped samples 0
+  no problems found
+--- verify_video.py
+E07: 40 pictures, 0 mismatches; video 410.89s, narration 410.93s
+--- sync_check.py
+E07 streams: video starts 0.000s lasts 410.76s | audio starts 0.000s lasts 410.89s -> MISMATCH
+E07: 59 pieces checked in the video file, 0 out of sync
