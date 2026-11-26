@@ -68,7 +68,7 @@ def silences(a, thr_db=-40, win=0.02):
 def score(path_or_audio, text):
     """Transcribe one recording and compare it with the script text."""
     a = load(path_or_audio) if isinstance(path_or_audio, str) else path_or_audio
-    segs, _ = model().transcribe(a, language="hi", beam_size=3, condition_on_previous_text=False, vad_filter=False)
+    segs, _ = model().transcribe(a, language="hi", beam_size=1, condition_on_previous_text=False, vad_filter=False)
     said = " ".join(s.text.strip() for s in segs)
     n_said, n_want = norm(said), norm(text)
     ratio = len(n_said) / max(1, len(n_want))
