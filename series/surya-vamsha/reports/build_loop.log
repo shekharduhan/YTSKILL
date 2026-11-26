@@ -99,3 +99,7 @@ E07: 40 pictures, 0 mismatches; video 410.89s, narration 410.93s
 --- sync_check.py
 E07 streams: video starts 0.000s lasts 410.76s | audio starts 0.000s lasts 410.89s -> MISMATCH
 E07: 59 pieces checked in the video file, 0 out of sync
+21:35 done E07
+21:36 building E08
+21:36 building E16
+21:36 building E08
