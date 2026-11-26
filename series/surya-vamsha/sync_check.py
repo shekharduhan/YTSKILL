@@ -45,6 +45,12 @@ def check(ep):
         heard = norm(" ".join(s.text for s in segs))
         want = norm(x["text"])[: max(8, len(heard))]
         sim = difflib.SequenceMatcher(None, heard[: len(want)], want).ratio()
+        if sim < 0.6:   # short clips sometimes transcribe badly: re-listen to the whole line before reporting
+            a = clip(video, x["start"], x["end"] - x["start"])
+            segs, _ = model().transcribe(a, language="hi", beam_size=3, condition_on_previous_text=False)
+            heard = norm(" ".join(s.text for s in segs))
+            want = norm(x["text"])
+            sim = difflib.SequenceMatcher(None, heard[: len(want)], want).ratio()
         if sim < 0.6:
             bad += 1
             print(f"  ! {int(x['start'] // 60)}:{x['start'] % 60:04.1f} expected: {x['text'][:45]}\n"
