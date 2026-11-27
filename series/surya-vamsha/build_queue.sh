@@ -10,7 +10,7 @@ while true; do
     left=1
     want=$(grep -c "^| [0-9]" ep$e-image-prompts.md 2>/dev/null)
     have=$(ls images/ep$e/*.png 2>/dev/null | wc -l)
-    [ -f audio/ep$e.mp3 ] && [ -f images/ep$e/.reviewed ] && [ "$have" -ge "$want" ] || continue
+    [ -f audio/ep$e.mp3 ] && [ -f audio/ep$e.timing.json ] && [ -f images/ep$e/.reviewed ] && [ "$have" -ge "$want" ] || continue
     mkdir reports/ep$e.lock 2>/dev/null || continue
     echo "$(date +%H:%M) building E$e" >> $LOG
     python3 -u produce.py build $n >> $LOG 2>&1
