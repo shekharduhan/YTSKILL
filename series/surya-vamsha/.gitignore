@@ -3,3 +3,4 @@
 .env.local
 video/
 *.new
+youtube-upload-*.zip
