@@ -1,0 +1,15 @@
+E20 production report
+timing plan problems:
+  none
+wrote /home/user/YTSKILL/series/surya-vamsha/video/ep20.mp4 392.8s narration, 37 shots, video 392.7s
+wrote brand/out/thumbnails/ep20-thumbnail-1280x720.jpg (1280, 720)
+--- qa_audio.py
+E20: 0 of 57 pieces flagged; longest pause between pieces 1.2 s
+--- voice_report.py
+E20 voice: 57 pieces, 0 failed the script check, longest silence 1.8s, loudness spread -2.1/+2.2 dB, speed spread 0.77-1.24x, clipped samples 0
+  no problems found
+--- verify_video.py
+E20: 37 pictures, 0 mismatches; video 392.71s, narration 392.75s
+--- sync_check.py
+E20 streams: video starts 0.000s lasts 392.60s | audio starts 0.000s lasts 392.71s -> MISMATCH
+E20: 57 pieces checked in the video file, 0 out of sync
