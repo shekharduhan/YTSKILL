@@ -1,0 +1,57 @@
+E22 production report
+timing plan problems:
+    main(int([a for a in args if a != "--check"][0]), check_only="--check" in args)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/user/YTSKILL/series/surya-vamsha/audio/ep22.timing.json'
+wrote brand/out/thumbnails/ep22-thumbnail-1280x720.jpg (1280, 720)
+--- qa_audio.py
+Traceback (most recent call last):
+  File "/home/user/YTSKILL/series/surya-vamsha/qa_audio.py", line 116, in <module>
+    check(int(e))
+    ~~~~~^^^^^^^^
+  File "/home/user/YTSKILL/series/surya-vamsha/qa_audio.py", line 91, in check
+    timing = json.load(open(base + ".timing.json", encoding="utf-8"))
+                       ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/user/YTSKILL/series/surya-vamsha/audio/ep22.timing.json'
+--- voice_report.py
+Traceback (most recent call last):
+  File "/home/user/YTSKILL/series/surya-vamsha/voice_report.py", line 85, in <module>
+    ok = all([report(int(e)) for e in sys.argv[1:]])
+              ~~~~~~^^^^^^^^
+  File "/home/user/YTSKILL/series/surya-vamsha/voice_report.py", line 26, in report
+    timing = [x for x in json.load(open(base + ".timing.json", encoding="utf-8"))["items"] if x["kind"] == "text"]
+                                   ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/user/YTSKILL/series/surya-vamsha/audio/ep22.timing.json'
+--- verify_video.py
+Traceback (most recent call last):
+  File "/home/user/YTSKILL/series/surya-vamsha/verify_video.py", line 53, in <module>
+    ok = all(main(int(e)) for e in sys.argv[1:])
+  File "/home/user/YTSKILL/series/surya-vamsha/verify_video.py", line 53, in <genexpr>
+    ok = all(main(int(e)) for e in sys.argv[1:])
+             ~~~~^^^^^^^^
+  File "/home/user/YTSKILL/series/surya-vamsha/verify_video.py", line 26, in main
+    shots, total, _ = assemble.shot_plan(ep)
+                      ~~~~~~~~~~~~~~~~~~^^^^
+  File "/home/user/YTSKILL/series/surya-vamsha/assemble.py", line 46, in shot_plan
+    timing = json.load(open(os.path.join(HERE, "audio", f"ep{ep:02d}.timing.json"), encoding="utf-8"))
+                       ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/user/YTSKILL/series/surya-vamsha/audio/ep22.timing.json'
+--- sync_check.py
+/home/user/YTSKILL/series/surya-vamsha/video/ep22.mp4: No such file or directory
+Traceback (most recent call last):
+  File "/home/user/YTSKILL/series/surya-vamsha/sync_check.py", line 63, in <module>
+    ok = all([check(int(e)) for e in sys.argv[1:]])
+              ~~~~~^^^^^^^^
+  File "/home/user/YTSKILL/series/surya-vamsha/sync_check.py", line 34, in check
+    st = probe(video)
+  File "/home/user/YTSKILL/series/surya-vamsha/sync_check.py", line 21, in probe
+    out = subprocess.check_output(["ffprobe", "-v", "error", "-show_entries",
+                                   "stream=codec_type,start_time,duration", "-of", "json", path])
+  File "/usr/local/lib/python3.13/subprocess.py", line 473, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+               **kwargs).stdout
+               ^^^^^^^^^
+  File "/usr/local/lib/python3.13/subprocess.py", line 578, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['ffprobe', '-v', 'error', '-show_entries', 'stream=codec_type,start_time,duration', '-of', 'json', '/home/user/YTSKILL/series/surya-vamsha/video/ep22.mp4']' returned non-zero exit status 1.

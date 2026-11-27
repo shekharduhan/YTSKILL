@@ -1,0 +1,49 @@
+E21 production report
+timing plan problems:
+  none
+subprocess.CalledProcessError: Command '['ffmpeg', '-y', '-loglevel', 'error', '-i', '/tmp/tmpc0awmlwd/c00.mp4', '-i', '/tmp/tmpc0awmlwd/c01.mp4', '-i', '/tmp/tmpc0awmlwd/c02.mp4', '-i', '/tmp/tmpc0awmlwd/c03.mp4', '-i', '/tmp/tmpc0awmlwd/c04.mp4', '-i', '/tmp/tmpc0awmlwd/c05.mp4', '-i', '/tmp/tmpc0awmlwd/c06.mp4', '-i', '/tmp/tmpc0awmlwd/c07.mp4', '-i', '/tmp/tmpc0awmlwd/c08.mp4', '-i', '/tmp/tmpc0awmlwd/c09.mp4', '-i', '/tmp/tmpc0awmlwd/c10.mp4', '-i', '/tmp/tmpc0awmlwd/c11.mp4', '-i', '/tmp/tmpc0awmlwd/c12.mp4', '-i', '/tmp/tmpc0awmlwd/c13.mp4', '-i', '/tmp/tmpc0awmlwd/c14.mp4', '-i', '/tmp/tmpc0awmlwd/c15.mp4', '-i', '/tmp/tmpc0awmlwd/c16.mp4', '-i', '/tmp/tmpc0awmlwd/c17.mp4', '-i', '/tmp/tmpc0awmlwd/c18.mp4', '-i', '/tmp/tmpc0awmlwd/c19.mp4', '-i', '/tmp/tmpc0awmlwd/c20.mp4', '-i', '/tmp/tmpc0awmlwd/c21.mp4', '-i', '/tmp/tmpc0awmlwd/c22.mp4', '-i', '/tmp/tmpc0awmlwd/c23.mp4', '-i', '/tmp/tmpc0awmlwd/c24.mp4', '-i', '/tmp/tmpc0awmlwd/c25.mp4', '-i', '/tmp/tmpc0awmlwd/c26.mp4', '-i', '/tmp/tmpc0awmlwd/c27.mp4', '-i', '/tmp/tmpc0awmlwd/c28.mp4', '-i', '/tmp/tmpc0awmlwd/c29.mp4', '-i', '/tmp/tmpc0awmlwd/c30.mp4', '-i', '/tmp/tmpc0awmlwd/c31.mp4', '-i', '/tmp/tmpc0awmlwd/c32.mp4', '-i', '/tmp/tmpc0awmlwd/c33.mp4', '-i', '/tmp/tmpc0awmlwd/c34.mp4', '-i', '/tmp/tmpc0awmlwd/c35.mp4', '-i', '/tmp/tmpc0awmlwd/c36.mp4', '-i', '/tmp/tmpc0awmlwd/c37.mp4', '-i', '/tmp/tmpc0awmlwd/c38.mp4', '-i', '/tmp/tmpc0awmlwd/c39.mp4', '-i', '/tmp/tmpc0awmlwd/c40.mp4', '-i', '/tmp/tmpc0awmlwd/c41.mp4', '-i', '/tmp/tmpc0awmlwd/c42.mp4', '-filter_complex', '[0:v][1:v]xfade=transition=fade:duration=0.6:offset=11.600[v1];[v1][2:v]xfade=transition=fade:duration=0.6:offset=18.760[v2];[v2][3:v]xfade=transition=fade:duration=0.6:offset=27.120[v3];[v3][4:v]xfade=transition=fade:duration=0.6:offset=31.800[v4];[v4][5:v]xfade=transition=fade:duration=0.6:offset=42.800[v5];[v5][6:v]xfade=transition=fade:duration=0.6:offset=51.000[v6];[v6][7:v]xfade=transition=fade:duration=0.6:offset=56.880[v7];[v7][8:v]xfade=transition=fade:duration=0.6:offset=66.440[v8];[v8][9:v]xfade=transition=fade:duration=0.6:offset=76.560[v9];[v9][10:v]xfade=transition=fade:duration=0.6:offset=89.200[v10];[v10][11:v]xfade=transition=fade:duration=0.6:offset=97.360[v11];[v11][12:v]xfade=transition=fade:duration=0.6:offset=104.080[v12];[v12][13:v]xfade=transition=fade:duration=0.6:offset=114.200[v13];[v13][14:v]xfade=transition=fade:duration=0.6:offset=130.040[v14];[v14][15:v]xfade=transition=fade:duration=0.6:offset=138.400[v15];[v15][16:v]xfade=transition=fade:duration=0.6:offset=144.720[v16];[v16][17:v]xfade=transition=fade:duration=0.6:offset=160.800[v17];[v17][18:v]xfade=transition=fade:duration=0.6:offset=169.120[v18];[v18][19:v]xfade=transition=fade:duration=0.6:offset=173.600[v19];[v19][20:v]xfade=transition=fade:duration=0.6:offset=181.160[v20];[v20][21:v]xfade=transition=fade:duration=0.6:offset=192.600[v21];[v21][22:v]xfade=transition=fade:duration=0.6:offset=199.880[v22];[v22][23:v]xfade=transition=fade:duration=0.6:offset=210.160[v23];[v23][24:v]xfade=transition=fade:duration=0.6:offset=219.840[v24];[v24][25:v]xfade=transition=fade:duration=0.6:offset=226.200[v25];[v25][26:v]xfade=transition=fade:duration=0.6:offset=234.760[v26];[v26][27:v]xfade=transition=fade:duration=0.6:offset=242.640[v27];[v27][28:v]xfade=transition=fade:duration=0.6:offset=250.360[v28];[v28][29:v]xfade=transition=fade:duration=0.6:offset=260.560[v29];[v29][30:v]xfade=transition=fade:duration=0.6:offset=268.000[v30];[v30][31:v]xfade=transition=fade:duration=0.6:offset=281.080[v31];[v31][32:v]xfade=transition=fade:duration=0.6:offset=292.040[v32];[v32][33:v]xfade=transition=fade:duration=0.6:offset=298.560[v33];[v33][34:v]xfade=transition=fade:duration=0.6:offset=309.640[v34];[v34][35:v]xfade=transition=fade:duration=0.6:offset=314.960[v35];[v35][36:v]xfade=transition=fade:duration=0.6:offset=323.000[v36];[v36][37:v]xfade=transition=fade:duration=0.6:offset=331.920[v37];[v37][38:v]xfade=transition=fade:duration=0.6:offset=344.240[v38];[v38][39:v]xfade=transition=fade:duration=0.6:offset=355.960[v39];[v39][40:v]xfade=transition=fade:duration=0.6:offset=366.240[v40];[v40][41:v]xfade=transition=fade:duration=0.6:offset=372.080[v41];[v41][42:v]xfade=transition=fade:duration=0.6:offset=379.280[v42]', '-map', '[v42]', '-c:v', 'libx264', '-preset', 'medium', '-crf', '20', '-pix_fmt', 'yuv420p', '/tmp/tmpc0awmlwd/silent.mp4']' died with <Signals.SIGKILL: 9>.
+wrote brand/out/thumbnails/ep21-thumbnail-1280x720.jpg (1280, 720)
+--- qa_audio.py
+E21: 0 of 60 pieces flagged; longest pause between pieces 1.2 s
+--- voice_report.py
+E21 voice: 60 pieces, 0 failed the script check, longest silence 1.4s, loudness spread -1.4/+2.0 dB, speed spread 0.74-1.36x, clipped samples 0
+  ! 3:53.5 speed 1.36x the usual: प्राण बचाने के लिए।
+--- verify_video.py
+[in#0 @ 0x561248db9dc0] Error opening input: No such file or directory
+Error opening input file /home/user/YTSKILL/series/surya-vamsha/video/ep21.mp4.
+Error opening input files: No such file or directory
+Traceback (most recent call last):
+  File "/home/user/YTSKILL/series/surya-vamsha/verify_video.py", line 53, in <module>
+    ok = all(main(int(e)) for e in sys.argv[1:])
+  File "/home/user/YTSKILL/series/surya-vamsha/verify_video.py", line 53, in <genexpr>
+    ok = all(main(int(e)) for e in sys.argv[1:])
+             ~~~~^^^^^^^^
+  File "/home/user/YTSKILL/series/surya-vamsha/verify_video.py", line 38, in main
+    subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-ss", f"{at:.2f}", "-i", video, "-frames:v", "1", f],
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                   check=True)
+                   ^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/subprocess.py", line 578, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['ffmpeg', '-loglevel', 'error', '-y', '-ss', '0.90', '-i', '/home/user/YTSKILL/series/surya-vamsha/video/ep21.mp4', '-frames:v', '1', '/tmp/tmp131n9xqv/f.jpg']' returned non-zero exit status 254.
+--- sync_check.py
+/home/user/YTSKILL/series/surya-vamsha/video/ep21.mp4: No such file or directory
+Traceback (most recent call last):
+  File "/home/user/YTSKILL/series/surya-vamsha/sync_check.py", line 63, in <module>
+    ok = all([check(int(e)) for e in sys.argv[1:]])
+              ~~~~~^^^^^^^^
+  File "/home/user/YTSKILL/series/surya-vamsha/sync_check.py", line 34, in check
+    st = probe(video)
+  File "/home/user/YTSKILL/series/surya-vamsha/sync_check.py", line 21, in probe
+    out = subprocess.check_output(["ffprobe", "-v", "error", "-show_entries",
+                                   "stream=codec_type,start_time,duration", "-of", "json", path])
+  File "/usr/local/lib/python3.13/subprocess.py", line 473, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+               **kwargs).stdout
+               ^^^^^^^^^
+  File "/usr/local/lib/python3.13/subprocess.py", line 578, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['ffprobe', '-v', 'error', '-show_entries', 'stream=codec_type,start_time,duration', '-of', 'json', '/home/user/YTSKILL/series/surya-vamsha/video/ep21.mp4']' returned non-zero exit status 1.
