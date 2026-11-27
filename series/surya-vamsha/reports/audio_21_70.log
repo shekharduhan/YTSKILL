@@ -123,3 +123,130 @@
 [60/60] अगला एपिसोड… यहीं जुड़ा है।
 E21 narration 390.8s
 [1/55] "जो बैठा है… उसका भाग्य भी बैठ जाता है।
+   take 0: ratio 1.0 sim 1.0 ok
+[2/55] जो खड़ा होता है… उसका भाग्य भी खड़ा होता है।
+   take 0: ratio 1.0 sim 1.0 ok
+[3/55] जो सोता है… उसका भाग्य सो जाता है।
+   take 0: ratio 1.0 sim 1.0 ok
+[4/55] और जो चलता है… उसका भाग्य भी चलता है।
+   take 0: ratio 1.0 sim 1.0 ok
+[5/55] चरैवेति… चरैवेति। चलते रहो… चलते रहो।"
+   take 0: ratio 0.74 sim 0.79 missing words
+   take 1: ratio 0.71 sim 0.8 missing words
+   !! kept best take 0 but it still has: missing words
+[6/55] यह किसी कवि का गीत नहीं। ये इंद्र के शब्द हैं… एक 
+   take 0: ratio 0.97 sim 0.97 ok
+[7/55] पिछले एपिसोड में… हरिश्चंद्र ने पाँच बार वरुण को ट
+   take 0: ratio 1.01 sim 0.97 ok
+[8/55] आज की कथा… वन में रोहित की। भागवत इसे कुछ पंक्तियो
+   take 0: ratio 0.97 sim 0.96 cut off at end
+   take 1: ratio 0.98 sim 0.97 ok
+[9/55] रोहित वन में था। अकेला।
+   take 0: ratio 0.91 sim 0.95 ok
+[10/55] राजकुमार… जिसके पास कल तक सेवक थे, महल था… आज जंगल
+   take 0: ratio 1.0 sim 0.96 ok
+[11/55] सोचिए उस युवक का मन। गुस्सा? हाँ। डर? हाँ। पर इन स
+   take 0: ratio 0.97 sim 0.98 ok
+[12/55] सबसे कठिन वन बाहर नहीं होता… वह मन के भीतर उगता है
+   take 0: ratio 0.99 sim 0.98 ok
+[13/55] और फिर… वन में एक समाचार पहुँचा।
+   take 0: ratio 0.9 sim 0.95 ok
+[14/55] "तुम्हारे पिता… वरुण के शाप से… जलोदर रोग से पीड़ि
+   take 0: ratio 1.0 sim 0.96 ok
+[15/55] और रोहित… जो अपने प्राण बचाने भागा था… उसने निर्णय
+   take 0: ratio 1.0 sim 0.98 ok
+[16/55] अब ठहरिए।
+   take 0: ratio 1.0 sim 0.67 does not match
+   take 1: ratio 1.0 sim 0.78 ok
+[17/55] उसका पिता वही था… जिसने उसकी बलि का वचन दिया था। औ
+   take 0: ratio 0.98 sim 0.97 ok
+[18/55] आप होते रोहित… तो क्या लौटते?
+   take 0: ratio 1.0 sim 0.96 ok
+[19/55] रोहित नगर की ओर चला। और रास्ते में मिला… एक ब्राह्
+   take 0: ratio 0.96 sim 0.96 cut off at end
+   take 1: ratio 0.98 sim 0.97 ok
+[20/55] भागवत कहता है… वह ब्राह्मण के वेश में स्वयं इंद्र 
+   take 0: ratio 1.02 sim 0.95 ok
+[21/55] और इंद्र ने कहा… "मत लौटो। लौटोगे तो तुम्हारी बलि 
+   take 0: ratio 0.95 sim 0.95 ok
+[22/55] रोहित रुक गया। एक वर्ष और वन में रहा।
+   take 0: ratio 0.97 sim 0.96 ok
+[23/55] वर्ष बीता। रोहित फिर लौटने लगा। और फिर… वही ब्राह्
+   take 0: ratio 0.93 sim 0.93 ok
+[24/55] भागवत कहता है… ऐसा हर वर्ष हुआ। पाँच वर्ष तक।
+   take 0: ratio 0.98 sim 0.99 ok
+[25/55] अब ऐतरेय ब्राह्मण की ओर चलते हैं। क्योंकि वहाँ इंद
+   take 0: ratio 0.96 sim 0.94 ok
+[26/55] एक श्लोक का भाव ऐसा है…
+   take 0: ratio 1.05 sim 0.98 ok
+[27/55] "जो बैठा रहता है… उसका भाग्य भी बैठा रहता है। जो ख
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/urllib/request.py", line 1331, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              encode_chunked=req.has_header('Transfer-encoding'))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/http/client.py", line 1386, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/http/client.py", line 1432, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/http/client.py", line 1381, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/http/client.py", line 1141, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "/usr/local/lib/python3.13/http/client.py", line 1085, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/http/client.py", line 1520, in connect
+    super().connect()
+    ~~~~~~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/http/client.py", line 1051, in connect
+    self.sock = self._create_connection(
+                ~~~~~~~~~~~~~~~~~~~~~~~^
+        (self.host,self.port), self.timeout, self.source_address)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/socket.py", line 868, in create_connection
+    raise exceptions[0]
+  File "/usr/local/lib/python3.13/socket.py", line 853, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user/YTSKILL/series/surya-vamsha/produce.py", line 68, in <module>
+    {"audio": audio, "images": images, "build": build}[step](eps)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/user/YTSKILL/series/surya-vamsha/produce.py", line 33, in audio
+    t = er.render(md, os.path.join(HERE, "audio", f"ep{ep:02d}.mp3"))
+  File "/home/user/YTSKILL/series/surya-vamsha/eleven_render.py", line 204, in render
+    a = tidy(decode(choose(val, prev, nxt, takes, qa)))
+                    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/YTSKILL/series/surya-vamsha/eleven_render.py", line 176, in choose
+    p = tts(text, prev, nxt, take)
+  File "/home/user/YTSKILL/series/surya-vamsha/eleven_render.py", line 115, in tts
+    with urllib.request.urlopen(req, timeout=180) as r:
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/urllib/request.py", line 189, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/urllib/request.py", line 489, in open
+    response = self._open(req, data)
+  File "/usr/local/lib/python3.13/urllib/request.py", line 506, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "/usr/local/lib/python3.13/urllib/request.py", line 466, in _call_chain
+    result = func(*args)
+  File "/usr/local/lib/python3.13/urllib/request.py", line 1379, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/urllib/request.py", line 1334, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 111] Connection refused>
