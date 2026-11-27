@@ -594,3 +594,20 @@ E18: 45 pictures, 0 mismatches; video 454.25s, narration 454.30s
 E18 streams: video starts 0.000s lasts 454.16s | audio starts 0.000s lasts 454.25s -> OK
 E18: 61 pieces checked in the video file, 0 out of sync
 14:45 building E19
+E19 production report
+timing plan problems:
+  none
+wrote /home/user/YTSKILL/series/surya-vamsha/video/ep19.mp4 450.2s narration, 43 shots, video 450.2s
+wrote brand/out/thumbnails/ep19-thumbnail-1280x720.jpg (1280, 720)
+--- qa_audio.py
+E19: 0 of 64 pieces flagged; longest pause between pieces 1.2 s
+--- voice_report.py
+E19 voice: 64 pieces, 0 failed the script check, longest silence 1.4s, loudness spread -1.9/+1.5 dB, speed spread 0.74-1.32x, clipped samples 0
+  no problems found
+--- verify_video.py
+E19: 43 pictures, 0 mismatches; video 450.18s, narration 450.22s
+--- sync_check.py
+E19 streams: video starts 0.000s lasts 450.16s | audio starts 0.000s lasts 450.18s -> OK
+E19: 64 pieces checked in the video file, 0 out of sync
+15:23 done E19
+15:23 building E21
