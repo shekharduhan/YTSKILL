@@ -406,3 +406,4 @@ Traceback (most recent call last):
                              output=stdout, stderr=stderr)
 subprocess.CalledProcessError: Command '['ffprobe', '-v', 'error', '-show_entries', 'stream=codec_type,start_time,duration', '-of', 'json', '/home/user/YTSKILL/series/surya-vamsha/video/ep21.mp4']' returned non-zero exit status 1.
 12:37 done E21
+12:48 building E23
