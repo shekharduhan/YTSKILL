@@ -276,3 +276,19 @@ E13: 39 pictures, 0 mismatches; video 414.69s, narration 414.72s
 E13 streams: video starts 0.000s lasts 414.60s | audio starts 0.000s lasts 414.69s -> OK
 E13: 54 pieces checked in the video file, 0 out of sync
 23:44 done E13
+E12 production report
+timing plan problems:
+  none
+wrote /home/user/YTSKILL/series/surya-vamsha/video/ep12.mp4 426.1s narration, 40 shots, video 426.0s
+wrote brand/out/thumbnails/ep12-thumbnail-1280x720.jpg (1280, 720)
+--- qa_audio.py
+E12: 0 of 60 pieces flagged; longest pause between pieces 1.2 s
+--- voice_report.py
+E12 voice: 60 pieces, 0 failed the script check, longest silence 1.8s, loudness spread -1.6/+1.3 dB, speed spread 0.75-1.22x, clipped samples 0
+  no problems found
+--- verify_video.py
+E12: 40 pictures, 0 mismatches; video 426.04s, narration 426.08s
+--- sync_check.py
+E12 streams: video starts 0.000s lasts 426.00s | audio starts 0.000s lasts 426.04s -> OK
+E12: 60 pieces checked in the video file, 0 out of sync
+00:04 done E12
