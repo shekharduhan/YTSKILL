@@ -442,3 +442,19 @@ E17 streams: video starts 0.000s lasts 429.96s | audio starts 0.000s lasts 429.9
 E17: 58 pieces checked in the video file, 0 out of sync
 13:26 done E17
 13:26 building E18
+E23 production report
+timing plan problems:
+  none
+wrote /home/user/YTSKILL/series/surya-vamsha/video/ep23.mp4 441.8s narration, 49 shots, video 441.8s
+wrote brand/out/thumbnails/ep23-thumbnail-1280x720.jpg (1280, 720)
+--- qa_audio.py
+E23: 0 of 59 pieces flagged; longest pause between pieces 1.2 s
+--- voice_report.py
+E23 voice: 59 pieces, 0 failed the script check, longest silence 1.8s, loudness spread -2.1/+2.6 dB, speed spread 0.62-1.24x, clipped samples 0
+  ! 3:31.6 speed 0.62x the usual: और फिर… वह हुआ।
+--- verify_video.py
+E23: 49 pictures, 0 mismatches; video 441.77s, narration 441.81s
+--- sync_check.py
+E23 streams: video starts 0.000s lasts 441.64s | audio starts 0.000s lasts 441.77s -> MISMATCH
+E23: 59 pieces checked in the video file, 0 out of sync
+13:45 done E23
