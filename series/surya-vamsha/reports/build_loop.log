@@ -292,3 +292,5 @@ E12: 40 pictures, 0 mismatches; video 426.04s, narration 426.08s
 E12 streams: video starts 0.000s lasts 426.00s | audio starts 0.000s lasts 426.04s -> OK
 E12: 60 pieces checked in the video file, 0 out of sync
 00:04 done E12
+02:05 building E20
+02:05 building E17
