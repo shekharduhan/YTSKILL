@@ -561,3 +561,36 @@ Traceback (most recent call last):
                              output=stdout, stderr=stderr)
 subprocess.CalledProcessError: Command '['ffprobe', '-v', 'error', '-show_entries', 'stream=codec_type,start_time,duration', '-of', 'json', '/home/user/YTSKILL/series/surya-vamsha/video/ep19.mp4']' returned non-zero exit status 1.
 14:10 done E19
+E25 production report
+timing plan problems:
+  none
+wrote /home/user/YTSKILL/series/surya-vamsha/video/ep25.mp4 456.1s narration, 50 shots, video 456.1s
+wrote brand/out/thumbnails/ep25-thumbnail-1280x720.jpg (1280, 720)
+--- qa_audio.py
+E25: 0 of 63 pieces flagged; longest pause between pieces 1.2 s
+--- voice_report.py
+E25 voice: 63 pieces, 0 failed the script check, longest silence 1.8s, loudness spread -1.9/+2.0 dB, speed spread 0.76-1.28x, clipped samples 0
+  ! 0:20.8 silence of 1.8s
+--- verify_video.py
+E25: 50 pictures, 0 mismatches; video 456.07s, narration 456.10s
+--- sync_check.py
+E25 streams: video starts 0.000s lasts 456.00s | audio starts 0.000s lasts 456.07s -> OK
+E25: 63 pieces checked in the video file, 0 out of sync
+E18 production report
+timing plan problems:
+  none
+wrote /home/user/YTSKILL/series/surya-vamsha/video/ep18.mp4 454.3s narration, 45 shots, video 454.2s
+wrote brand/out/thumbnails/ep18-thumbnail-1280x720.jpg (1280, 720)
+--- qa_audio.py
+E18 6:46.2 does not match               want: पर कितना मूल्य चुकाया? वाल्मीकि बताते हैं… इसके बाद विश्वामि
+                                        said: पर कितना मूल्य चुकाया? वालमी की बताते हैं, इसके बाद विश्वा मित्र ने इसे अपने तप में एक बड़
+E18: 1 of 61 pieces flagged; longest pause between pieces 1.2 s
+--- voice_report.py
+E18 voice: 61 pieces, 1 failed the script check, longest silence 1.8s, loudness spread -1.7/+3.0 dB, speed spread 0.68-1.29x, clipped samples 0
+  no problems found
+--- verify_video.py
+E18: 45 pictures, 0 mismatches; video 454.25s, narration 454.30s
+--- sync_check.py
+E18 streams: video starts 0.000s lasts 454.16s | audio starts 0.000s lasts 454.25s -> OK
+E18: 61 pieces checked in the video file, 0 out of sync
+14:45 building E19

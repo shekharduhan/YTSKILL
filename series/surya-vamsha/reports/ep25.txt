@@ -1,0 +1,15 @@
+E25 production report
+timing plan problems:
+  none
+wrote /home/user/YTSKILL/series/surya-vamsha/video/ep25.mp4 456.1s narration, 50 shots, video 456.1s
+wrote brand/out/thumbnails/ep25-thumbnail-1280x720.jpg (1280, 720)
+--- qa_audio.py
+E25: 0 of 63 pieces flagged; longest pause between pieces 1.2 s
+--- voice_report.py
+E25 voice: 63 pieces, 0 failed the script check, longest silence 1.8s, loudness spread -1.9/+2.0 dB, speed spread 0.76-1.28x, clipped samples 0
+  ! 0:20.8 silence of 1.8s
+--- verify_video.py
+E25: 50 pictures, 0 mismatches; video 456.07s, narration 456.10s
+--- sync_check.py
+E25 streams: video starts 0.000s lasts 456.00s | audio starts 0.000s lasts 456.07s -> OK
+E25: 63 pieces checked in the video file, 0 out of sync
