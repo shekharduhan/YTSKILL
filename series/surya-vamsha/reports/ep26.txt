@@ -1,0 +1,20 @@
+E26 production report
+timing plan problems:
+  ! image 1: words occur 2 times, using the first: दो ऋषि।
+wrote /home/user/YTSKILL/series/surya-vamsha/video/ep26.mp4 443.1s narration, 47 shots, video 443.1s
+wrote brand/out/thumbnails/ep26-thumbnail-1280x720.jpg (1280, 720)
+--- qa_audio.py
+E26 0:00.8 does not match               want: दो ऋषि।
+                                        said: दो रिशी
+E26: 1 of 62 pieces flagged; longest pause between pieces 1.2 s
+--- voice_report.py
+E26 voice: 62 pieces, 1 failed the script check, longest silence 2.0s, loudness spread -1.8/+2.5 dB, speed spread 0.68-1.40x, clipped samples 0
+  ! 4:30.7 speed 1.40x the usual: अब पीछे मुड़कर देखिए।
+  ! 0:55.0 silence of 2.0s
+--- verify_video.py
+E26: 47 pictures, 0 mismatches; video 443.05s, narration 443.09s
+--- sync_check.py
+E26 streams: video starts 0.000s lasts 442.92s | audio starts 0.000s lasts 443.05s -> MISMATCH
+  ! 0:00.8 expected: दो ऋषि।
+                heard:    दो रिशि  (match 0.57)
+E26: 62 pieces checked in the video file, 1 out of sync

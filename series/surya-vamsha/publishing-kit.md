@@ -1,7 +1,7 @@
 # YouTube upload kit: सूर्यवंश कथा
 
 Everything to type into YouTube: the channel set-up, the settings for every upload, the playlists,
-and for episodes 1 to 20 (the rest of the 84 come later) the title, description (with chapters once the episode is made),
+and for episodes 1 to 26 (the rest of the 84 come later) the title, description (with chapters once the episode is made),
 tags, pinned comment and thumbnail words. Made by `make_publish_kit.py` from the scripts, so every
 description quotes that episode's own opening lines and sources.
 
@@ -1247,5 +1247,359 @@ Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Scri
 ```
 एक राजा… पुत्र के लिए तड़प रहा था। 🔱 हरिश्चंद्र का वरुण से सौदा: पहले पुत्र, फिर बलि
 पूरी कथा: सूर्यवंश कथा · एपिसोड 20 (Related video में लिंक)
+#Shorts #सूर्यवंश #राजाहरिश्चंद्र #पौराणिककथा
+```
+
+### E21 · हरिश्चंद्र की पाँच टालमटोल: वरुण को दिया वचन
+
+*Harishchandra's 5 Delays: The Son He Promised Varuna* · राजा हरिश्चंद्र, भाग 2/7 · थंबनेल पर: **देवता को टालना** (English: STALLING A GOD)
+
+**YouTube title** (59/100)
+```
+हरिश्चंद्र की पाँच टालमटोल: वरुण को दिया वचन | सूर्यवंश कथा
+```
+**YouTube description**
+```
+एक देवता… पाँच बार एक राजा के द्वार पर आए।
+हर बार राजा ने कहा… "थोड़ा और समय।"
+और हर बार… देवता मान गए।
+पर छठी बार… देवता नहीं आए। और जो आया… वह उससे भी भयानक था।
+
+सूर्यवंश कथा · एपिसोड 21 / 84 · राजा हरिश्चंद्र (भाग 2 / 7)
+In this episode: The five times Harishchandra put off Varuna, and the illness that followed.
+
+📜 स्रोत: श्रीमद्भागवत 9.7 · ऐतरेय ब्राह्मण 7.14 (वही पाँच टालमटोल, राजा के कारणों सहित)
+हर कथा के स्रोत स्क्रीन पर दिखाए गए हैं। जहाँ कथा लोक-परंपरा या बाद के ग्रंथों से है, वहाँ भी बताया गया है।
+
+⏱ अध्याय
+0:00 हुक
+0:19 कथा का द्वार
+0:43 पहला दृश्य: पहली टालमटोल — दस दिन
+1:17 दूसरा दृश्य: दूसरी टालमटोल — दाँत आने दो
+1:44 तीसरा दृश्य: तीसरी टालमटोल — दाँत गिरने दो
+2:25 चौथा दृश्य: चौथी टालमटोल — नए दाँत आने दो
+2:54 पाँचवाँ दृश्य: पाँचवीं टालमटोल — कवच
+3:30 छठा दृश्य: रोहित को पता चला
+4:03 सातवाँ दृश्य: जलोदर
+4:41 आठवाँ दृश्य: वरुण का पाश
+5:39 समाधान: वरुण ने इतनी प्रतीक्षा क्यों की?
+6:06 समापन
+
+▶ अगला एपिसोड: E22 रोहित के छह वर्ष वन में: चलते रहो
+▶ पूरी शृंखला (प्लेलिस्ट): [link]
+
+वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
+
+#सूर्यवंश #राजाहरिश्चंद्र #भागवतपुराण #Harishchandra #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
+```
+**YouTube tags field** (304/500)
+```
+हरिश्चंद्र की पाँच टालमटोल: वरुण को दिया वचन, Harishchandra's 5 Delays: The Son He Promised Varuna, राजा हरिश्चंद्र, Harishchandra, सूर्यवंश, Suryavansh, सूर्यवंश कथा, भागवत पुराण, Bhagavata Purana, Srimad Bhagavatam, हिंदू पौराणिक कथा, Hindu mythology, Ikshvaku dynasty, रामायण, Hindi story, पौराणिक कथा
+```
+**YouTube pinned comment**
+```
+आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
+अगला एपिसोड: E22 रोहित के छह वर्ष वन में: चलते रहो
+```
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
+```
+एक देवता… पाँच बार एक राजा के द्वार पर आए। 🔱 हरिश्चंद्र की पाँच टालमटोल: वरुण को दिया वचन
+पूरी कथा: सूर्यवंश कथा · एपिसोड 21 (Related video में लिंक)
+#Shorts #सूर्यवंश #राजाहरिश्चंद्र #पौराणिककथा
+```
+
+### E22 · रोहित के छह वर्ष वन में: चलते रहो
+
+*Rohita's 6 Years in the Forest: 'Keep Walking'* · राजा हरिश्चंद्र, भाग 3/7 · थंबनेल पर: **चरैवेति** (English: CHARAIVETI)
+
+**YouTube title** (48/100)
+```
+रोहित के छह वर्ष वन में: चलते रहो | सूर्यवंश कथा
+```
+**YouTube description**
+```
+"जो बैठा है… उसका भाग्य भी बैठ जाता है।
+जो खड़ा होता है… उसका भाग्य भी खड़ा होता है।
+जो सोता है… उसका भाग्य सो जाता है।
+और जो चलता है… उसका भाग्य भी चलता है।
+
+सूर्यवंश कथा · एपिसोड 22 / 84 · राजा हरिश्चंद्र (भाग 3 / 7)
+In this episode: The prince who ran, and Indra's verses telling him not to go home.
+
+📜 स्रोत: श्रीमद्भागवत 9.7 · ऐतरेय ब्राह्मण 7.15 (इंद्र के "चरैवेति" श्लोक)
+हर कथा के स्रोत स्क्रीन पर दिखाए गए हैं। जहाँ कथा लोक-परंपरा या बाद के ग्रंथों से है, वहाँ भी बताया गया है।
+
+⏱ अध्याय
+0:00 हुक
+0:30 कथा का द्वार
+0:57 पहला दृश्य: वन का एकांत
+1:31 दूसरा दृश्य: पिता बीमार हैं
+2:05 तीसरा दृश्य: एक ब्राह्मण रास्ता रोकता है
+2:44 चौथा दृश्य: पहला श्लोक — बैठे का भाग्य
+3:22 पाँचवाँ दृश्य: युग चलने में हैं
+3:57 छठा दृश्य: शहद और सूर्य
+4:44 सातवाँ दृश्य: छठा वर्ष
+5:06 आठवाँ दृश्य: "इंद्र चलने वाले का मित्र है"
+6:03 समाधान: चरैवेति आज
+6:26 समापन
+
+▶ अगला एपिसोड: E23 शुनःशेप: वह बालक जो दूसरे की जगह मरने के लिए खरीदा गया
+▶ पूरी शृंखला (प्लेलिस्ट): [link]
+
+वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
+
+#सूर्यवंश #राजाहरिश्चंद्र #भागवतपुराण #Harishchandra #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
+```
+**YouTube tags field** (287/500)
+```
+रोहित के छह वर्ष वन में: चलते रहो, Rohita's 6 Years in the Forest: 'Keep Walking', राजा हरिश्चंद्र, Harishchandra, सूर्यवंश, Suryavansh, सूर्यवंश कथा, भागवत पुराण, Bhagavata Purana, Srimad Bhagavatam, हिंदू पौराणिक कथा, Hindu mythology, Ikshvaku dynasty, रामायण, Hindi story, पौराणिक कथा
+```
+**YouTube pinned comment**
+```
+आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
+अगला एपिसोड: E23 शुनःशेप: वह बालक जो दूसरे की जगह मरने के लिए खरीदा गया
+```
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
+```
+"जो बैठा है… उसका भाग्य भी बैठ जाता है। 🔱 रोहित के छह वर्ष वन में: चलते रहो
+पूरी कथा: सूर्यवंश कथा · एपिसोड 22 (Related video में लिंक)
+#Shorts #सूर्यवंश #राजाहरिश्चंद्र #पौराणिककथा
+```
+
+### E23 · शुनःशेप: वह बालक जो दूसरे की जगह मरने के लिए खरीदा गया
+
+*Shunahshepha: The Boy Bought to Die in a Prince's Place* · राजा हरिश्चंद्र, भाग 4/7 · थंबनेल पर: **पिता ने बेचा** (English: SOLD BY HIS FATHER)
+
+**YouTube title** (69/100)
+```
+शुनःशेप: वह बालक जो दूसरे की जगह मरने के लिए खरीदा गया | सूर्यवंश कथा
+```
+**YouTube description**
+```
+एक बालक… यज्ञ के खंभे से बँधा था।
+कोई उसे बाँधने को तैयार नहीं था। तो उसके पिता ने… सौ गायें और लेकर… उसे बाँधा।
+कोई उसे मारने को तैयार नहीं था। तो उसके पिता ने… सौ गायें और लेकर… छुरी तेज़ करनी शुरू की।
+और उस बालक ने… आँखें बंद कीं… और देवताओं को पुकारा।
+
+सूर्यवंश कथा · एपिसोड 23 / 84 · राजा हरिश्चंद्र (भाग 4 / 7)
+In this episode: The boy bought from Ajigarta, his prayers at the post, and how he became Devarata.
+
+📜 स्रोत: श्रीमद्भागवत 9.7 (यज्ञ) · 9.16 (देवरात) · ऐतरेय ब्राह्मण 7.15-18 (शुनःशेप-आख्यान) · वाल्मीकि रामायण, बाल कांड (अलग संस्करण)
+हर कथा के स्रोत स्क्रीन पर दिखाए गए हैं। जहाँ कथा लोक-परंपरा या बाद के ग्रंथों से है, वहाँ भी बताया गया है।
+
+⏱ अध्याय
+0:00 हुक
+0:24 कथा का द्वार
+0:50 पहला दृश्य: तीन पुत्र, एक सौदा
+1:38 दूसरा दृश्य: यज्ञ की तैयारी
+2:09 तीसरा दृश्य: कोई बाँधने को तैयार नहीं
+2:56 चौथा दृश्य: देवताओं को पुकार
+3:31 पाँचवाँ दृश्य: एक-एक बंधन
+4:14 छठा दृश्य: "तुम छुरी लेकर खड़े थे"
+4:41 सातवाँ दृश्य: देवरात
+5:32 आठवाँ दृश्य: शुनःशेप का पहला प्रश्न
+6:30 समाधान: एक कथा, दो रामायण
+7:00 समापन
+
+▶ अगला एपिसोड: E24 दूसरा हरिश्चंद्र, भाग 1: जिसने राज्य दान कर दिया
+▶ पूरी शृंखला (प्लेलिस्ट): [link]
+
+वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
+
+#सूर्यवंश #राजाहरिश्चंद्र #भागवतपुराण #Harishchandra #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
+```
+**YouTube tags field** (317/500)
+```
+शुनःशेप: वह बालक जो दूसरे की जगह मरने के लिए खरीदा गया, Shunahshepha: The Boy Bought to Die in a Prince's Place, राजा हरिश्चंद्र, Harishchandra, सूर्यवंश, Suryavansh, सूर्यवंश कथा, भागवत पुराण, Bhagavata Purana, Srimad Bhagavatam, हिंदू पौराणिक कथा, Hindu mythology, Ikshvaku dynasty, रामायण, Hindi story, पौराणिक कथा
+```
+**YouTube pinned comment**
+```
+आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
+अगला एपिसोड: E24 दूसरा हरिश्चंद्र, भाग 1: जिसने राज्य दान कर दिया
+```
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
+```
+एक बालक… यज्ञ के खंभे से बँधा था। 🔱 शुनःशेप: वह बालक जो दूसरे की जगह मरने के लिए खरीदा गया
+पूरी कथा: सूर्यवंश कथा · एपिसोड 23 (Related video में लिंक)
+#Shorts #सूर्यवंश #राजाहरिश्चंद्र #पौराणिककथा
+```
+
+### E24 · दूसरा हरिश्चंद्र, भाग 1: जिसने राज्य दान कर दिया
+
+*The Other Harishchandra, Part 1: He Gave Away His Kingdom* · राजा हरिश्चंद्र, भाग 5/7 · थंबनेल पर: **भागवत में नहीं** (English: NOT IN BHAGAVATA)
+
+**YouTube title** (63/100)
+```
+दूसरा हरिश्चंद्र, भाग 1: जिसने राज्य दान कर दिया | सूर्यवंश कथा
+```
+**YouTube description**
+```
+एक राजा ने… एक वचन के लिए… अपना पूरा राज्य दान कर दिया।
+फिर ऋषि ने कहा… "अब दक्षिणा दो।"
+राजा के पास कुछ नहीं बचा था। न राज्य। न धन। न घर।
+तो उसने अपनी पत्नी को बेचा। अपने पुत्र को बेचा।
+
+सूर्यवंश कथा · एपिसोड 24 / 84 · राजा हरिश्चंद्र (भाग 5 / 7)
+In this episode: The truth-test story most people know, and why it comes from a different Purana.
+
+📜 स्रोत: मार्कंडेय पुराण, अध्याय 7-8 (हरिश्चंद्रोपाख्यान) · यह कथा भागवत में नहीं है
+हर कथा के स्रोत स्क्रीन पर दिखाए गए हैं। जहाँ कथा लोक-परंपरा या बाद के ग्रंथों से है, वहाँ भी बताया गया है।
+
+⏱ अध्याय
+0:00 हुक
+0:23 कथा का द्वार
+0:51 पहला दृश्य: वन में रोती स्त्रियाँ
+1:27 दूसरा दृश्य: एक क्रोध का क्षण
+1:59 तीसरा दृश्य: "जो माँगें, वह दूँगा"
+2:39 चौथा दृश्य: दक्षिणा
+3:32 पाँचवाँ दृश्य: काशी
+4:04 छठा दृश्य: पत्नी ने कहा, "मुझे बेच दीजिए"
+4:46 सातवाँ दृश्य: और अभी भी कम था
+5:10 आठवाँ दृश्य: काशी किसी राजा की क्यों नहीं?
+6:04 समाधान: यह परीक्षा क्यों?
+6:32 समापन
+
+▶ अगला एपिसोड: E25 दूसरा हरिश्चंद्र, भाग 2: श्मशान
+▶ पूरी शृंखला (प्लेलिस्ट): [link]
+
+वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
+
+#सूर्यवंश #राजाहरिश्चंद्र #भागवतपुराण #Harishchandra #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
+```
+**YouTube tags field** (313/500)
+```
+दूसरा हरिश्चंद्र, भाग 1: जिसने राज्य दान कर दिया, The Other Harishchandra, Part 1: He Gave Away His Kingdom, राजा हरिश्चंद्र, Harishchandra, सूर्यवंश, Suryavansh, सूर्यवंश कथा, भागवत पुराण, Bhagavata Purana, Srimad Bhagavatam, हिंदू पौराणिक कथा, Hindu mythology, Ikshvaku dynasty, रामायण, Hindi story, पौराणिक कथा
+```
+**YouTube pinned comment**
+```
+आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
+अगला एपिसोड: E25 दूसरा हरिश्चंद्र, भाग 2: श्मशान
+```
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
+```
+एक राजा ने… एक वचन के लिए… अपना पूरा राज्य दान कर दिया। 🔱 दूसरा हरिश्चंद्र, भाग 1: जिसने राज्य दान कर दिया
+पूरी कथा: सूर्यवंश कथा · एपिसोड 24 (Related video में लिंक)
+#Shorts #सूर्यवंश #राजाहरिश्चंद्र #पौराणिककथा
+```
+
+### E25 · दूसरा हरिश्चंद्र, भाग 2: श्मशान
+
+*The Other Harishchandra, Part 2: The Cremation Ground* · राजा हरिश्चंद्र, भाग 6/7 · थंबनेल पर: **अपना ही पुत्र** (English: HIS OWN SON)
+
+**YouTube title** (46/100)
+```
+दूसरा हरिश्चंद्र, भाग 2: श्मशान | सूर्यवंश कथा
+```
+**YouTube description**
+```
+आधी रात। श्मशान।
+एक स्त्री आई… अपने मृत पुत्र को गोद में लिए। चिता के लिए।
+और श्मशान के रखवाले ने कहा… "पहले कर दो।"
+स्त्री ने उसकी ओर देखा। और पहचान लिया।
+
+सूर्यवंश कथा · एपिसोड 25 / 84 · राजा हरिश्चंद्र (भाग 6 / 7)
+In this episode: Kashi, the sale of his wife and son, Rohita's death, and the end of the test.
+
+📜 स्रोत: मार्कंडेय पुराण, अध्याय 8 (हरिश्चंद्रोपाख्यान) · गांधी, "सत्य के प्रयोग" (आत्मकथा), भाग 1 · यह कथा भागवत में नहीं है
+हर कथा के स्रोत स्क्रीन पर दिखाए गए हैं। जहाँ कथा लोक-परंपरा या बाद के ग्रंथों से है, वहाँ भी बताया गया है।
+
+⏱ अध्याय
+0:00 हुक
+0:22 कथा का द्वार
+0:41 पहला दृश्य: स्वयं को बेचा
+1:27 दूसरा दृश्य: श्मशान का रखवाला
+2:04 तीसरा दृश्य: साँप
+2:43 चौथा दृश्य: "कर दो"
+3:14 पाँचवाँ दृश्य: फिर भी कर
+4:15 छठा दृश्य: देवता प्रकट हुए
+4:47 सातवाँ दृश्य: प्रजा के बिना नहीं
+5:35 आठवाँ दृश्य: हरिश्चंद्र घाट
+6:28 समाधान: एक बालक, जो रोया
+7:08 समापन
+
+▶ अगला एपिसोड: E26 दो ऋषि एक राजा के लिए पक्षी बनकर लड़े
+▶ पूरी शृंखला (प्लेलिस्ट): [link]
+
+वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
+
+#सूर्यवंश #राजाहरिश्चंद्र #भागवतपुराण #Harishchandra #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
+```
+**YouTube tags field** (292/500)
+```
+दूसरा हरिश्चंद्र, भाग 2: श्मशान, The Other Harishchandra, Part 2: The Cremation Ground, राजा हरिश्चंद्र, Harishchandra, सूर्यवंश, Suryavansh, सूर्यवंश कथा, भागवत पुराण, Bhagavata Purana, Srimad Bhagavatam, हिंदू पौराणिक कथा, Hindu mythology, Ikshvaku dynasty, रामायण, Hindi story, पौराणिक कथा
+```
+**YouTube pinned comment**
+```
+आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
+अगला एपिसोड: E26 दो ऋषि एक राजा के लिए पक्षी बनकर लड़े
+```
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
+```
+आधी रात। श्मशान। 🔱 दूसरा हरिश्चंद्र, भाग 2: श्मशान
+पूरी कथा: सूर्यवंश कथा · एपिसोड 25 (Related video में लिंक)
+#Shorts #सूर्यवंश #राजाहरिश्चंद्र #पौराणिककथा
+```
+
+### E26 · दो ऋषि एक राजा के लिए पक्षी बनकर लड़े
+
+*Two Sages Fought as Birds Over 1 King* · राजा हरिश्चंद्र, भाग 7/7 · थंबनेल पर: **वर्षों का युद्ध** (English: YEARS OF WAR)
+
+**YouTube title** (52/100)
+```
+दो ऋषि एक राजा के लिए पक्षी बनकर लड़े | सूर्यवंश कथा
+```
+**YouTube description**
+```
+दो ऋषि।
+एक ने दूसरे को शाप दिया… "तुम बगुला बन जाओ।"
+दूसरे ने उत्तर में शाप दिया… "और तुम आडी पक्षी।"
+और फिर… दो विशाल पक्षी… आकाश में भिड़ गए। पर्वत हिले। समुद्र उफने। और यह युद्ध… वर्षों चला।
+
+सूर्यवंश कथा · एपिसोड 26 / 84 · राजा हरिश्चंद्र (भाग 7 / 7)
+In this episode: Vasishtha and Vishvamitra's years-long battle in bird form, and who started it.
+
+📜 स्रोत: श्रीमद्भागवत 9.7 (युद्ध का उल्लेख) · मार्कंडेय पुराण, अध्याय 9 (आडी-बक युद्ध का विस्तार)
+हर कथा के स्रोत स्क्रीन पर दिखाए गए हैं। जहाँ कथा लोक-परंपरा या बाद के ग्रंथों से है, वहाँ भी बताया गया है।
+
+⏱ अध्याय
+0:00 हुक
+0:22 कथा का द्वार
+0:44 पहला दृश्य: भागवत की एक पंक्ति
+1:22 दूसरा दृश्य: जल से लौटे वसिष्ठ
+2:05 तीसरा दृश्य: शाप
+2:38 चौथा दृश्य: उत्तर में शाप
+3:14 पाँचवाँ दृश्य: आकाश का युद्ध
+3:58 छठा दृश्य: ब्रह्मा आए
+4:30 सातवाँ दृश्य: एक झगड़ा, पूरी शृंखला में
+5:27 आठवाँ दृश्य: "बक-वृत्ति"
+6:23 समाधान
+6:52 समापन
+
+▶ अगला एपिसोड: E27 रोहित से बाहुक तक: सूर्यवंश ने अयोध्या कैसे खोई
+▶ पूरी शृंखला (प्लेलिस्ट): [link]
+
+वाचन: AI आवाज़ (ElevenLabs) · चित्र: AI से बनाए गए (Google) · पटकथा: स्रोत-ग्रंथों पर आधारित
+Narration: AI voice (ElevenLabs) · Illustrations: AI-generated (Google) · Script: written from the cited texts
+
+#सूर्यवंश #राजाहरिश्चंद्र #भागवतपुराण #Harishchandra #Suryavansh #हिंदूपौराणिककथा #IndianMythology #BhagavataPurana #पौराणिककथा #सनातनधर्म #HindiKahani #Mythology
+```
+**YouTube tags field** (282/500)
+```
+दो ऋषि एक राजा के लिए पक्षी बनकर लड़े, Two Sages Fought as Birds Over 1 King, राजा हरिश्चंद्र, Harishchandra, सूर्यवंश, Suryavansh, सूर्यवंश कथा, भागवत पुराण, Bhagavata Purana, Srimad Bhagavatam, हिंदू पौराणिक कथा, Hindu mythology, Ikshvaku dynasty, रामायण, Hindi story, पौराणिक कथा
+```
+**YouTube pinned comment**
+```
+आपके अनुसार, इस कथा में सबसे कठिन निर्णय किसका था? 👇
+अगला एपिसोड: E27 रोहित से बाहुक तक: सूर्यवंश ने अयोध्या कैसे खोई
+```
+**YouTube Short** (optional: 30-60 s vertical clip of the hook, linked to the full episode)
+```
+दो ऋषि। 🔱 दो ऋषि एक राजा के लिए पक्षी बनकर लड़े
+पूरी कथा: सूर्यवंश कथा · एपिसोड 26 (Related video में लिंक)
 #Shorts #सूर्यवंश #राजाहरिश्चंद्र #पौराणिककथा
 ```
