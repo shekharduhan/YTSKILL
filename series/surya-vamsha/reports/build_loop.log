@@ -630,3 +630,22 @@ E21 streams: video starts 0.000s lasts 390.76s | audio starts 0.000s lasts 390.7
 E21: 60 pieces checked in the video file, 0 out of sync
 00:45 done E21
 00:45 building E22
+E22 production report
+timing plan problems:
+  none
+wrote /home/user/YTSKILL/series/surya-vamsha/video/ep22.mp4 409.7s narration, 48 shots, video 409.7s
+wrote brand/out/thumbnails/ep22-thumbnail-1280x720.jpg (1280, 720)
+--- qa_audio.py
+E22: 0 of 55 pieces flagged; longest pause between pieces 1.2 s
+--- voice_report.py
+E22 voice: 55 pieces, 0 failed the script check, longest silence 1.7s, loudness spread -1.5/+1.5 dB, speed spread 0.74-1.15x, clipped samples 0
+  no problems found
+--- verify_video.py
+! 1:41.3 (start of image 14): looks like image 4 (0.62 vs 0.59)
+  ! 2:35.5 (start of image 20): looks like image 13 (0.70 vs 0.64)
+E22: 48 pictures, 2 mismatches; video 409.70s, narration 409.73s
+--- sync_check.py
+E22 streams: video starts 0.000s lasts 409.56s | audio starts 0.000s lasts 409.70s -> MISMATCH
+E22: 55 pieces checked in the video file, 0 out of sync
+01:10 done E22
+01:10 building E24
