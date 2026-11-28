@@ -707,3 +707,21 @@ E27 streams: video starts 0.000s lasts 417.52s | audio starts 0.000s lasts 417.5
 E27: 53 pieces checked in the video file, 0 out of sync
 02:30 done E27
 02:30 building E28
+E28 production report
+timing plan problems:
+  none
+wrote /home/user/YTSKILL/series/surya-vamsha/video/ep28.mp4 399.8s narration, 46 shots, video 399.8s
+wrote brand/out/thumbnails/ep28-thumbnail-1280x720.jpg (1280, 720)
+--- qa_audio.py
+E28: 0 of 56 pieces flagged; longest pause between pieces 1.2 s
+--- voice_report.py
+E28 voice: 56 pieces, 0 failed the script check, longest silence 1.7s, loudness spread -1.7/+1.6 dB, speed spread 0.59-1.39x, clipped samples 0
+  ! 2:10.4 speed 0.59x the usual: "स" यानी साथ। "गर" यानी विष। सगर।
+  ! 6:34.6 speed 1.39x the usual: उन्होंने उनके सिर मुँडवा दिए।
+--- verify_video.py
+E28: 46 pictures, 0 mismatches; video 399.76s, narration 399.80s
+--- sync_check.py
+E28 streams: video starts 0.000s lasts 399.68s | audio starts 0.000s lasts 399.76s -> OK
+E28: 56 pieces checked in the video file, 0 out of sync
+02:56 done E28
+02:56 building E29
