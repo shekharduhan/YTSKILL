@@ -1,0 +1,15 @@
+E29 production report
+timing plan problems:
+  none
+wrote /home/user/YTSKILL/series/surya-vamsha/video/ep29.mp4 396.7s narration, 47 shots, video 396.6s
+wrote brand/out/thumbnails/ep29-thumbnail-1280x720.jpg (1280, 720)
+--- qa_audio.py
+E29: 0 of 53 pieces flagged; longest pause between pieces 1.2 s
+--- voice_report.py
+E29 voice: 53 pieces, 0 failed the script check, longest silence 1.4s, loudness spread -1.9/+1.9 dB, speed spread 0.63-1.20x, clipped samples 0
+  ! 1:31.8 speed 0.63x the usual: तालजंघ। यवन। शक। हैहय। और बर्बर।
+--- verify_video.py
+E29: 47 pictures, 0 mismatches; video 396.62s, narration 396.67s
+--- sync_check.py
+E29 streams: video starts 0.000s lasts 396.52s | audio starts 0.000s lasts 396.62s -> MISMATCH
+E29: 53 pieces checked in the video file, 0 out of sync
