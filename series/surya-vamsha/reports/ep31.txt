@@ -1,0 +1,18 @@
+E31 production report
+timing plan problems:
+  none
+wrote /home/user/YTSKILL/series/surya-vamsha/video/ep31.mp4 437.0s narration, 50 shots, video 436.9s
+wrote brand/out/thumbnails/ep31-thumbnail-1280x720.jpg (1280, 720)
+--- qa_audio.py
+E31 0:13.6 missing words                want: और अगले ही क्षण… साठ हज़ार राजकुमार… राख हो गए।
+                                        said: और अगले ही ख्षण 60,000 राजकुमार राख हो गए।
+E31: 1 of 58 pieces flagged; longest pause between pieces 1.2 s
+--- voice_report.py
+E31 voice: 58 pieces, 1 failed the script check, longest silence 1.6s, loudness spread -2.4/+2.7 dB, speed spread 0.65-1.51x, clipped samples 0
+  ! 3:07.9 speed 0.65x the usual: और फिर… वह हुआ।
+  ! 4:13.5 speed 1.51x the usual: अब इसे वाल्मीकि से तुलना कीजिए।
+--- verify_video.py
+E31: 50 pictures, 0 mismatches; video 436.95s, narration 436.98s
+--- sync_check.py
+E31 streams: video starts 0.000s lasts 436.92s | audio starts 0.000s lasts 436.95s -> OK
+E31: 58 pieces checked in the video file, 0 out of sync
