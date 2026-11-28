@@ -690,3 +690,20 @@ E26 streams: video starts 0.000s lasts 442.92s | audio starts 0.000s lasts 443.0
 E26: 62 pieces checked in the video file, 1 out of sync
 02:05 done E26
 02:05 building E27
+E27 production report
+timing plan problems:
+  none
+wrote /home/user/YTSKILL/series/surya-vamsha/video/ep27.mp4 417.6s narration, 47 shots, video 417.5s
+wrote brand/out/thumbnails/ep27-thumbnail-1280x720.jpg (1280, 720)
+--- qa_audio.py
+E27: 0 of 53 pieces flagged; longest pause between pieces 1.2 s
+--- voice_report.py
+E27 voice: 53 pieces, 0 failed the script check, longest silence 1.8s, loudness spread -1.5/+1.6 dB, speed spread 0.69-1.23x, clipped samples 0
+  no problems found
+--- verify_video.py
+E27: 47 pictures, 0 mismatches; video 417.54s, narration 417.57s
+--- sync_check.py
+E27 streams: video starts 0.000s lasts 417.52s | audio starts 0.000s lasts 417.54s -> OK
+E27: 53 pieces checked in the video file, 0 out of sync
+02:30 done E27
+02:30 building E28
