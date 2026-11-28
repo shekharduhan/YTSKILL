@@ -1,0 +1,16 @@
+E32 production report
+timing plan problems:
+  none
+wrote /home/user/YTSKILL/series/surya-vamsha/video/ep32.mp4 442.6s narration, 48 shots, video 442.6s
+wrote brand/out/thumbnails/ep32-thumbnail-1280x720.jpg (1280, 720)
+--- qa_audio.py
+E32: 0 of 59 pieces flagged; longest pause between pieces 1.2 s
+--- voice_report.py
+E32 voice: 59 pieces, 0 failed the script check, longest silence 1.9s, loudness spread -1.7/+2.2 dB, speed spread 0.75-1.56x, clipped samples 0
+  ! 4:35.6 speed 1.56x the usual: अब वाल्मीकि से तुलना कीजिए।
+  ! 5:51.7 silence of 1.9s
+--- verify_video.py
+E32: 48 pictures, 0 mismatches; video 442.60s, narration 442.64s
+--- sync_check.py
+E32 streams: video starts 0.000s lasts 442.60s | audio starts 0.000s lasts 442.60s -> OK
+E32: 59 pieces checked in the video file, 0 out of sync
