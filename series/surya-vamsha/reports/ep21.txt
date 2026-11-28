@@ -1,0 +1,16 @@
+E21 production report
+timing plan problems:
+  none
+wrote /home/user/YTSKILL/series/surya-vamsha/video/ep21.mp4 390.8s narration, 43 shots, video 390.8s
+wrote brand/out/thumbnails/ep21-thumbnail-1280x720.jpg (1280, 720)
+--- qa_audio.py
+E21: 0 of 60 pieces flagged; longest pause between pieces 1.2 s
+--- voice_report.py
+E21 voice: 60 pieces, 0 failed the script check, longest silence 1.4s, loudness spread -1.4/+2.0 dB, speed spread 0.74-1.36x, clipped samples 0
+  ! 3:53.5 speed 1.36x the usual: प्राण बचाने के लिए।
+--- verify_video.py
+! 3:31.1 (start of image 24): looks like image 27 (0.70 vs 0.69)
+E21: 43 pictures, 1 mismatches; video 390.77s, narration 390.82s
+--- sync_check.py
+E21 streams: video starts 0.000s lasts 390.76s | audio starts 0.000s lasts 390.77s -> OK
+E21: 60 pieces checked in the video file, 0 out of sync
