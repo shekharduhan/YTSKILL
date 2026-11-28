@@ -742,3 +742,28 @@ E29 streams: video starts 0.000s lasts 396.52s | audio starts 0.000s lasts 396.6
 E29: 53 pieces checked in the video file, 0 out of sync
 03:20 done E29
 03:20 building E30
+E30 production report
+timing plan problems:
+  none
+wrote /home/user/YTSKILL/series/surya-vamsha/video/ep30.mp4 425.3s narration, 50 shots, video 425.3s
+wrote brand/out/thumbnails/ep30-thumbnail-1280x720.jpg (1280, 720)
+--- qa_audio.py
+E30 0:08.8 missing words                want: और दूसरी को… साठ हज़ार पुत्र मिलेंगे।
+                                        said: और दूसरी को 60,000 कुत्र मिलेंगे।
+E30 0:13.4 extra words                  want: आप होतीं… तो क्या चुनतीं?
+                                        said: आप होती ही तो क्या चुनती ही?
+E30 2:20.8 missing words                want: और सुमति ने कहा… "मुझे साठ हज़ार।"
+                                        said: और सुमती ने कहा मुझे 60,000
+E30 5:12.9 missing words                want: और साठ हज़ार राजकुमार… चारों दिशाओं में निकल पड़े।
+                                        said: और 60,000 राजकुमार चारों दिशाओं में निकल पड़े।
+E30: 4 of 64 pieces flagged; longest pause between pieces 1.2 s
+--- voice_report.py
+E30 voice: 64 pieces, 4 failed the script check, longest silence 1.8s, loudness spread -2.5/+2.4 dB, speed spread 0.77-1.36x, clipped samples 0
+  ! 6:38.7 speed 1.36x the usual: और उन्होंने खोदना शुरू किया।
+--- verify_video.py
+E30: 50 pictures, 0 mismatches; video 425.29s, narration 425.33s
+--- sync_check.py
+E30 streams: video starts 0.000s lasts 425.28s | audio starts 0.000s lasts 425.29s -> OK
+E30: 64 pieces checked in the video file, 0 out of sync
+03:49 done E30
+03:49 building E31
